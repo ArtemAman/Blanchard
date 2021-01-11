@@ -131,10 +131,12 @@
           </p>
         </div>
         <div class="gallery_right">
-          <div class="swiper-button-prev"></div>
-          <p class="swiper_counter">1 / 3</p>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-container">            
+          <div class="swiper_nav_buttons_1">
+            <div class="swiper-button-prev_1"></div>
+            <p class="swiper_counter_1">1 / 3</p>
+            <div class="swiper-button-next_1"></div>
+          </div>
+          <div class="swiper-container" id="swiper_1">            
             <div class="swiper-wrapper">
               <div class="swiper-slide slide_1">
                 <img class="swiper_img" src="img/Rectangle 2.png" alt="">
@@ -374,31 +376,90 @@
           <h5 class="pubs_header_inputs"> Цена</h5>
           <form class="pubs_inputs">
             <label class="label_price label_price_1" for="from">От</label>
-            <input class="input_price" type="text" id="from">
+            <input class="input_price" type="number" id="from">
             <label class="label_price label_price_2" for="to">До</label>
-            <input class="input_price" type="text" id="to">
+            <input class="input_price" type="number" id="to">
             <label class="label_price label_price_3" for="to">рублей</label>
           </form>
 
-        </div>
+        </div>        
         <div class="publications_right">
-          <div class="swiper-button-prev prev_2"></div>
-          <p class="swiper_counter">1 / 3</p>
-          <div class="swiper-button-next next_2"></div>
-          <div class="swiper-container cont_2">            
+          <div class="swiper_nav_buttons_2">
+            <div class="swiper-button-prev_2 "></div>
+            <p class="swiper_counter_2">1 / 3</p>
+            <div class="swiper-button-next_2 "></div>
+          </div>
+
+          <div class="swiper-container container_2" id="swiper_2">            
             <div class="swiper-wrapper wrap_2">
-              <div class="swiper-slide pub_slide_1">
-                <img class="swiper_img" src="img/Rectangle 2.png" alt="">
-                <img class="swiper_img" src="img/Rectangle 3.png" alt="">
-                <img class="swiper_img" src="img/Rectangle 1.png" alt="">
+              <div class="swiper-slide sw_slide_2">
+                <div class="swiper_slide_2_block">
+                  <img class="swiper_img_2" src="img/Rectangle 111.jpg" alt="">
+                  <div class="swiper_2_text_block">
+                    <p class="swiper_2_text_block_left">Искусство света</p>
+                    <p class="swiper_2_text_block_right"> 620 руб </p>
+                  </div>
+                  <p class="swiper_2_text_bot">Иттен, Иоханнес</p>
+                  <button class="swiper_2_button">Заказать</button>
+                </div>
+                <div class="swiper_slide_2_block">
+                  <img class="swiper_img_2" src="img/Rectangle 112.jpg" alt="">
+                  <div class="swiper_2_text_block">
+                    <p class="swiper_2_text_block_left">Типографика </p>
+                    <p class="swiper_2_text_block_right">2 450 руб</p>
+                  </div>
+                  <p class="swiper_2_text_bot">Рудер, Эмиль</p>
+                  <button class="swiper_2_button">Заказать</button>
+                </div>   
+                <div class="swiper_slide_2_block">
+                  <img class="swiper_img_2" src="img/Rectangle 113.jpg" alt="">
+                  <div class="swiper_2_text_block">
+                    <p class="swiper_2_text_block_left">Книга про буквы</p>
+                    <p class="swiper_2_text_block_right">2 200 руб</p>
+                  </div>
+                  <p class="swiper_2_text_bot">Гордон, Юрий</p>
+                  <button class="swiper_2_button">Заказать</button>
+                </div>              
               </div>
-              <div class="swiper-slide pub_slide_2">
-                <img class="swiper_img" src="img/Rectangle 70.png" alt="">
-                <img class="swiper_img" src="img/Rectangle 68.png" alt="">
-                <img class="swiper_img" src="img/Rectangle 69.png" alt="">
+              <div class="swiper-slide sw_slide_2">
+                <div class="swiper_slide_2_block">
+                  <img class="swiper_img_2" src="img/Rectangle 114.png" alt="">
+                  <div class="swiper_2_text_block">
+                    <p class="swiper_2_text_block_left">Николай Ильин </p>
+                    <p class="swiper_2_text_block_right">1 100 руб</p>
+                  </div>
+                  <p class="swiper_2_text_bot">Кричевский, Владимир</p>
+                  <button class="swiper_2_button">Заказать</button>
+                </div>   
+                <div class="swiper_slide_2_block">
+                  <img class="swiper_img_2" src="img/Rectangle 115.jpg" alt="">
+                  <div class="swiper_2_text_block">
+                    <p class="swiper_2_text_block_left">Модульные сетки в граф...</p>
+                    <p class="swiper_2_text_block_right">1 450 руб</p>
+                  </div>
+                  <p class="swiper_2_text_bot"> Мюллер-Брокманн, Йозеф</p>
+                  <button class="swiper_2_button">Заказать</button>
+                </div>   
+                <div class="swiper_slide_2_block">
+                  <img class="swiper_img_2" src="img/Rectangle 116.jpg" alt="">
+                  <div class="swiper_2_text_block">
+                    <p class="swiper_2_text_block_left"> Эволюция графических ст...</p>
+                    <p class="swiper_2_text_block_right">2 200 руб</p>
+                  </div>
+                  <p class="swiper_2_text_bot">Хеллер, Чваст</p>
+                  <button class="swiper_2_button">Заказать</button>
+                </div>   
               </div>              
-              <div class="swiper-slide pub_slide_3">
-                <img class="swiper_img" src="img/Rectangle 77.png" alt="">
+              <div class="swiper-slide sw_slide_2">
+                <div class="swiper_slide_2_block">
+                  <img class="swiper_img_2" src="img/Rectangle 117.jpg" alt="">
+                  <div class="swiper_2_text_block">
+                    <p class="swiper_2_text_block_left">Искусство и визуальное в...</p>
+                    <p class="swiper_2_text_block_right">Арнхейм, Рудольф</p>
+                  </div>
+                  <p class="swiper_2_text_bot">2 200 руб</p>
+                  <button class="swiper_2_button">Заказать</button>
+                </div>   
               </div>
             </div>
 
@@ -423,6 +484,28 @@
         Партнёры проектов:
       </h4>
       <div class="projects_swiper">
+        <div class="swiper-button-prev_3"></div>        
+        <div class="swiper-container sw_3" id="swiper_3">            
+          <div class="swiper-wrapper wrap_3">
+            <div class="swiper-slide sw_slide_3">
+              <div class="swiper_img__class swiper_img_1"></div>
+              <div class="swiper_img__class swiper_img_2"></div>
+              <div class="swiper_img__class swiper_img_3"></div>
+            </div>
+            <div class="swiper-slide sw_slide_3">
+              <div class="swiper_img__class swiper_img_4"></div>
+              <div class="swiper_img__class swiper_img_5"></div>
+              <div class="swiper_img__class swiper_img_6"></div>
+
+            </div>              
+            <div class="swiper-slide sw_slide_3">
+              <div class="swiper_img__class swiper_img_7"></div>
+              <div class="swiper_img__class swiper_img_8"></div>
+              <div class="swiper_img__class swiper_img_9"></div>
+            </div>            
+          </div>          
+        </div>
+        <div class="swiper-button-next_3"></div>
       </div>
     </section>
     <section class="contacts">
