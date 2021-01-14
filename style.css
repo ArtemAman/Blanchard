@@ -529,6 +529,10 @@ a:hover {
   border: none;
 }
 
+.catalog_header_button:hover{
+  cursor: pointer;
+}
+
 
 .country_france {
   background-image: url(img/france.svg);
@@ -541,7 +545,7 @@ a:hover {
 }
 
 .country_italy {
-  background-image: url(img/france.svg);
+  background-image: url(img/italy.svg);
   
 }
 
@@ -567,6 +571,62 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
+
+
+
+
+.tab_content{
+  display: none;
+}
+
+
+.tab_content_active{
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+
+}
+
+
+
+
+
+.question_item_header{
+  padding-top: 38px;
+  padding-bottom: 44px;
+  padding-right: 60px;
+  display: flex;
+  width: 100%;
+
+
+  align-items: center;
+  border-top: 1px solid #CACACA;
+  font-family: 'open_sans';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  background-image: url(img/accotdion_arrow_down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .catalog_left {
   max-width: 750px;
@@ -1046,10 +1106,12 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 23px;
 }
 
 .sw_3 {
   height: 150px;
+  margin-top: 0;
 }
 
 .sw_slide_3 {

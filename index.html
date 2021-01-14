@@ -11,7 +11,12 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/choices.min.css" />
 
+
   <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -92,8 +97,8 @@
         предложений.
       </p>
       <a href="#map" class="href_to_map">
-        <button  class="hero_button">Подписаться на рассылку</button>
-      </a>  
+        <button class="hero_button">Подписаться на рассылку</button>
+      </a>
     </section>
     <section class="about_us">
       <h3 class="about_us_header">
@@ -140,7 +145,7 @@
               <div class="arrow_next_1"></div>
             </div>
           </div>
-          <div class="swiper-container" id="swiper_1">            
+          <div class="swiper-container" id="swiper_1">
             <div class="swiper-wrapper">
               <div class="swiper-slide slide_1">
                 <img class="swiper_img" src="img/Rectangle 2.png" alt="">
@@ -157,7 +162,7 @@
                 <img class="swiper_img" src="img/Rectangle 72.png" alt="">
                 <img class="swiper_img" src="img/Rectangle 71.png" alt="">
                 <img class="swiper_img" src="img/Rectangle 73.png" alt="">
-              </div>              
+              </div>
               <div class="swiper-slide slide_3">
                 <img class="swiper_img" src="img/Rectangle 77.png" alt="">
                 <img class="swiper_img" src="img/Rectangle 74.png" alt="">
@@ -177,19 +182,19 @@
         <h3 class="catalog_header_header">Каталог</h3>
         <ul class="catalog_header_tab_list">
           <li class="catalog_header_list_item">
-            <button class="catalog_header_button country_france"></button>
+            <button class="catalog_header_button country_france" data-path="one"></button>
           </li>
           <li class="catalog_header_list_item">
-            <button class="catalog_header_button country_german"></button>
+            <button class="catalog_header_button country_german" data-path="two"></button>
           </li>
           <li class="catalog_header_list_item">
-            <button class="catalog_header_button country_italy"></button>
+            <button class="catalog_header_button country_italy" data-path="three"></button>
           </li>
           <li class="catalog_header_list_item">
-            <button class="catalog_header_button country_russia"></button>
+            <button class="catalog_header_button country_russia" data-path="four"></button>
           </li>
           <li class="catalog_header_list_item">
-            <button class="catalog_header_button country_belgium"></button>
+            <button class="catalog_header_button country_belgium" data-path="five"></button>
           </li>
         </ul>
       </div>
@@ -217,28 +222,116 @@
           </p>
         </div>
         <div class="catalog_right">
-          <div class="catalog_right_accordion">
-            <h3>C 1400 по 1499 гг.</h3>
-            <div>Бенедетто ди Биндо
-              Бергоньоне, Амброджо
-              Биссоло, Франческо
-              Больтраффио, Джованни
-              Бонсиньори, Франческо
-              Боттичини, Рафаэлло
-              Брамантино
-              Бреа, Людовико
-              Бьяджо д’Антонио Туччи</div>
-            <h3>C 1500 по 1599 гг.</h3>
-            <div></div>
-            <h3>C 1600 по 1699 гг.</h3>
-            <div></div>
-            <h3>C 1700 по 1799 гг.</h3>
-            <div></div>
-            <h3>C 1800 по 1899 гг.</h3>
-            <div></div>
-            <h3>C 1900 по 1999 гг.</h3>
-            <div></div>
-            <h3>C 2000 г.</h3>
+          <div class="tab_content " data-target="one">
+            <div id="accordion" class="accordion_class">
+              <h3 class="question_item_header">C 1400 по dfgggggggggggggggg1499 гг.</h3>
+              <div>
+                <p class="accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum eum vel et voluptate aliquid
+                  doloremque corrupti quod magnam consequuntur in recusandae laborum eveniet iusto architecto non,
+                  dolorem, placeat odit.
+                </p>
+              </div>
+              <h3 class="question_item_header">C 1500 по 1599 гг.</h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="question_item_header">C 1600 по 1699 гг.</h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="question_item_header">C 1700 по 1799 гг.</h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="question_item_header last_accord">C 1800 по 1899 гг.</h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="question_item_header last_accord">C 1900 по 1999 гг.</h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="question_item_header last_accord">C 2000 г.</h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab_content" data-target="two">
+            <div class="catalog_right_accordion">
+              <h3>C 1400 по 1499 гг.</h3>
+              <div></div>
+              <h3>C 1500 по 1599 гг.</h3>
+              <div></div>
+              <h3>C 1600 по 1699 гг.</h3>
+              <div></div>
+              <h3>C 1700 по 1799 гг.</h3>
+              <div></div>
+              <h3>C 1800 по 1899 гг.</h3>
+              <div></div>
+              <h3>C 1900 по 1999 гг.</h3>
+              <div></div>
+              <h3>C 2000 г.</h3>
+            </div>
+          </div>
+          <div class="tab_content tab_content_active" data-target="three">
+            <div class="catalog_right_accordion">
+              <h3>C 1400 по 1499 гг.</h3>
+              <div>ИТАЛИЯ</div>
+              <h3>C 1500 по 1599 гг.</h3>
+              <div></div>
+              <h3>C 1600 по 1699 гг.</h3>
+              <div></div>
+              <h3>C 1700 по 1799 гг.</h3>
+              <div></div>
+              <h3>C 1800 по 1899 гг.</h3>
+              <div></div>
+              <h3>C 1900 по 1999 гг.</h3>
+              <div></div>
+              <h3>C 2000 г.</h3>
+            </div>
+          </div>
+          <div class="tab_content" data-target="four">
+            <div class="catalog_right_accordion">
+              <h3>C 1400 по 1499 гг.</h3>
+              <div></div>
+              <h3>C 1500 по 1599 гг.</h3>
+              <div></div>
+              <h3>C 1600 по 1699 гг.</h3>
+              <div></div>
+              <h3>C 1700 по 1799 гг.</h3>
+              <div></div>
+              <h3>C 1800 по 1899 гг.</h3>
+              <div></div>
+              <h3>C 1900 по 1999 гг.</h3>
+              <div></div>
+              <h3>C 2000 г.</h3>
+            </div>
+          </div>
+          <div class="tab_content" data-target="five">
+            <div class="catalog_right_accordion">
+              <h3>C 1400 по 1499 гг.</h3>
+              <div></div>
+              <h3>C 1500 по 1599 гг.</h3>
+              <div></div>
+              <h3>C 1600 по 1699 гг.</h3>
+              <div></div>
+              <h3>C 1700 по 1799 гг.</h3>
+              <div></div>
+              <h3>C 1800 по 1899 гг.</h3>
+              <div></div>
+              <h3>C 1900 по 1999 гг.</h3>
+              <div></div>
+              <h3>C 2000 г.</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -327,7 +420,7 @@
         <div class="publications_left">
           <h3 class="publications_left_header">Издания</h3>
           <h4 class="categories">Категории:</h4>
-          <div class="publications_checkbox">            
+          <div class="publications_checkbox">
             <div class="check_pubs">
               <input type="checkbox" id="bestsellers">
               <label class="pubs_label" for="bestsellers">Бестселлеры</label>
@@ -386,7 +479,7 @@
             <label class="label_price label_price_3" for="to">рублей</label>
           </form>
 
-        </div>        
+        </div>
         <div class="publications_right">
           <div class="swiper_nav_buttons_2">
             <div class="swiper-button-prev_2 ">
@@ -398,7 +491,7 @@
             </div>
           </div>
 
-          <div class="swiper-container container_2" id="swiper_2">            
+          <div class="swiper-container container_2" id="swiper_2">
             <div class="swiper-wrapper wrap_2">
               <div class="swiper-slide sw_slide_2">
                 <div class="swiper_slide_2_block">
@@ -418,7 +511,7 @@
                   </div>
                   <p class="swiper_2_text_bot">Рудер, Эмиль</p>
                   <button class="swiper_2_button">Заказать</button>
-                </div>   
+                </div>
                 <div class="swiper_slide_2_block">
                   <img class="swiper_img_2" src="img/Rectangle 113.jpg" alt="">
                   <div class="swiper_2_text_block">
@@ -427,7 +520,7 @@
                   </div>
                   <p class="swiper_2_text_bot">Гордон, Юрий</p>
                   <button class="swiper_2_button">Заказать</button>
-                </div>              
+                </div>
               </div>
               <div class="swiper-slide sw_slide_2">
                 <div class="swiper_slide_2_block">
@@ -438,7 +531,7 @@
                   </div>
                   <p class="swiper_2_text_bot">Кричевский, Владимир</p>
                   <button class="swiper_2_button">Заказать</button>
-                </div>   
+                </div>
                 <div class="swiper_slide_2_block">
                   <img class="swiper_img_2" src="img/Rectangle 115.jpg" alt="">
                   <div class="swiper_2_text_block">
@@ -447,7 +540,7 @@
                   </div>
                   <p class="swiper_2_text_bot"> Мюллер-Брокманн, Йозеф</p>
                   <button class="swiper_2_button">Заказать</button>
-                </div>   
+                </div>
                 <div class="swiper_slide_2_block">
                   <img class="swiper_img_2" src="img/Rectangle 116.jpg" alt="">
                   <div class="swiper_2_text_block">
@@ -456,8 +549,8 @@
                   </div>
                   <p class="swiper_2_text_bot">Хеллер, Чваст</p>
                   <button class="swiper_2_button">Заказать</button>
-                </div>   
-              </div>              
+                </div>
+              </div>
               <div class="swiper-slide sw_slide_2">
                 <div class="swiper_slide_2_block">
                   <img class="swiper_img_2" src="img/Rectangle 117.jpg" alt="">
@@ -467,7 +560,7 @@
                   </div>
                   <p class="swiper_2_text_bot">2 200 руб</p>
                   <button class="swiper_2_button">Заказать</button>
-                </div>   
+                </div>
               </div>
             </div>
 
@@ -494,8 +587,8 @@
       <div class="projects_swiper">
         <div class="swiper-button-prev_3">
           <div class="arrow_prev_1"></div>
-        </div>        
-        <div class="swiper-container sw_3" id="swiper_3">            
+        </div>
+        <div class="swiper-container sw_3" id="swiper_3">
           <div class="swiper-wrapper wrap_3">
             <div class="swiper-slide sw_slide_3">
               <div class="swiper_img__class swiper_img_1"></div>
@@ -507,13 +600,13 @@
               <div class="swiper_img__class swiper_img_5"></div>
               <div class="swiper_img__class swiper_img_6"></div>
 
-            </div>              
+            </div>
             <div class="swiper-slide sw_slide_3">
               <div class="swiper_img__class swiper_img_7"></div>
               <div class="swiper_img__class swiper_img_8"></div>
               <div class="swiper_img__class swiper_img_9"></div>
-            </div>            
-          </div>          
+            </div>
+          </div>
         </div>
         <div class="swiper-button-next_3">
           <div class="arrow_next_1"></div>
@@ -570,5 +663,7 @@
 <script src="js/selector.js"></script>
 <script src="js/events.js"></script>
 <script src="js/yandex.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/accordion.js"></script>
 
 </html>
