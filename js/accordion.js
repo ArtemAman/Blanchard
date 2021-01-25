@@ -1,31 +1,9 @@
 $( function() {
-  $( "#accordion" ).accordion({
-    heightStyle: "content"
+  $( ".accordion_class" ).accordion({
+    heightStyle: "content",
+    collapsible: true,
   });
-  
-  $( "#accordion" ).accordion({
-    collapsible: true
-  });  
-  
-  $('#accordion').accordion({
-    active: false
-  });
-} );
-
-
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
+});
 
 
 

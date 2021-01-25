@@ -115,6 +115,19 @@ a:hover {
   width: 100%;
   height: 800px;
   background-image: url(img/hero_1.jpg);
+  animation: city 30s linear infinite;
+}
+
+@keyframes city {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 130%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
 .hero_top {
@@ -228,16 +241,14 @@ a:hover {
   color: #FFFFFF;
 }
 
-.href_to_map{
+.href_to_map {
   width: 314px;
   height: 70px;
   margin-left: 160px;
-
 }
 
 .hero_button {
   margin-top: 92px;
-  
   width: 314px;
   height: 70px;
   border-radius: 100px;
@@ -506,7 +517,6 @@ a:hover {
   flex-direction: row;
   align-items: center;
   margin-left: 41px;
-
 }
 
 .catalog_header_header {
@@ -518,45 +528,46 @@ a:hover {
 
 .catalog_header_list_item {
   margin-right: 50px;
-  width: 46px;
-  height: 46px;
+  width: 66px;
+  height: 66px;
 }
 
-.catalog_header_button{
-  width: 46px;
-  height: 46px;
+.catalog_header_button {
+  width: 66px;
+  height: 66px;
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
 }
 
-.catalog_header_button:hover{
+.catalog_header_button:hover {
   cursor: pointer;
 }
 
-
 .country_france {
   background-image: url(img/france.svg);
-  
 }
 
 .country_german {
   background-image: url(img/german.svg);
-  
 }
 
 .country_italy {
   background-image: url(img/italy.svg);
-  
 }
 
 .country_russia {
   background-image: url(img/russia.svg);
-  
 }
 
 .country_belgium {
   background-image: url(img/belgium.svg);
-  
+}
+
+.country_active {
+  border: 2px solid #9D5CD0;
+  border-radius: 100px;
 }
 
 .catalog_text {
@@ -572,61 +583,105 @@ a:hover {
   flex-direction: row;
 }
 
+.catalog_right {
+  max-width: 800px;
+  width: 100%;
+}
 
-
-
-.tab_content{
+.tab_content {
   display: none;
 }
 
-
-.tab_content_active{
+.tab_content_active {
   display: flex;
-  max-width: 800px;
-  width: 100%;
-
 }
 
+.accordion_class {
+  width: 100%;
+}
 
-
-
-
-.question_item_header{
+.accordion_header {
+  width: 100%;
   padding-top: 38px;
   padding-bottom: 44px;
-  padding-right: 60px;
   display: flex;
-  width: 100%;
-
-
   align-items: center;
   border-top: 1px solid #CACACA;
   font-family: 'open_sans';
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  background-image: url(img/accotdion_arrow_down.svg);
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
+.accrodion_marker {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  z-index: 10;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #ECECEC;
+  border-radius: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+.accrodion_marker_down {
+  margin-top: 17px;
+  margin-left: 18px;
+  width: 12px;
+  height: 12px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 
+.accrodion_marker_up {
+  margin-top: 22px;
+  margin-left: 18px;
+  width: 12px;
+  height: 12px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
 
+.accordion_wrap {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0;
+}
 
+.accordion_inside_list {
+  margin-right: 50px;
+}
 
+.accordion_inside_links {
+  color: #333333;
+  font-size: 16px;
+  line-height: 32px;
+}
 
+.accordion_inside_links:hover {
+  border-bottom: 1px solid #9D5CD0;
+}
 
+.catalog_left_variable {
+  display: none;
+}
 
-
-
-
-
-
-
-
-
-
+.left_visible {
+  display: block;
+}
 
 .catalog_left {
   max-width: 750px;
@@ -639,7 +694,15 @@ a:hover {
   max-width: 750px;
   height: 470px;
   width: 100%;
+  background-size: cover;
+}
+
+.ct_left_img_1 {
   background-image: url(img/domenico.jpg);
+}
+
+.ct_left_img_2 {
+  background-image: url(img/bindo.jpg);
 }
 
 .catalog_left_text_top {
@@ -686,14 +749,6 @@ a:hover {
   margin-right: 47px;
   margin-bottom: 50px;
   border: 1px solid #CACACA;
-}
-
-.hidden {
-  display: none;
-}
-
-.shown {
-  display: inline-block;
 }
 
 .events_list_item:nth-child(3n) {
@@ -765,17 +820,14 @@ a:hover {
   bottom: 50px;
   margin-left: 50px;
   color: #9D5CD0;
-  border-bottom: 1px solid  #9D5CD0;
+  border-bottom: 1px solid #9D5CD0;
   padding-bottom: 3px;
 }
 
 .events_list_more:hover {
   color: #9D5CD0;
   font-weight: 700;
-
 }
-
-
 
 .events_button_all {
   width: 188px;
@@ -791,6 +843,18 @@ a:hover {
   line-height: 25px;
   color: #9D5CD0;
   font-weight: 700;
+}
+
+.events_button_all:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: inline-block;
 }
 
 .publications {
@@ -1092,6 +1156,78 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   font-size: 16px;
   line-height: 32px;
   color: #333333;
+  position: relative;
+}
+
+.tool_tip_img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url(img/tooltip_img.svg);
+  margin-top: 7px;
+}
+
+.tool_tip_img:hover {
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.popup_1 {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  width: 264px;
+  height: 59px;
+  top: 38px;
+  left: 24px;
+  background-image: url(img/popup_1.svg);
+}
+
+.popup_2 {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  width: 264px;
+  height: 74px;
+  top: 58px;
+  left: 734px;
+  background-image: url(img/popup_2.svg);
+}
+
+.popup_3 {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  width: 232px;
+  height: 42px;
+  top: 120px;
+  left: 200px;
+  background-image: url(img/popup_3.svg);
+}
+
+.tool_tip_img:hover+.popup_1 {
+  opacity: 1;
+}
+
+.tool_tip_img:hover+.popup_2 {
+  opacity: 1;
+}
+
+.tool_tip_img:hover+.popup_3 {
+  opacity: 1;
+}
+
+.out_link {
+  color: #9D5CD0;
+}
+
+.out_link:hover {
+  border-bottom: 1px solid #9D5CD0;
 }
 
 .projects_partners {
@@ -1302,6 +1438,10 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   line-height: 25px;
   color: #9D5CD0;
   font-weight: 700;
+}
+
+.contacts_button:hover {
+  cursor: pointer;
 }
 
 .contacts_one_click {

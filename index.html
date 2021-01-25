@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/choices.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
 
   <link rel="stylesheet" href="style.css">
@@ -32,25 +34,25 @@
       <div class="header_logo"></div>
       <ul class="header_nav_list">
         <li class="header_nav_list_item">
-          <a href="" class="header_nav_list_link">О нас</a>
+          <a href="#about_us" class="header_nav_list_link">О нас</a>
         </li>
         <li class="header_nav_list_item">
-          <a href="" class="header_nav_list_link">Галерея</a>
+          <a href="#gallery" class="header_nav_list_link">Галерея</a>
         </li>
         <li class="header_nav_list_item">
-          <a href="" class="header_nav_list_link">Каталог</a>
+          <a href="#catalog" class="header_nav_list_link">Каталог</a>
         </li>
         <li class="header_nav_list_item">
-          <a href="" class="header_nav_list_link">События</a>
+          <a href="#events" class="header_nav_list_link">События</a>
         </li>
         <li class="header_nav_list_item">
-          <a href="" class="header_nav_list_link">Издания</a>
+          <a href="#publications" class="header_nav_list_link">Издания</a>
         </li>
         <li class="header_nav_list_item">
-          <a href="" class="header_nav_list_link">Проекты</a>
+          <a href="#projects" class="header_nav_list_link">Проекты</a>
         </li>
         <li class="header_nav_list_item">
-          <a href="" class="header_nav_list_link">Контакты</a>
+          <a href="#contacts" class="header_nav_list_link">Контакты</a>
         </li>
       </ul>
       <a href="" class="header_enter">Войти</a>
@@ -96,11 +98,11 @@
         Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
         предложений.
       </p>
-      <a href="#map" class="href_to_map">
+      <a href="#map" class="href_to_map" tabindex="-1">
         <button class="hero_button">Подписаться на рассылку</button>
       </a>
     </section>
-    <section class="about_us">
+    <section class="about_us" id="about_us">
       <h3 class="about_us_header">
         О нас
       </h3>
@@ -115,7 +117,7 @@
         разоблачены.
       </p>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="gallery_two_sections">
         <div class="gallery_left">
           <h3 class="gallery_header">
@@ -177,7 +179,7 @@
       </div>
 
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="catalog_header">
         <h3 class="catalog_header_header">Каталог</h3>
         <ul class="catalog_header_tab_list">
@@ -187,8 +189,8 @@
           <li class="catalog_header_list_item">
             <button class="catalog_header_button country_german" data-path="two"></button>
           </li>
-          <li class="catalog_header_list_item">
-            <button class="catalog_header_button country_italy" data-path="three"></button>
+          <li class="catalog_header_list_item ">
+            <button class="catalog_header_button country_italy country_active" data-path="three"></button>
           </li>
           <li class="catalog_header_list_item">
             <button class="catalog_header_button country_russia" data-path="four"></button>
@@ -206,25 +208,51 @@
       </p>
       <div class="catalog_two_sections">
         <div class="catalog_left">
-          <div class="catalog_left_img"></div>
-          <p class="catalog_left_text_top">
-            Доменико Гирландайо
-          </p>
-          <p class="catalog_left_text_mid">
-            2 июня 1448 — 11 января 1494.
-          </p>
-          <p class="catalog_left_text_bot">
-            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
-            его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
-            овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
-            подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции
-            в костюмах того времени).
-          </p>
+          <div class="catalog_left_variable left_visible" data-target="artist_12">
+            <div class="catalog_left_img ct_left_img_1"></div>
+            <p class="catalog_left_text_top">
+              Доменико Гирландайо
+            </p>
+            <p class="catalog_left_text_mid">
+              2 июня 1448 — 11 января 1494.
+            </p>
+            <p class="catalog_left_text_bot">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили
+              его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
+              овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
+              подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане
+              Флоренции
+              в костюмах того времени).
+            </p>
+          </div>
+          <div class="catalog_left_variable" data-target="artist_1">
+            <div class="catalog_left_img ct_left_img_2"></div>
+            <p class="catalog_left_text_top">
+              Бенедетто ди Биндо
+            </p>
+            <p class="catalog_left_text_mid">
+              1380 - 1417
+            </p>
+            <p class="catalog_left_text_bot">
+              Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда»,
+              несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в
+              Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались). Обучение он
+              прошёл у Таддео ди Бартоло, крупного сиенского мастера поздней готики, в боттеге которого Бенедетто
+              трудился вместе с Грегорио ди Чекко. Наибольшее влияние на его творчество оказали работы Симоне Мартини, в
+              частности в выборе колорита, а тонко проработанные лица его персонажей напоминают произведения Джованни да
+              Милано.
+            </p>
+          </div>
         </div>
         <div class="catalog_right">
           <div class="tab_content " data-target="one">
-            <div id="accordion" class="accordion_class">
-              <h3 class="question_item_header">C 1400 по dfgggggggggggggggg1499 гг.</h3>
+            <div class="accordion_class">
+              <h3 class="accordion_header">C 1400 по 1499 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
               <div>
                 <p class="accord_text">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum eum vel et voluptate aliquid
@@ -232,111 +260,372 @@
                   dolorem, placeat odit.
                 </p>
               </div>
-              <h3 class="question_item_header">C 1500 по 1599 гг.</h3>
+              <h3 class="accordion_header">C 1500 по 1599 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
               <div>
                 <p class="accord_text">
                 </p>
               </div>
-              <h3 class="question_item_header">C 1600 по 1699 гг.</h3>
+              <h3 class="accordion_header">C 1600 по 1699 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
               <div>
                 <p class="accord_text">
                 </p>
               </div>
-              <h3 class="question_item_header">C 1700 по 1799 гг.</h3>
+              <h3 class="accordion_header">C 1700 по 1799 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
               <div>
                 <p class="accord_text">
                 </p>
               </div>
-              <h3 class="question_item_header last_accord">C 1800 по 1899 гг.</h3>
+              <h3 class="accordion_header">C 1800 по 1899 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
               <div>
                 <p class="accord_text">
                 </p>
               </div>
-              <h3 class="question_item_header last_accord">C 1900 по 1999 гг.</h3>
+              <h3 class="accordion_header">C 1900 по 1999 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
               <div>
                 <p class="accord_text">
                 </p>
               </div>
-              <h3 class="question_item_header last_accord">C 2000 г.</h3>
+              <h3 class="accordion_header">C 2000 г.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
               <div>
                 <p class="accord_text">
                 </p>
               </div>
-
             </div>
           </div>
           <div class="tab_content" data-target="two">
-            <div class="catalog_right_accordion">
-              <h3>C 1400 по 1499 гг.</h3>
-              <div></div>
-              <h3>C 1500 по 1599 гг.</h3>
-              <div></div>
-              <h3>C 1600 по 1699 гг.</h3>
-              <div></div>
-              <h3>C 1700 по 1799 гг.</h3>
-              <div></div>
-              <h3>C 1800 по 1899 гг.</h3>
-              <div></div>
-              <h3>C 1900 по 1999 гг.</h3>
-              <div></div>
-              <h3>C 2000 г.</h3>
+            <div class="accordion_class">
+              <h3 class="accordion_header">C 1400 по 1499 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum eum vel et voluptate aliquid
+                  doloremque corrupti quod magnam consequuntur in recusandae laborum eveniet iusto architecto non,
+                  dolorem, placeat odit.
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1500 по 1599 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1600 по 1699 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1700 по 1799 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1800 по 1899 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1900 по 1999 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 2000 г.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
             </div>
           </div>
           <div class="tab_content tab_content_active" data-target="three">
-            <div class="catalog_right_accordion">
-              <h3>C 1400 по 1499 гг.</h3>
-              <div>ИТАЛИЯ</div>
-              <h3>C 1500 по 1599 гг.</h3>
-              <div></div>
-              <h3>C 1600 по 1699 гг.</h3>
-              <div></div>
-              <h3>C 1700 по 1799 гг.</h3>
-              <div></div>
-              <h3>C 1800 по 1899 гг.</h3>
-              <div></div>
-              <h3>C 1900 по 1999 гг.</h3>
-              <div></div>
-              <h3>C 2000 г.</h3>
+            <div class="accordion_class">
+              <h3 class="accordion_header ">C 1400 по 1499 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div class="accordion_wrap">
+                <ul class="accordion_inside_list">
+                  <li><a class="accordion_inside_links" data-path="artist_1" tabindex="0">Бенедетто ди Биндо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_2" tabindex="0 ">Бергоньоне, Амброджо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_3" tabindex="0">Биссоло, Франческо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_4" tabindex="0">Больтраффио, Джованни</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_5" tabindex="0">Бонсиньори, Франческо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_6" tabindex="0">Боттичини, Рафаэлло</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_7" tabindex="0">Брамантино</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_8" tabindex="0">Бреа, Людовико</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_9" tabindex="0">Бьяджо д’Антонио Туччи</a>
+                  </li>
+                  <li><a class="accordion_inside_links" data-path="artist_10" tabindex="0">Веккьетта</a></li>
+                </ul>
+                <ul class="accordion_inside_list">
+                  <li><a class="accordion_inside_links" data-path="artist_11" tabindex="0">Андреа Верроккьо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_12" tabindex="0">Доменико Гирландайо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_13" tabindex="0">Беноццо Гоццоли</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_14" tabindex="0">Граначчи, Франческо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_15" tabindex="0">Грегорио ди Чекко</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_16" tabindex="0">Джованни да Удине</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_17" tabindex="0">Джованни ди Паоло</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_18" tabindex="0">Джорджоне</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_19" tabindex="0">Парентино, Бернардо</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_20" tabindex="0">Пезеллино</a></li>
+                </ul>
+                <ul class="accordion_inside_list">
+                  <li><a class="accordion_inside_links" data-path="artist_21" tabindex="0">Пьетро Перуджино</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_22" tabindex="0">Перуцци, Бальдассаре</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_23" tabindex="0">Пизанелло</a></li>
+                  <li><a class="accordion_inside_links" data-path="artist_24" tabindex="0">Пинтуриккьо</a></li>
+                </ul>
+              </div>
+              <h3 class="accordion_header">C 1500 по 1599 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1600 по 1699 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1700 по 1799 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1800 по 1899 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1900 по 1999 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 2000 г.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
             </div>
           </div>
           <div class="tab_content" data-target="four">
-            <div class="catalog_right_accordion">
-              <h3>C 1400 по 1499 гг.</h3>
-              <div></div>
-              <h3>C 1500 по 1599 гг.</h3>
-              <div></div>
-              <h3>C 1600 по 1699 гг.</h3>
-              <div></div>
-              <h3>C 1700 по 1799 гг.</h3>
-              <div></div>
-              <h3>C 1800 по 1899 гг.</h3>
-              <div></div>
-              <h3>C 1900 по 1999 гг.</h3>
-              <div></div>
-              <h3>C 2000 г.</h3>
+            <div class="accordion_class">
+              <h3 class="accordion_header">C 1400 по 1499 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum eum vel et voluptate aliquid
+                  doloremque corrupti quod magnam consequuntur in recusandae laborum eveniet iusto architecto non,
+                  dolorem, placeat odit.
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1500 по 1599 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1600 по 1699 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1700 по 1799 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1800 по 1899 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1900 по 1999 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 2000 г.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
             </div>
           </div>
           <div class="tab_content" data-target="five">
-            <div class="catalog_right_accordion">
-              <h3>C 1400 по 1499 гг.</h3>
-              <div></div>
-              <h3>C 1500 по 1599 гг.</h3>
-              <div></div>
-              <h3>C 1600 по 1699 гг.</h3>
-              <div></div>
-              <h3>C 1700 по 1799 гг.</h3>
-              <div></div>
-              <h3>C 1800 по 1899 гг.</h3>
-              <div></div>
-              <h3>C 1900 по 1999 гг.</h3>
-              <div></div>
-              <h3>C 2000 г.</h3>
+            <div class="accordion_class">
+              <h3 class="accordion_header">C 1400 по 1499 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita illum eum vel et voluptate aliquid
+                  doloremque corrupti quod magnam consequuntur in recusandae laborum eveniet iusto architecto non,
+                  dolorem, placeat odit.
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1500 по 1599 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1600 по 1699 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1700 по 1799 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1800 по 1899 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 1900 по 1999 гг.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
+              <h3 class="accordion_header">C 2000 г.
+                <div class="accrodion_marker">
+                  <div class="accrodion_marker_down"></div>
+                </div>
+              </h3>
+              <div>
+                <p class="accord_text">
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="events">
+    <section class="events" id="events">
       <h3 class="events_header">События</h3>
       <ul class="events_list">
         <li class="events_list_item">
@@ -415,7 +704,7 @@
       </ul>
       <button id="all_events_button" class="events_button_all">Все события</button>
     </section>
-    <section class="publications">
+    <section class="publications" id="publications">
       <div class="publications_two_sections">
         <div class="publications_left">
           <h3 class="publications_left_header">Издания</h3>
@@ -568,18 +857,31 @@
         </div>
       </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
       <h3 class="projects_header">Проекты</h3>
       <p class="projects_text">
         Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
         фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
         уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде
-        всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует
+        всего, постоянное информационно-пропагандистское
+        <a class="tool_tip_img"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="popup popup_1">Пример современных тенденций - современная методология разработки </a>
+
+        обеспечение нашей деятельности однозначно фиксирует
         необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
-        оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но
+        оппозиции могут быть рассмотрены
+        <a class="tool_tip_img"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="popup popup_2"> Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас
+          эмоции </a>
+
+        исключительно в разрезе маркетинговых и финансовых
+        <a class="tool_tip_img"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="popup popup_3"> В стремлении повысить качество </a>
+
+        предпосылок. Банальные, но
         неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
         которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
-        Подробнее: blanchard-art.ru/projects/about
+        Подробнее: <a href="" class="out_link">blanchard-art.ru/projects/about</a>
       </p>
       <h4 class="projects_partners">
         Партнёры проектов:
@@ -613,7 +915,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h3 class="contacts_header">
         Контакты
       </h3>
@@ -639,8 +941,8 @@
             Связаться в один клик
           </h5>
           <div class="contacts_social">
-            <div class="watsapp"></div>
-            <div class="telegramm"></div>
+            <a href="https://www.whatsapp.com/" class="watsapp"></a>
+            <a href="https://telegram.org/" class="telegramm"></a>
           </div>
         </div>
         <div class="contacts_right" id="map"></div>
@@ -665,5 +967,6 @@
 <script src="js/yandex.js"></script>
 <script src="js/tabs.js"></script>
 <script src="js/accordion.js"></script>
+<script src="js/moves.js"></script>
 
 </html>
