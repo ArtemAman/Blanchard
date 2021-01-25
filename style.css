@@ -1390,6 +1390,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   width: 100%;
   height: 682px;
   padding-left: 160px;
+  border: 1px solid #CACACA;
 }
 
 .contacts_left_header {
