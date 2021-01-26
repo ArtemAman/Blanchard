@@ -1,4 +1,4 @@
-const anchors = document.querySelectorAll('.header_nav_list a[href*="#"]')
+const anchors = document.querySelectorAll('.container a[href*="#"]')
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
@@ -12,3 +12,5 @@ for (let anchor of anchors) {
   })
   })
 }
+
+

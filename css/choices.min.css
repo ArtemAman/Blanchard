@@ -33,13 +33,13 @@
 }
 
 .choices[data-type*=select-one] .choices__inner {
-  padding-bottom:0;
+  padding-bottom: 7.5px
 }
 
 .choices[data-type*=select-one] .choices__input {
   display: block;
   width: 100%;
-  padding: 0px;
+  padding: 10px;
   border-bottom: 1px solid #ddd;
   background-color: #fff;
   margin: 0
@@ -130,10 +130,11 @@
   vertical-align: top;
   width: 100%;
   background-color: #f9f9f9;
-  padding: 0;
+  padding: 7.5px 7.5px 3.75px;
   border: 1px solid #ddd;
   border-radius: 2.5px;
   font-size: 14px;
+  min-height: 44px;
   overflow: hidden
 }
 
@@ -142,11 +143,11 @@
 }
 
 .is-open .choices__inner {
-  border-radius: 6px
+  border-radius: 2.5px 2.5px 0 0
 }
 
 .is-flipped.is-open .choices__inner {
-  border-radius: 6px
+  border-radius: 0 0 2.5px 2.5px
 }
 
 .choices__list {
@@ -157,7 +158,7 @@
 
 .choices__list--single {
   display: inline-block;
-  padding: 0;
+  padding: 4px 16px 4px 4px;
   width: 100%
 }
 
@@ -218,8 +219,8 @@
   border: 1px solid #ddd;
   top: 100%;
   margin-top: -1px;
-  border-radius: 6px;
-
+  border-bottom-left-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
   overflow: hidden;
   word-break: break-all;
   will-change: visibility
@@ -230,8 +231,7 @@
 }
 
 .is-open .choices__list--dropdown {
-  border: none;
-  
+  border-color: #b7b7b7
 }
 
 .is-flipped .choices__list--dropdown {
@@ -250,11 +250,9 @@
   will-change: scroll-position
 }
 
-.choices__list--dropdown .choices__item {  
+.choices__list--dropdown .choices__item {
   position: relative;
-  border: 1px solid #999999;
-  border-radius: 6px;
-  padding: 0 0  0 15px;
+  padding: 10px;
   font-size: 14px
 }
 
@@ -287,7 +285,7 @@
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
-  background-color: transparent
+  background-color: #f2f2f2
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted:after {
@@ -299,8 +297,7 @@
 }
 
 .choices__item--selectable {
-  cursor: pointer;
-
+  cursor: pointer
 }
 
 .choices__item--disabled {
@@ -352,4 +349,6 @@
   padding-left: 0
 }
 
-
+.choices__placeholder {
+  opacity: .5
+}

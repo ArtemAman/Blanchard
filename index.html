@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/choices.min.css" />
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
@@ -61,14 +61,18 @@
       <div class="hero_top">
         <ul class="hero_top_list">
           <li class="hero_top_list_item">
-            <a href="" class="hero_top_list_link">Реализм
-              <div class="list_arrow"></div>
-            </a>
+            <select name="" id="select_header_1" class="select_header">
+              <option value="">Автор</option>
+              <option value="">Направление</option>
+              <option value="">Техника</option>
+            </select>
           </li>
           <li class="hero_top_list_item">
-            <a href="" class="hero_top_list_link">Импрессионизм
-              <div class="list_arrow"></div>
-            </a>
+            <select name="" id="select_header_2" class="select_header">
+              <option value="">Автор</option>
+              <option value="">Направление</option>
+              <option value="">Техника</option>
+            </select>
           </li>
           <li class="hero_top_list_item">
             <a href="" class="hero_top_list_link">Постимпрессионизм
@@ -87,7 +91,7 @@
           </li>
         </ul>
         <form tabindex="0" action="https://jsonplaceholder.typicode.com/posts" class="hero_top_search" method="POST">
-          <input class="hero_top_search_input" required type="text" name="searched_info" placeholder="Поиск">
+          <input class="hero_top_search_input" required type="text" name="searched_info" placeholder="Поиск по сайту">
           <button tabindex="-1" class="hero_top_search_button"></button>
         </form>
       </div>
@@ -125,7 +129,7 @@
           </h3>
           <p class="gallery_left_filter">Фильтровать по:</p>
           <div class="gallery_left_select">
-            <select name="select" id="new_select">
+            <select name="select" id="gallery_select">
               <option value="">Автор</option>
               <option value="">Направление</option>
               <option value="">Техника</option>

@@ -43,6 +43,7 @@ h2, h3, h4, h5, p {
 
 a {
   color: #FFFFFF;
+  transition: color 0.6s ease;
 }
 
 a:link {
@@ -71,7 +72,7 @@ a:hover {
 .header {
   width: 100%;
   height: 100px;
-  padding: 0 160px;
+  padding: 0 142px 0 160px;
   background-color: #000000;
   display: flex;
   flex-direction: row;
@@ -87,7 +88,7 @@ a:hover {
 .header_nav_list {
   display: flex;
   flex-direction: row;
-  margin-left: 160px;
+  margin-left: 179px;
 }
 
 .header_nav_list_item {
@@ -96,11 +97,15 @@ a:hover {
 
 .header_nav_list_link {
   font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .header_enter {
   margin-left: auto;
-  padding-left: 18px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 25px;
   background-image: url(img/arrow_enter_white.png);
   background-repeat: no-repeat;
   background-position: center left;
@@ -113,7 +118,7 @@ a:hover {
 
 .hero {
   width: 100%;
-  height: 800px;
+  height: 700px;
   background-image: url(img/hero_1.jpg);
   animation: city 30s linear infinite;
 }
@@ -145,7 +150,9 @@ a:hover {
 }
 
 .hero_top_list_item {
-  margin-right: 111px;
+  margin-right: 101px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .hero_top_list_link {
@@ -176,7 +183,7 @@ a:hover {
   display: flex;
   flex-direction: row-reverse;
   margin-left: auto;
-  margin-right: 160px;
+  padding-right: 146px;
 }
 
 .hero_top_search:focus {
@@ -185,6 +192,7 @@ a:hover {
 }
 
 .hero_top_search_input {
+  padding: 0;
   background-color: transparent;
   border: none;
   outline: none;
@@ -197,7 +205,8 @@ a:hover {
 }
 
 .hero_top_search_button {
-  margin-right: 9px;
+  margin-top: 4px;
+  margin-right: 7px;
   border: none;
   background-image: url(img/search_icon.png);
   background-color: transparent;
@@ -224,17 +233,17 @@ a:hover {
 .hero_header {
   max-width: 597px;
   margin-left: 155px;
-  margin-top: 63px;
+  margin-top: 70px;
   font-weight: 800;
   font-size: 72px;
-  line-height: 98px;
+  line-height: 82px;
   color: #FFFFFF;
 }
 
 .hero_text {
   max-width: 597px;
   margin-left: 160px;
-  margin-top: 1px;
+  margin-top: 22px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -270,8 +279,12 @@ a:hover {
   cursor: pointer;
 }
 
+.about_us {
+  height: 455px;
+}
+
 .about_us_header {
-  margin-top: 80px;
+  padding-top: 80px;
   margin-left: 157px;
   font-size: 48px;
   line-height: 65px;
@@ -281,7 +294,7 @@ a:hover {
 
 .about_us_text {
   max-width: 1080px;
-  margin-top: 30px;
+  margin-top: 17px;
   margin-left: 159px;
   font-size: 16px;
   line-height: 32px;
@@ -293,7 +306,7 @@ a:hover {
   width: 100%;
   height: 995px;
   background-image: url(img/gallery_back.jpg);
-  margin-top: 80px;
+  background-size: cover;
   padding: 0 160px 0 160px;
 }
 
@@ -328,45 +341,59 @@ a:hover {
   height: 118px;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!   начало селектов   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .choices__inner {
+  width: 400px;
+  padding-left: 15px;
   border-radius: 6px;
   background-color: transparent;
-  padding: 0 0 0 15px;
-  height: 40px;
-}
-
-.choices__list {
-  background-color: transparent;
-}
-
-.choices__item {
   font-size: 16px;
-  line-height: 40px;
+  border: 1px solid #FFFFFF;
+  height: 40px;
+  min-height: auto;
+  color: #FFFFFF;
+}
+
+.choices__placeholder {
+  opacity: 1
+}
+
+.is-open .choices__inner {
+  border-radius: 6px;
+  border: 1px solid #FFFFFF;
+}
+
+.choices__list--dropdown {
+  width: 400px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.is-open .choices__list--dropdown {
+  border-color: #999999;
+  border-radius: 6px;
+  background-color: transparent;
   color: #FFFFFF;
 }
 
 .choices__list--dropdown .choices__item {
+  padding-left: 15px;
   font-size: 16px;
-  line-height: 32px;
-  color: #999999;
+  border-bottom: 1px solid #999999;
+  height: 40px;
+  min-height: auto;
+  color: #FFFFFF;
 }
 
-.choices__list--dropdown .choices__item--selectable {
-  padding-right: 10px;
-}
-
-.choices[data-type*=select-one] {
-  cursor: pointer;
-}
-
-.choices {
-  width: 400px;
-  font-size: 16px;
+.choices__list--dropdown .choices__item:last-child {
+  border-bottom: none;
 }
 
 .choices[data-type*=select-one]:after {
   right: 15px;
-  top: 15px;
+  top: 17px;
   width: 8px;
   height: 8px;
   border-width: 0;
@@ -389,6 +416,8 @@ a:hover {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!   конец селектов   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .gallery_left_text_bot {
   max-width: 400px;
