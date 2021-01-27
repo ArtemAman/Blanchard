@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/simplebar.css">
 
 
 
@@ -61,33 +62,99 @@
       <div class="hero_top">
         <ul class="hero_top_list">
           <li class="hero_top_list_item">
-            <select name="" id="select_header_1" class="select_header">
-              <option value="">Автор</option>
-              <option value="">Направление</option>
-              <option value="">Техника</option>
-            </select>
+            <a href="" class="hero_top_list_link">Реализм
+              <div class="list_arrow"></div>
+            </a>
+            <ul id="myscroll_1" data-simplebar class="scroll_class">
+              <li class="myscroll_element myscroll_element_1">
+                <p class="myscroll_element_text">Тинторетто</p>
+              </li>
+              <li class="myscroll_element myscroll_element_2">
+                <p class="myscroll_element_text">Фридрих</p>
+              </li>
+              <li class="myscroll_element myscroll_element_3">
+                <p class="myscroll_element_text">Леонардо</p>
+              </li>
+              <li class="myscroll_element myscroll_element_4">
+                <p class="myscroll_element_text">Верроккьо</p>
+              </li>          
+            </ul>
           </li>
           <li class="hero_top_list_item">
-            <select name="" id="select_header_2" class="select_header">
-              <option value="">Автор</option>
-              <option value="">Направление</option>
-              <option value="">Техника</option>
-            </select>
+            <a href="" class="hero_top_list_link">Импрессионизм
+              <div class="list_arrow"></div>
+            </a>
+            <!-- <ul id="myscroll_2" data-simplebar class="scroll_class">
+              <li class="myscroll_element myscroll_element_1">
+                <p class="myscroll_element_text">Тинторетто</p>
+              </li>
+              <li class="myscroll_element myscroll_element_2">
+                <p class="myscroll_element_text">Фридрих</p>
+              </li>
+              <li class="myscroll_element myscroll_element_3">
+                <p class="myscroll_element_text">Леонардо</p>
+              </li>
+              <li class="myscroll_element myscroll_element_4">
+                <p class="myscroll_element_text">Верроккьо</p>
+              </li>          
+            </ul> -->
           </li>
           <li class="hero_top_list_item">
             <a href="" class="hero_top_list_link">Постимпрессионизм
               <div class="list_arrow"></div>
             </a>
+            <!-- <ul id="myscroll_3" data-simplebar class="scroll_class">
+              <li class="myscroll_element myscroll_element_1">
+                <p class="myscroll_element_text">Тинторетто</p>
+              </li>
+              <li class="myscroll_element myscroll_element_2">
+                <p class="myscroll_element_text">Фридрих</p>
+              </li>
+              <li class="myscroll_element myscroll_element_3">
+                <p class="myscroll_element_text">Леонардо</p>
+              </li>
+              <li class="myscroll_element myscroll_element_4">
+                <p class="myscroll_element_text">Верроккьо</p>
+              </li>          
+            </ul> -->
           </li>
           <li class="hero_top_list_item">
             <a href="" class="hero_top_list_link">Авангард
               <div class="list_arrow"></div>
             </a>
+            <!-- <ul id="myscroll_4" data-simplebar class="scroll_class">
+              <li class="myscroll_element myscroll_element_1">
+                <p class="myscroll_element_text">Тинторетто</p>
+              </li>
+              <li class="myscroll_element myscroll_element_2">
+                <p class="myscroll_element_text">Фридрих</p>
+              </li>
+              <li class="myscroll_element myscroll_element_3">
+                <p class="myscroll_element_text">Леонардо</p>
+              </li>
+              <li class="myscroll_element myscroll_element_4">
+                <p class="myscroll_element_text">Верроккьо</p>
+              </li>          
+            </ul> -->
           </li>
           <li class="hero_top_list_item">
             <a href="" class="hero_top_list_link">Футуризм
               <div class="list_arrow"></div>
             </a>
+            <!-- <ul id="myscroll_5" data-simplebar class="scroll_class">
+              <li class="myscroll_element myscroll_element_1">
+                <p class="myscroll_element_text">Тинторетто</p>
+              </li>
+              <li class="myscroll_element myscroll_element_2">
+                <p class="myscroll_element_text">Фридрих</p>
+              </li>
+              <li class="myscroll_element myscroll_element_3">
+                <p class="myscroll_element_text">Леонардо</p>
+              </li>
+              <li class="myscroll_element myscroll_element_4">
+                <p class="myscroll_element_text">Верроккьо</p>
+              </li>          
+            </ul> -->
           </li>
         </ul>
         <form tabindex="0" action="https://jsonplaceholder.typicode.com/posts" class="hero_top_search" method="POST">
@@ -973,5 +1040,7 @@
 <script src="js/tabs.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/moves.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/scroll.js"></script>
 
 </html>

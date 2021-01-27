@@ -109,11 +109,13 @@ a:hover {
   background-image: url(img/arrow_enter_white.png);
   background-repeat: no-repeat;
   background-position: center left;
+  transition: background-image 1s ease, color 0.6s ease; 
 }
 
 .header_enter:hover {
   padding-left: 22px;
   background-image: url(img/arrow_enter_hover.png);
+  color: #C283F3;
 }
 
 .hero {
@@ -159,6 +161,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+   
 }
 
 .list_arrow {
@@ -172,11 +175,13 @@ a:hover {
   -o-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  transition: border-left 1s ease, border-bottom 1s ease;
 }
 
 .hero_top_list_link:hover .list_arrow {
   border-left: 1px solid #C283F3;
   border-bottom: 1px solid #C283F3;
+  color: #C283F3;
 }
 
 .hero_top_search {
@@ -202,6 +207,7 @@ a:hover {
   font-size: 18px;
   line-height: 25px;
   color: rgba(255, 255, 255, 0.85);
+  transition: border-bottom 0.7s ease;
 }
 
 .hero_top_search_button {
@@ -213,6 +219,7 @@ a:hover {
   background-position: center;
   width: 22px;
   height: 22px;
+  transition: background-image 0.7s ease-in-out;
 }
 
 .hero_top_search_input:hover {
@@ -229,6 +236,103 @@ a:hover {
   line-height: 30px;
   color: rgba(255, 255, 255, 0.85);
 }
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!   начало выпадающих   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+.scroll_class {
+  position: absolute;
+  top:170px;
+  width: 300px;
+  height: 300px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+
+
+
+.simplebar-scrollbar::before {
+  left: 0;
+  top: 0;
+  
+
+
+  max-width: 2px;
+  width: 2px;
+  background-color: #9D5CD0;
+  border-radius: 0px;
+
+}
+
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: 1;
+}
+
+.simplebar-track{
+  max-width: 2px;
+  background-color: #000000;
+  margin-top: 40px;
+  right: 12px;
+  bottom: 40px;
+
+}
+
+
+.simplebar-track .simplebar-scrollbar {
+  min-width: 2px;
+  width: 2px;
+}
+
+
+.myscroll_element{
+  width: 220px;
+  height: 40px;
+  margin-bottom: 20px;  
+}
+
+.myscroll_element:hover{
+  border: 2px solid #9D5CD0;
+  cursor: pointer;
+
+
+}
+
+.myscroll_element_1{
+  background-image: url(img/tinto.svg);
+}
+
+.myscroll_element_2{
+  background-image: url(img/fridrickh.svg);
+}
+
+.myscroll_element_3{
+  background-image: url(img/leonardo.svg);
+}
+
+.myscroll_element_4{
+  background-image: url(img/vero.svg);
+}
+
+.myscroll_element_text{
+  padding-top: 9px;
+  padding-left: 14px;
+  font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+color: #FFFFFF;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!   конец выпадающих   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 
 .hero_header {
   max-width: 597px;
@@ -267,10 +371,12 @@ a:hover {
   line-height: 25px;
   color: #FFFFFF;
   font-weight: 700;
+  transition: border-color 0.7s ease-in;
 }
 
 .hero_button:focus {
-  border: 3px solid #7943A4;
+  border: 3px solid;
+  border-color: #D1A9F0;
   outline: none;
 }
 
@@ -378,18 +484,29 @@ a:hover {
   color: #FFFFFF;
 }
 
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: transparent;
+}
+
+
+
+
 .choices__list--dropdown .choices__item {
   padding-left: 15px;
   font-size: 16px;
   border-bottom: 1px solid #999999;
   height: 40px;
   min-height: auto;
-  color: #FFFFFF;
+  color: #999999;
 }
 
 .choices__list--dropdown .choices__item:last-child {
   border-bottom: none;
 }
+
+
+
+
 
 .choices[data-type*=select-one]:after {
   right: 15px;
