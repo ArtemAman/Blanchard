@@ -30,3 +30,29 @@ window.addEventListener('DOMContentLoaded', function () {
     })
   });
 })
+
+
+
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.hero_top_list_link').forEach(function (herolink) {
+    herolink.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+      document.querySelectorAll('.scroll_class').forEach(function (scrolldell) {
+        scrolldell.classList.remove('scroll_visible')
+      })
+      document.querySelectorAll('.list_arrow').forEach(function (scrolldell) {
+        scrolldell.classList.remove('list_arrow_up')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('scroll_visible')
+    })
+    document.querySelectorAll('.hero_top_list_link').forEach(function (changecolor) {
+      changecolor.addEventListener('click', function (event3) {
+        event3.target.classList.toggle('changed')
+      })
+
+    })
+
+  })
+})
+
+
