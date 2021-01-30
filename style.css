@@ -165,12 +165,9 @@ a:hover {
   transition: all 1s ease;
 }
 
-
-
-.changed{
+.changed {
   color: #7943A4;
 }
-
 
 .list_arrow {
   margin-left: 5px;
@@ -186,8 +183,6 @@ a:hover {
   transition: border-left 1s ease, border-bottom 1s ease;
 }
 
-
-
 .hero_top_list_dropdown:hover .list_arrow {
   border-left: 1px solid #C283F3;
   border-bottom: 1px solid #C283F3;
@@ -197,7 +192,6 @@ a:hover {
 .hero_top_list_dropdown:hover {
   color: #C283F3;
   cursor: pointer;
-
 }
 
 .hero_top_search {
@@ -265,7 +259,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   list-style-type: none;
 }
-
 
 .simplebar-scrollbar::before {
   left: 0;
@@ -440,7 +433,7 @@ a:hover {
   height: 995px;
   background-image: url(img/gallery_back.jpg);
   background-size: cover;
-  padding: 0 160px 0 160px;
+  padding: 0 160px;
 }
 
 .gallery_two_sections {
@@ -464,13 +457,16 @@ a:hover {
 }
 
 .gallery_left_filter {
-  margin-top: 30px;
+  margin-top: 31px;
   margin-bottom: 20px;
   color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0;
 }
 
 .gallery_left_select {
-  margin-top: 20px;
+  margin-top: 7px;
   height: 118px;
 }
 
@@ -484,8 +480,12 @@ a:hover {
   font-size: 16px;
   border: 1px solid #FFFFFF;
   height: 40px;
-  min-height: auto;
+  min-height: 40px;
   color: #FFFFFF;
+}
+
+.choices__list--single{
+  padding: 0;
 }
 
 .choices__placeholder {
@@ -574,7 +574,8 @@ a:hover {
 }
 
 .swiper_nav_buttons_1 {
-  margin-top: 105px;
+  margin-top: 104px;
+  margin-left: 3px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -624,8 +625,8 @@ a:hover {
 
 .swiper_counter_1 {
   color: #FFFFFF;
-  margin-left: 11px;
-  margin-right: 11px;
+  margin-left: 18px;
+  margin-right: 18px;
   font-size: 16px;
   line-height: 32px;
 }
@@ -646,7 +647,7 @@ a:hover {
 
 .swiper-container {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 .swiper-wrapper {
@@ -661,7 +662,7 @@ a:hover {
 
 .swiper_img {
   margin-right: 45px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .swiper_img:nth-child(3n) {
@@ -669,7 +670,7 @@ a:hover {
 }
 
 .catalog {
-  padding: 0 160px 0 160px;
+  padding: 0 145px 0 160px;
 }
 
 .catalog_header {
@@ -682,7 +683,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 41px;
+  margin-left: 30px;
 }
 
 .catalog_header_header {
@@ -693,12 +694,13 @@ a:hover {
 }
 
 .catalog_header_list_item {
-  margin-right: 50px;
+  margin-right: 30px;
   width: 66px;
   height: 66px;
 }
 
 .catalog_header_button {
+  padding: 0;
   width: 66px;
   height: 66px;
   background-color: transparent;
@@ -737,14 +739,14 @@ a:hover {
 }
 
 .catalog_text {
-  margin-top: 23px;
+  margin-top: 15px;
   max-width: 1080px;
   font-size: 16px;
   line-height: 32px;
 }
 
 .catalog_two_sections {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
 }
@@ -768,15 +770,15 @@ a:hover {
 
 .accordion_header {
   width: 100%;
-  padding-top: 38px;
-  padding-bottom: 44px;
+  padding-top: 31px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
   border-top: 1px solid #CACACA;
   font-family: 'open_sans';
   font-weight: 600;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 0px;
 }
 
 .accrodion_marker {
@@ -824,11 +826,15 @@ a:hover {
 .accordion_wrap {
   display: flex;
   flex-direction: row;
-  padding: 25px 0;
+  padding: 25px 0 28px 0;
 }
 
 .accordion_inside_list {
-  margin-right: 50px;
+  margin-right: 62px;
+}
+
+.accordion_inside_list_2 {
+  margin-right: 82px;
 }
 
 .accordion_inside_links {
@@ -879,23 +885,24 @@ a:hover {
 }
 
 .catalog_left_text_mid {
-  margin-top: 15px;
+  margin-top: 7px;
   font-size: 12px;
   line-height: 16px;
   color: #999999;
 }
 
 .catalog_left_text_bot {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 32px;
 }
 
 .events {
-  margin-top: 80px;
-  padding: 0 160px 0 160px;
+  padding: 0 160px;
+  margin-top: 82px;
 }
 
-.events_header {
+.events_header {  
   font-size: 48px;
   line-height: 65px;
   color: #333333;
@@ -903,16 +910,16 @@ a:hover {
 }
 
 .events_list {
-  margin-top: 30px;
+  margin-top: 17px;
 }
 
 .events_list_item {
   position: relative;
   display: inline-block;
-  width: 499px;
+  width: 497px;
   height: 700px;
   vertical-align: top;
-  margin-right: 47px;
+  margin-right: 50px;
   margin-bottom: 50px;
   border: 1px solid #CACACA;
 }
@@ -946,7 +953,7 @@ a:hover {
   background-image: url(img/5.jpg);
 }
 
-.events_item_text_top {
+.events_item_text_top {  
   max-width: 211px;
   width: 100%;
   margin-left: auto;
@@ -955,6 +962,7 @@ a:hover {
   font-size: 12px;
   line-height: 16px;
   color: #999999;
+  text-align: right;
 }
 
 .events_item_text_mid {
@@ -962,7 +970,7 @@ a:hover {
   width: 100%;
   margin-left: 50px;
   margin-right: auto;
-  margin-top: 13px;
+  margin-top: 5px;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
@@ -974,7 +982,7 @@ a:hover {
   width: 100%;
   margin-left: 50px;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -983,7 +991,7 @@ a:hover {
 
 .events_list_more {
   position: absolute;
-  bottom: 50px;
+  bottom: 44px;
   margin-left: 50px;
   color: #9D5CD0;
   border-bottom: 1px solid #9D5CD0;
@@ -999,7 +1007,7 @@ a:hover {
   width: 188px;
   height: 59px;
   display: block;
-  margin-top: 50px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   border-radius: 100px;
@@ -1046,7 +1054,7 @@ a:hover {
 }
 
 .publications_left_header {
-  margin-top: 80px;
+  margin-top: 86px;
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
@@ -1054,21 +1062,22 @@ a:hover {
 }
 
 .categories {
-  margin-top: 30px;
+  margin-top: 35px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
+.publications_checkbox{
+  margin-top: 5px;
+}
+
 .pubs_label {
   color: #FFFFFF;
-  font-size: 16px;
-  line-height: 32px;
 }
 
 .label {
-  color: #333333;
   font-family: 'Open Sans';
 }
 
@@ -1082,10 +1091,10 @@ input[type="checkbox"]:checked+label, input[type="checkbox"]:not(:checked)+label
   flex-direction: column;
   position: relative;
   padding-left: 22px;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
   cursor: pointer;
-  margin-top: 20px;
 }
 
 input[type="checkbox"]:checked+label {
@@ -1096,9 +1105,9 @@ input[type="checkbox"]:checked+label:before, input[type="checkbox"]:not(:checked
   content: "";
   position: absolute;
   left: 0px;
-  top: 0px;
-  width: 12px;
-  height: 12px;
+  top: 10px;
+  width: 11px;
+  height: 11px;
 }
 
 input[type="checkbox"]:not(:checked)+label:before {
@@ -1119,8 +1128,8 @@ input[type="checkbox"]:checked+label:after, input[type="checkbox"]:not(:checked)
 }
 
 input[type="checkbox"]:checked+label:after, input[type="checkbox"]:not(:checked)+label:after {
-  left: 5px;
-  top: 5px;
+  left: 4.5px;
+  top: 15px;
   width: 4px;
   height: 4px;
   border-radius: 100px;
@@ -1136,7 +1145,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .pubs_header_inputs {
-  margin-top: 32px;
+  margin-top: 30px;
   font-size: 16px;
   line-height: 32px;
   font-weight: 700;
@@ -1144,6 +1153,7 @@ input[type="checkbox"]:checked+label:after {
 }
 
 .pubs_inputs {
+  margin-top: 5px;
   width: 341px;
   height: 40px;
   display: flex;
