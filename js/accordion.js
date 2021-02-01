@@ -1,5 +1,5 @@
 $( function() {
-  $( ".accordion_class" ).accordion({
+  $( ".catalog__accordion" ).accordion({
     heightStyle: "content",
     collapsible: true,
   });
