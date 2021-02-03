@@ -365,7 +365,7 @@ a:hover {
   padding-top: 240px;
   width: 100%;
   height: 800px;
-  background-image: url(img/hero_1.jpg);
+  background-image: url(img/hero_1.webp);
   background-size: 100%;
   animation: city 30s linear infinite;
 }
@@ -1539,6 +1539,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   border: 1px solid #CACACA;
 }
 
+
+
 .contacts__left-header {
   margin-top: 125px;
   font-weight: 600;
@@ -1624,7 +1626,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .contacts__right {
   width: 100%;
-  height: 682px;
+  height: 680px;
 }
 
 [class*="ground-pane"] {
