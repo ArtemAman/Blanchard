@@ -196,22 +196,7 @@ a:hover {
 
 /* arrows end */
 
-.changed {
-  color: #7943A4;
-}
 
-.list_arrow {
-  margin-left: 5px;
-  width: 7.07px;
-  height: 7.07px;
-  border-left: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
 
 .header__button:hover {
   color: #C283F3;
@@ -264,7 +249,7 @@ a:hover {
   cursor: pointer;
 }
 
-.header__input:hover+.header__button {
+.header__input:hover+.header__search-button {
   background-image: url(img/search_icon_violet.png);
 }
 
