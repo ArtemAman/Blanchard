@@ -21,10 +21,14 @@ window.addEventListener('DOMContentLoaded', function () {
 
 $(".js-button-1").click(function() {
   $('.js-scroll-1').toggle();
+  $(".js-arrow-1").toggleClass("open");
+  $(".js-button-1").toggleClass("violet");
 });
 $(document).on('click', function(e) {
   if (!$(e.target).closest(".js-button-1").length) {
     $('.js-scroll-1').hide();
+    $(".js-arrow-1").removeClass("open");
+    $(".js-button-1").removeClass("violet");
   }
   e.stopPropagation();
 });
@@ -35,10 +39,14 @@ $(document).on('click', function(e) {
 
 $(".js-button-2").click(function() {
   $('.js-scroll-2').toggle();
+  $(".js-arrow-2").toggleClass("open");
+  $(".js-button-2").toggleClass("violet");
 });
 $(document).on('click', function(e) {
   if (!$(e.target).closest(".js-button-2").length) {
     $('.js-scroll-2').hide();
+    $(".js-arrow-2").removeClass("open");
+    $(".js-button-2").removeClass("violet");
   }
   e.stopPropagation();
 });
@@ -51,10 +59,14 @@ $(document).on('click', function(e) {
 
 $(".js-button-3").click(function() {
   $('.js-scroll-3').toggle();
+  $(".js-arrow-3").toggleClass("open");
+  $(".js-button-3").toggleClass("violet");
 });
 $(document).on('click', function(e) {
   if (!$(e.target).closest(".js-button-3").length) {
     $('.js-scroll-3').hide();
+    $(".js-arrow-3").removeClass("open");
+    $(".js-button-3").removeClass("violet");
   }
   e.stopPropagation();
 });
@@ -66,10 +78,14 @@ $(document).on('click', function(e) {
 
 $(".js-button-4").click(function() {
   $('.js-scroll-4').toggle();
+  $(".js-arrow-4").toggleClass("open");
+  $(".js-button-4").toggleClass("violet");
 });
 $(document).on('click', function(e) {
   if (!$(e.target).closest(".js-button-4").length) {
     $('.js-scroll-4').hide();
+    $(".js-arrow-4").removeClass("open");
+    $(".js-button-4").removeClass("violet");
   }
   e.stopPropagation();
 });
@@ -83,12 +99,17 @@ $(document).on('click', function(e) {
 
 $(".js-button-5").click(function() {
   $('.js-scroll-5').toggle();
+  $(".js-arrow-5").toggleClass("open");
+  $(".js-button-5").toggleClass("violet");
 });
 $(document).on('click', function(e) {
   if (!$(e.target).closest(".js-button-5").length) {
     $('.js-scroll-5').hide();
+    $(".js-arrow-5").removeClass("open");
+    $(".js-button-5").removeClass("violet");
   }
   e.stopPropagation();
 });
+
 
 

@@ -79,7 +79,6 @@ a:hover {
 .header {
   position: absolute;
   width: 100%;
-  
 }
 
 .header__top {
@@ -95,8 +94,7 @@ a:hover {
 }
 
 .header__logo {
-  width: 173px;
-  height: 40px;
+  padding-left: 6px;
   margin-right: 179px;
 }
 
@@ -107,7 +105,7 @@ a:hover {
 }
 
 .header__toplist-item {
-  margin-right: 62px;
+  margin-right: 63px;
 }
 
 .header__link {
@@ -132,9 +130,8 @@ a:hover {
   color: #C283F3;
 }
 
-.header__bottom {    
-  background-color: rgba(0, 0, 0, 0.4); 
-
+.header__bottom {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header__container-bottom {
@@ -147,10 +144,11 @@ a:hover {
 .header__list {
   display: flex;
   flex-direction: row;
+  margin-right: auto;
 }
 
 .header__botlist-item {
-  margin-right: 101px;
+  margin-right: 90px;
   font-size: 18px;
   line-height: 25px;
 }
@@ -164,6 +162,39 @@ a:hover {
   color: #FFFFFF;
   transition: color 1s ease;
 }
+
+.violet {
+  color: #7943A4;
+}
+
+/* arrows */
+
+.header__arrow {
+  margin-left: 5px;
+  width: 7.07px;
+  height: 7.07px;
+  border-left: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: all 0.7s ease;
+}
+
+.open {
+  margin-top: 4px;
+  border-left: 2px solid #7943A4;
+  border-bottom: 2px solid #7943A4;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* arrows end */
 
 .changed {
   color: #7943A4;
@@ -195,7 +226,6 @@ a:hover {
 .header__search {
   display: flex;
   flex-direction: row-reverse;
-  margin-left: auto;
 }
 
 .header__search:focus {
@@ -347,10 +377,11 @@ a:hover {
 /* !!!!!!!!!!!!!!!!!!!!!!   конец выпадающих   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .hero {
-  padding-top: 233px;
+  padding-top: 240px;
   width: 100%;
   height: 800px;
   background-image: url(img/hero_1.jpg);
+  background-size: 100%;
   animation: city 30s linear infinite;
 }
 
@@ -373,6 +404,7 @@ a:hover {
   line-height: 82px;
   color: #FFFFFF;
   padding-bottom: 22px;
+  padding-left: 3px;
 }
 
 .hero__text {
@@ -382,11 +414,13 @@ a:hover {
   font-size: 18px;
   line-height: 30px;
   color: #FFFFFF;
+  padding-left: 7px;
 }
 
 .hero__map {
   width: 314px;
   height: 70px;
+  padding-left: 7px;
 }
 
 .hero__button {
@@ -441,13 +475,13 @@ a:hover {
 }
 
 .gallery {
-  width: 100%;  
+  width: 100%;
   height: 995px;
   background-image: url(img/gallery_back.jpg);
   background-size: cover;
 }
 
-.gallery__two-sections { 
+.gallery__two-sections {
   display: flex;
   flex-direction: row;
   padding-top: 80px;
@@ -586,7 +620,6 @@ a:hover {
 }
 
 .swiper-buttons {
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -642,24 +675,19 @@ a:hover {
   line-height: 32px;
 }
 
-
-
 .swiper-container {
   width: 100%;
-  
 }
 
-.gallery__swiper-container{
+.gallery__swiper-container {
   margin-top: 29px;
 }
 
-
 .swiper-wrapper {
   width: 100%;
-  
 }
 
-.gallery__swiper-wrapper{
+.gallery__swiper-wrapper {
   height: 750px;
 }
 
@@ -675,11 +703,9 @@ a:hover {
 
 .swiper-img:nth-child(3n) {
   margin-right: 0px;
-
 }
 
-
-.catalog{
+.catalog {
   padding-top: 80px;
 }
 
@@ -692,7 +718,7 @@ a:hover {
 .catalog__tabs {
   display: flex;
   flex-direction: row;
-  align-items: center;  
+  align-items: center;
 }
 
 .catalog__header {
@@ -1216,21 +1242,13 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   padding-top: 30px;
 }
 
-.publications__buttons{
+.publications__buttons {
   padding-bottom: 30px;
 }
 
 .publications__swiper-container {
   height: 550px;
 }
-
-
-
-
-
-
-
-
 
 .publications__swiper-slide {
   display: flex;
@@ -1395,8 +1413,6 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  
 }
 
 .projects__swiper-container {
@@ -1429,7 +1445,6 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 .projects__swiper-button:nth-child() {
   margin-right: 0;
 }
-
 
 .projects__img {
   width: 450px;
@@ -1514,10 +1529,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   background-image: url(img/27\ hover.png);
 }
 
-
-
 .contacts {
-padding-top: 80px;
+  padding-top: 80px;
 }
 
 .contacts__header {
@@ -1532,10 +1545,6 @@ padding-top: 80px;
   flex-direction: row;
 }
 
-
-
-
-
 .contacts__left {
   display: flex;
   flex-direction: column;
@@ -1544,8 +1553,6 @@ padding-top: 80px;
   height: 682px;
   border: 1px solid #CACACA;
 }
-
-
 
 .contacts__left-header {
   margin-top: 125px;
@@ -1640,12 +1647,10 @@ padding-top: 80px;
 }
 
 .footer {
-
   background-color: #000000;
-
 }
 
-.footer__container{
+.footer__container {
   width: 100%;
   height: 160px;
   display: flex;
