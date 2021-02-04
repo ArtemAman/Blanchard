@@ -3,8 +3,12 @@ var mySwiper = new Swiper('#swiper_1', {
     loop: true,
 
     navigation: {
-      nextEl: '.js-prev-1',
-      prevEl: '.js-next-1',
+      nextEl: '.js-next-1',
+      prevEl: '.js-prev-1',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
     },
 
 })
@@ -15,8 +19,12 @@ var secondSwiper = new Swiper('#swiper_2', {
   loop: true,
 
   navigation: {
-    nextEl: '.js-prev-2',
-    prevEl: '.js-next-2',
+    nextEl: '.js-next-2',
+    prevEl: '.js-prev-2',
+  },
+  pagination: {
+    el: '.swiper-pagination-2',
+    type: 'fraction',
   },
 
 })
@@ -27,8 +35,8 @@ var lastSwiper = new Swiper('#swiper_3', {
   loop: true,
 
   navigation: {
-    nextEl: '.js-prev-3',
-    prevEl: '.js-next-3',
+    nextEl: '.js-next-3',
+    prevEl: '.js-prev-3',
   },
 
 })

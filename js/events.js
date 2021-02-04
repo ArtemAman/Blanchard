@@ -113,3 +113,37 @@ $(document).on('click', function(e) {
 
 
 
+
+
+
+$(".country-france").click(function() {
+  $(".catalog__button").removeClass("country-active");
+  $(".country-france").toggleClass("country-active");
+});
+
+
+$(".country-german").click(function() {
+  $(".catalog__button").removeClass("country-active");
+  $(".country-german").toggleClass("country-active");
+});
+
+$(".country-belgium").click(function() {
+  $(".catalog__button").removeClass("country-active");
+  $(".country-belgium").toggleClass("country-active");
+});
+
+$(".country-italy").click(function() {
+  $(".catalog__button").removeClass("country-active");
+  $(".country-italy").toggleClass("country-active");
+});
+
+$(".country-russia").click(function() {
+  $(".catalog__button").removeClass("country-active");
+  $(".country-russia").toggleClass("country-active");
+});
+
+
+
+
+
+
