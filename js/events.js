@@ -117,29 +117,29 @@ $(document).on('click', function(e) {
 
 
 $(".country-france").click(function() {
-  $(".catalog__button").removeClass("country-active");
-  $(".country-france").toggleClass("country-active");
+  $(".catalog__list-item").removeClass("country-active");
+  $(".catalog__france").toggleClass("country-active");
 });
 
 
 $(".country-german").click(function() {
-  $(".catalog__button").removeClass("country-active");
-  $(".country-german").toggleClass("country-active");
+  $(".catalog__list-item").removeClass("country-active");
+  $(".catalog__german").toggleClass("country-active");
 });
 
 $(".country-belgium").click(function() {
-  $(".catalog__button").removeClass("country-active");
-  $(".country-belgium").toggleClass("country-active");
+  $(".catalog__list-item").removeClass("country-active");
+  $(".catalog__belgium").toggleClass("country-active");
 });
 
 $(".country-italy").click(function() {
-  $(".catalog__button").removeClass("country-active");
-  $(".country-italy").toggleClass("country-active");
+  $(".catalog__list-item").removeClass("country-active");
+  $(".catalog__italy").toggleClass("country-active");
 });
 
 $(".country-russia").click(function() {
-  $(".catalog__button").removeClass("country-active");
-  $(".country-russia").toggleClass("country-active");
+  $(".catalog__list-item").removeClass("country-active");
+  $(".catalog__russia").toggleClass("country-active");
 });
 
 
