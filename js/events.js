@@ -19,6 +19,14 @@ window.addEventListener('DOMContentLoaded', function () {
 })
 
 
+
+
+$(".catalog__inside-links").click(function(active) {
+  $(".catalog__inside-links").removeClass("catalog__inside-links_active");
+  $(active.target).addClass("catalog__inside-links_active")
+});
+
+
 $(".js-button-1").click(function() {
   $('.js-scroll-1').toggle();
   $(".js-arrow-1").toggleClass("open");
@@ -32,8 +40,6 @@ $(document).on('click', function(e) {
   }
   e.stopPropagation();
 });
-
-
 
 
 
