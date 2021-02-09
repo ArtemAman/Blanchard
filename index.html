@@ -32,33 +32,36 @@
 
 <body>
   <div class="container">
+    <h1 class="main-header">Картинная Галерея Blanchard</h1>
     <header class="header">
       <div class="header__top">
         <div class="header__container-top container-inside">
           <img src="img/logo.svg" alt="" class="header__logo">
-          <ul class="header__nav-list">
-            <li class="header__toplist-item">
-              <a href="#about_us" class="header__link">О нас</a>
-            </li>
-            <li class="header__toplist-item">
-              <a href="#gallery" class="header__link">Галерея</a>
-            </li>
-            <li class="header__toplist-item">
-              <a href="#catalog" class="header__link">Каталог</a>
-            </li>
-            <li class="header__toplist-item">
-              <a href="#events" class="header__link">События</a>
-            </li>
-            <li class="header__toplist-item">
-              <a href="#publications" class="header__link">Издания</a>
-            </li>
-            <li class="header__toplist-item">
-              <a href="#projects" class="header__link">Проекты</a>
-            </li>
-            <li class="header__toplist-item">
-              <a href="#contacts" class="header__link">Контакты</a>
-            </li>
-          </ul>
+          <nav class="header__navigation">
+            <ul class="header__nav-list">
+              <li class="header__toplist-item">
+                <a href="#about_us" class="header__link">О нас</a>
+              </li>
+              <li class="header__toplist-item">
+                <a href="#gallery" class="header__link">Галерея</a>
+              </li>
+              <li class="header__toplist-item">
+                <a href="#catalog" class="header__link">Каталог</a>
+              </li>
+              <li class="header__toplist-item">
+                <a href="#events" class="header__link">События</a>
+              </li>
+              <li class="header__toplist-item">
+                <a href="#publications" class="header__link">Издания</a>
+              </li>
+              <li class="header__toplist-item">
+                <a href="#projects" class="header__link">Проекты</a>
+              </li>
+              <li class="header__toplist-item">
+                <a href="#contacts" class="header__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <a href="" class="header__enter">Войти</a>
         </div>
       </div>
@@ -175,10 +178,10 @@
       </div>
     </header>
     <section class="hero">
-      <div class="container-inside">
-        <h1 class="hero__header">
+      <div class="hero__container container-inside">
+        <h2 class="hero__header">
           Прикоснитесь к прекрасному
-        </h1>
+        </h2>
         <p class="hero__text">
           Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
           предложений.
@@ -187,7 +190,7 @@
       </div>
     </section>
     <section class="about-us" id="about_us">
-      <div class="container-inside">
+      <div class="about-us__container container-inside">
         <h2 class="about-us__header">
           О нас
         </h2>
@@ -387,6 +390,15 @@
                 Милано.
               </p>
             </div>
+            <div class="catalog__invisible" data-target="empty_1">
+              <img src="img/bindo.jpg" class="catalog__img" alt="">
+              <p class="catalog__text-top">
+              </p>
+              <p class="catalog__text-mid">
+              </p>
+              <p class="catalog__text-bot">               
+              </p>
+            </div>
           </div>
           <div class="catalog__right">
             <div class="catalog__tab-content" data-target="one">
@@ -394,7 +406,7 @@
                 <h3 class="catalog__accordion-header">C 1400 по 1499 гг.</h3>
                 <div class="catalog__wrap">
                   <ul class="catalog__inside-list">
-                    <li><a class="catalog__inside-links" tabindex="0">Бенедетто ди Биндо</a></li>
+                    <li><a class="catalog__inside-links catalog__inside-links_active" data-path="empty_1" tabindex="0">Бенедетто ди Биндо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0 ">Бергоньоне, Амброджо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Биссоло, Франческо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Больтраффио, Джованни</a></li>
@@ -444,7 +456,7 @@
                 <div class="catalog__wrap">
                   <ul class="catalog__inside-list">
                     <li><a class="catalog__inside-links" tabindex="0">Бенедетто ди Биндо</a></li>
-                    <li><a class="catalog__inside-links" tabindex="0 ">Бергоньоне, Амброджо</a></li>
+                    <li><a class="catalog__inside-links catalog__inside-links_active" data-path="empty_2" tabindex="0 ">Бергоньоне, Амброджо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Биссоло, Франческо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Больтраффио, Джованни</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Бонсиньори, Франческо</a></li>
@@ -562,7 +574,7 @@
                   <ul class="catalog__inside-list">
                     <li><a class="catalog__inside-links"  tabindex="0">Бенедетто ди Биндо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0 ">Бергоньоне, Амброджо</a></li>
-                    <li><a class="catalog__inside-links" tabindex="0">Биссоло, Франческо</a></li>
+                    <li><a class="catalog__inside-links catalog__inside-links_active" data-path="empty_3" tabindex="0">Биссоло, Франческо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Больтраффио, Джованни</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Бонсиньори, Франческо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Боттичини, Рафаэлло</a></li>
@@ -613,7 +625,7 @@
                     <li><a class="catalog__inside-links"  tabindex="0">Бенедетто ди Биндо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0 ">Бергоньоне, Амброджо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Биссоло, Франческо</a></li>
-                    <li><a class="catalog__inside-links" tabindex="0">Больтраффио, Джованни</a></li>
+                    <li><a class="catalog__inside-links catalog__inside-links_active" data-path="empty_4" tabindex="0">Больтраффио, Джованни</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Бонсиньори, Франческо</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Боттичини, Рафаэлло</a></li>
                     <li><a class="catalog__inside-links" tabindex="0">Брамантино</a></li>
@@ -659,237 +671,245 @@
       </div>
     </section>
     <section class="events" id="events">
-      <div class="container-inside">
+      <div class="events__container container-inside">
         <h2 class="events__header">События</h2>
-      <ul class="events__list">
-        <li class="events__list-item">
-          <div class="events__img events__img-1"></div>
-          <p class="events__text-top">Музей им. Щусева</p>
-          <p class="events__text-top">с 20 марта по 30 апреля</p>
-          <p class="events__text-mid">
-            Книжная гравюра в живом восприятии
-          </p>
-          <p class="events__text-bot">Один из ведущих флорентийских художников Кватроченто, основатель
-            художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской,
-            где юный Микеланджело.
-          </p>
-          <a href="" class="events__more">Подробнее</a>
-        </li>
-        <li class="events__list-item">
-          <div class="events__img events__img-2"></div>
-          <p class="events__text-top">ММОМА</p>
-          <p class="events__text-top">24 марта 19:00</p>
-          <p class="events__text-mid">
-            «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-          </p>
-          <p class="events__text-bot">
-            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
-            постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки
-            новых принципов формирования...
-          </p>
-          <a href="" class="events__more">Подробнее</a>
-        </li>
-        <li class="events__list-item">
-          <div class="events__img events__img-3"></div>
-          <p class="events__text-top"> Еврейский музей </p>
-          <p class="events__text-top"> с 31 марта по 21 апреля </p>  
-          <p class="events__text-mid">
-            Выставка «Формация 2020»
-          </p>
-          <p class="events__text-bot">
-            Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
-            формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение
-            для новых принципов формирования материально-технической и кадровой базы.
-          </p>
-          <a href="" class="events__more">Подробнее</a>
-        </li>
-        <li class="events__list-item events__hidden">
-          <div class="events__img events__img-4"></div>
-          <p class="events__text-top">Третьяковка на Крымском валу</p>
-          <p class="events__text-top">с 30 марта по 30 апреля </p>
-          <p class="events__text-mid">
-            XXIV Международная биеннале молодого искусства
-          </p>
-          <p class="events__text-bot">
-            Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное,
-            как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе
-            маркетинговых и финансовых...
-          </p>
-          <a href="" class="events__more">Подробнее</a>
-        </li>
-        <li class="events__list-item events__hidden">
-          <div class="events__img events__img-5"></div>
-          <p class="events__text-top">ММАМ</p>
-          <p class="events__text-top">с 8 апреля по 20 мая</p>
-          <p class="events__text-mid">
-            Джон Винзор. Фотографии из серии «Метафора серебра»
-          </p>
-          <p class="events__text-bot">
-            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
-            его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
-          </p>
-          <a href="" class="events__more">Подробнее</a>
-        </li>
-      </ul>
-      <button id="events__button" class="events__button">Все события</button>
+        <ul class="events__list">
+          <li class="events__list-item">
+            <div class="events__img events__img-1"></div>
+            <p class="events__text-top">Музей им. Щусева</p>
+            <p class="events__text-top">с 20 марта по 30 апреля</p>
+            <div class="events__text-block">
+              <p class="events__text-mid">
+                Книжная гравюра в живом восприятии
+              </p>
+              <p class="events__text-bot">Один из ведущих флорентийских художников Кватроченто, основатель
+                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской,
+                где юный Микеланджело.
+              </p>
+              <a href="" class="events__more" >Подробнее</a>              
+            </div>
+          </li>
+          <li class="events__list-item">
+            <div class="events__img events__img-2"></div>
+            <p class="events__text-top">ММОМА</p>
+            <p class="events__text-top">24 марта 19:00</p>
+            <div class="events__text-block">
+              <p class="events__text-mid">
+                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+              </p>
+              <p class="events__text-bot">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
+                постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки
+                новых принципов формирования...
+              </p>
+              <a href="" class="events__more">Подробнее</a>
+            </div>
+            
+          </li>
+          <li class="events__list-item">
+            <div class="events__img events__img-3"></div>
+            <p class="events__text-top"> Еврейский музей </p>
+            <p class="events__text-top"> с 31 марта по 21 апреля </p>  
+            <div class="events__text-block">
+              <p class="events__text-mid">
+                Выставка «Формация 2020»
+              </p>
+              <p class="events__text-bot">
+                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+                формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение
+                для новых принципов формирования материально-технической и кадровой базы.
+              </p>
+              <a href="" class="events__more">Подробнее</a>
+            </div>
+          </li>
+          <li class="events__list-item events__hidden">
+            <div class="events__img events__img-4"></div>
+            <p class="events__text-top">Третьяковка на Крымском валу</p>
+            <p class="events__text-top">с 30 марта по 30 апреля </p>
+            <div class="events__text-block">
+              <p class="events__text-mid">
+                XXIV Международная биеннале молодого искусства
+              </p>
+              <p class="events__text-bot">
+                Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное,
+                как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе
+                маркетинговых и финансовых...
+              </p>
+              <a href="" class="events__more">Подробнее</a>
+            </div>
+          </li>
+          <li class="events__list-item events__hidden">
+            <div class="events__img events__img-5"></div>
+            <p class="events__text-top">ММАМ</p>
+            <p class="events__text-top">с 8 апреля по 20 мая</p>
+            <div class="events__text-block">
+              <p class="events__text-mid">
+                Джон Винзор. Фотографии из серии «Метафора серебра»
+              </p>
+              <p class="events__text-bot">
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+                его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+              </p>
+              <a href="" class="events__more">Подробнее</a>
+            </div>
+          </li>
+        </ul>
+        <button id="events__button" class="events__button">Все события</button>
       </div>
     </section>
     <section class="publications" id="publications">
-      <div class="container-inside">
-        <div class="publications__two-sections">
-          <div class="publications__left">
-            <h2 class="publications__header">Издания</h2>
-            <h4 class="publications__categories">Категории:</h4>
-            <div class="publications__checkbox">
-              <div class="publications__check-item">
-                <input type="checkbox" id="bestsellers">
-                <label class="publications__label" for="bestsellers">Бестселлеры</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="art">
-                <label class="publications__label" for="art">Искусство</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="architecture">
-                <label class="publications__label" for="architecture">Архитектура</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="design">
-                <label class="publications__label" for="design">Дизайн</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="fashion">
-                <label class="publications__label" for="fashion">Мода</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="for_children">
-                <label class="publications__label" for="for_children">Детям</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="literature">
-                <label class="publications__label" for="literature">Художественная литература</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="publicism">
-                <label class="publications__label" for="publicism">Публицистика</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="travel_guides">
-                <label class="publications__label" for="travel_guides">Путеводители</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="philosophy">
-                <label class="publications__label" for="philosophy">Философия</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="academic_books">
-                <label class="publications__label" for="academic_books">Учебная литература</label>
-              </div>
-              <div class="publications__check-item">
-                <input type="checkbox" id="magazines">
-                <label class="publications__label" for="magazines">Журналы и газеты</label>
-              </div>
+      <div class="publications__container container-inside">
+        <div class="publications__left">
+          <h2 class="publications__header">Издания</h2>
+          <h4 class="publications__categories">Категории:</h4>
+          <div class="publications__checkbox">
+            <div class="publications__check-item">
+              <input type="checkbox" id="bestsellers">
+              <label class="publications__label" for="bestsellers">Бестселлеры</label>
             </div>
-            <h5 class="publications__header-inputs"> Цена</h5>
-            <form class="publications__inputs">
-              <label class="publications__label-price publications__label-price-1" for="from">От</label>
-              <input class="publications__input-price publications__input-1" type="number" id="from">
-              <label class="publications__label-price publications__label-price-2" for="to">до</label>
-              <input class="publications__input-price publications__input-2" type="number" id="to">
-              <label class="publications__label-price publications__label-price-3" for="to">руб.</label>
-            </form>  
+            <div class="publications__check-item">
+              <input type="checkbox" id="art">
+              <label class="publications__label" for="art">Искусство</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="architecture">
+              <label class="publications__label" for="architecture">Архитектура</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="design">
+              <label class="publications__label" for="design">Дизайн</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="fashion">
+              <label class="publications__label" for="fashion">Мода</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="for_children">
+              <label class="publications__label" for="for_children">Детям</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="literature">
+              <label class="publications__label" for="literature">Художественная литература</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="publicism">
+              <label class="publications__label" for="publicism">Публицистика</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="travel_guides">
+              <label class="publications__label" for="travel_guides">Путеводители</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="philosophy">
+              <label class="publications__label" for="philosophy">Философия</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="academic_books">
+              <label class="publications__label" for="academic_books">Учебная литература</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="magazines">
+              <label class="publications__label" for="magazines">Журналы и газеты</label>
+            </div>
           </div>
-          <div class="publications__right">
-            <div class="swiper-buttons publications__buttons">
-              <div class="swiper-buttons__button js-prev-2">
-                <div class="swiper-buttons__arrow-prev"></div>
-              </div>
-              <div class="swiper-buttons__counter swiper-pagination-2"></div>
-              <div class="swiper-buttons__button js-next-2">
-                <div class="swiper-buttons__arrow_next "></div>
-              </div>
+          <h5 class="publications__header-inputs"> Цена</h5>
+          <form class="publications__inputs">
+            <label class="publications__label-price publications__label-price-1" for="from">От</label>
+            <input class="publications__input-price publications__input-1" type="number" id="from">
+            <label class="publications__label-price publications__label-price-2" for="to">до</label>
+            <input class="publications__input-price publications__input-2" type="number" id="to">
+            <label class="publications__label-price publications__label-price-3" for="to">руб.</label>
+          </form>  
+        </div>
+        <div class="publications__right">
+          <div class="swiper-buttons publications__buttons">
+            <div class="swiper-buttons__button js-prev-2">
+              <div class="swiper-buttons__arrow-prev"></div>
             </div>
-  
-            <div class="swiper-container publications__swiper-container" id="swiper_2">
-              <div class="swiper-wrapper publications__swiper-wrapper">
-                <div class="swiper-slide publications__swiper-slide">
-                  <div class="publications__slide-block">
-                    <img class="publications__img" src="img/Rectangle 111.jpg" alt="">
-                    <div class="publications__text">
-                      <p class="publications__text-left">Искусство света</p>
-                      <p class="publications__text-right"> 620 руб </p>
-                    </div>
-                    <p class="publications__text-bottom">Иттен, Иоханнес</p>
-                    <button class="publications__button">Заказать</button>
+            <div class="swiper-buttons__counter swiper-pagination-2"></div>
+            <div class="swiper-buttons__button js-next-2">
+              <div class="swiper-buttons__arrow_next "></div>
+            </div>
+          </div>
+
+          <div class="swiper-container publications__swiper-container" id="swiper_2">
+            <div class="swiper-wrapper publications__swiper-wrapper">
+              <div class="swiper-slide publications__swiper-slide">
+                <div class="publications__slide-block">
+                  <img class="publications__img" src="img/Rectangle 111.jpg" alt="">
+                  <div class="publications__text">
+                    <p class="publications__text-left">Искусство света</p>
+                    <p class="publications__text-right"> 620 руб </p>
                   </div>
-                  <div class="publications__slide-block">
-                    <img class="publications__img" src="img/Rectangle 112.jpg" alt="">
-                    <div class="publications__text">
-                      <p class="publications__text-left">Типографика </p>
-                      <p class="publications__text-right">2 450 руб</p>
-                    </div>
-                    <p class="publications__text-bottom">Рудер, Эмиль</p>
-                    <button class="publications__button">Заказать</button>
-                  </div>
-                  <div class="publications__slide-block">
-                    <img class="publications__img" src="img/Rectangle 113.jpg" alt="">
-                    <div class="publications__text">
-                      <p class="publications__text-left">Книга про буквы</p>
-                      <p class="publications__text-right">2 200 руб</p>
-                    </div>
-                    <p class="publications__text-bottom">Гордон, Юрий</p>
-                    <button class="publications__button">Заказать</button>
-                  </div>
+                  <p class="publications__text-bottom">Иттен, Иоханнес</p>
+                  <button class="publications__button">Заказать</button>
                 </div>
-                <div class="swiper-slide publications__swiper-slide">
-                  <div class="publications__slide-block">
-                    <img class="publications__img" src="img/Rectangle 114.png" alt="">
-                    <div class="publications__text">
-                      <p class="publications__text-left">Николай Ильин </p>
-                      <p class="publications__text-right">1 100 руб</p>
-                    </div>
-                    <p class="publications__text-bottom">Кричевский, Владимир</p>
-                    <button class="publications__button">Заказать</button>
+                <div class="publications__slide-block">
+                  <img class="publications__img" src="img/Rectangle 112.jpg" alt="">
+                  <div class="publications__text">
+                    <p class="publications__text-left">Типографика </p>
+                    <p class="publications__text-right">2 450 руб</p>
                   </div>
-                  <div class="publications__slide-block">
-                    <img class="publications__img" src="img/Rectangle 115.jpg" alt="">
-                    <div class="publications__text">
-                      <p class="publications__text-left">Модульные сетки в граф...</p>
-                      <p class="publications__text-right">1 450 руб</p>
-                    </div>
-                    <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
-                    <button class="publications__button">Заказать</button>
-                  </div>
-                  <div class="publications__slide-block">
-                    <img class="publications__img" src="img/Rectangle 116.jpg" alt="">
-                    <div class="publications__text">
-                      <p class="publications__text-left"> Эволюция графических ст...</p>
-                      <p class="publications__text-right">2 200 руб</p>
-                    </div>
-                    <p class="publications__text-bottom">Хеллер, Чваст</p>
-                    <button class="publications__button">Заказать</button>
-                  </div>
+                  <p class="publications__text-bottom">Рудер, Эмиль</p>
+                  <button class="publications__button">Заказать</button>
                 </div>
-                <div class="swiper-slide publications__swiper-slide">
-                  <div class="publications__slide-block">
-                    <img class="publications__img" src="img/Rectangle 117.jpg" alt="">
-                    <div class="publications__text">
-                      <p class="publications__text-left">Искусство и визуальное в...</p>
-                      <p class="publications__text-right">Арнхейм, Рудольф</p>
-                    </div>
-                    <p class="publications__text-bottom">2 200 руб</p>
-                    <button class="publications__button">Заказать</button>
+                <div class="publications__slide-block">
+                  <img class="publications__img" src="img/Rectangle 113.jpg" alt="">
+                  <div class="publications__text">
+                    <p class="publications__text-left">Книга про буквы</p>
+                    <p class="publications__text-right">2 200 руб</p>
                   </div>
+                  <p class="publications__text-bottom">Гордон, Юрий</p>
+                  <button class="publications__button">Заказать</button>
                 </div>
               </div>
-  
+              <div class="swiper-slide publications__swiper-slide">
+                <div class="publications__slide-block">
+                  <img class="publications__img" src="img/Rectangle 114.png" alt="">
+                  <div class="publications__text">
+                    <p class="publications__text-left">Николай Ильин </p>
+                    <p class="publications__text-right">1 100 руб</p>
+                  </div>
+                  <p class="publications__text-bottom">Кричевский, Владимир</p>
+                  <button class="publications__button">Заказать</button>
+                </div>
+                <div class="publications__slide-block">
+                  <img class="publications__img" src="img/Rectangle 115.jpg" alt="">
+                  <div class="publications__text">
+                    <p class="publications__text-left">Модульные сетки в граф...</p>
+                    <p class="publications__text-right">1 450 руб</p>
+                  </div>
+                  <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
+                  <button class="publications__button">Заказать</button>
+                </div>
+                <div class="publications__slide-block">
+                  <img class="publications__img" src="img/Rectangle 116.jpg" alt="">
+                  <div class="publications__text">
+                    <p class="publications__text-left"> Эволюция графических ст...</p>
+                    <p class="publications__text-right">2 200 руб</p>
+                  </div>
+                  <p class="publications__text-bottom">Хеллер, Чваст</p>
+                  <button class="publications__button">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide publications__swiper-slide">
+                <div class="publications__slide-block">
+                  <img class="publications__img" src="img/Rectangle 117.jpg" alt="">
+                  <div class="publications__text">
+                    <p class="publications__text-left">Искусство и визуальное в...</p>
+                    <p class="publications__text-right">Арнхейм, Рудольф</p>
+                  </div>
+                  <p class="publications__text-bottom">2 200 руб</p>
+                  <button class="publications__button">Заказать</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="projects" id="projects">
-     <div class="container-inside">
+     <div class="projects__container container-inside">
       <h2 class="projects__header">Проекты</h2>
       <p class="projects__text">
         Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
@@ -1007,5 +1027,6 @@
 <script src="js/moves.js"></script>
 <script src="js/simplebar.min.js"></script>
 <script src="js/scroll.js"></script>
+<script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
 
 </html>
