@@ -21,10 +21,31 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-$(".catalog__inside-links").click(function(active) {
-  $(".catalog__inside-links").removeClass("catalog__inside-links_active");
+$(".catalog__inside-links_it").click(function(active) {
+  $(".catalog__inside-links_it").removeClass("catalog__inside-links_active");
   $(active.target).addClass("catalog__inside-links_active")
 });
+
+$(".catalog__inside-links_fr").click(function(active) {
+  $(".catalog__inside-links_fr").removeClass("catalog__inside-links_active");
+  $(active.target).addClass("catalog__inside-links_active")
+});
+
+$(".catalog__inside-links_ger").click(function(active) {
+  $(".catalog__inside-links_ger").removeClass("catalog__inside-links_active");
+  $(active.target).addClass("catalog__inside-links_active")
+});
+
+$(".catalog__inside-links_ru").click(function(active) {
+  $(".catalog__inside-links_ru").removeClass("catalog__inside-links_active");
+  $(active.target).addClass("catalog__inside-links_active")
+});
+
+$(".catalog__inside-links_bl").click(function(active) {
+  $(".catalog__inside-links_bl").removeClass("catalog__inside-links_active");
+  $(active.target).addClass("catalog__inside-links_active")
+});
+
 
 
 $(".js-button-1").click(function() {
