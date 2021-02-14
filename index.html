@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=0.9, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -25,1157 +25,1149 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/choices.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
   </script>
 
 </head>
 
 <body>
-  <div class="container">
-    <h1 class="visually-hidden">Картинная Галерея Blanchard</h1>
-    <header class="header">
-      <div class="header__top">
-        <div class="header__container-top container-inside">
-          <img src="img/logo.svg" alt="" class="header__logo">
-          <nav class="header__navigation">
-            <ul class="header__nav-list">
-              <li class="header__toplist-item">
-                <a href="#about_us" class="header__link">О нас</a>
+
+  <h1 class="visually-hidden">Картинная Галерея Blanchard</h1>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container-top container-inside">
+        <img src="img/logo.svg" alt="" class="header__logo">
+        <nav class="header__navigation">
+          <ul class="header__nav-list">
+            <li class="header__toplist-item">
+              <a href="#about_us" class="header__link">О нас</a>
+            </li>
+            <li class="header__toplist-item">
+              <a href="#gallery" class="header__link">Галерея</a>
+            </li>
+            <li class="header__toplist-item">
+              <a href="#catalog" class="header__link">Каталог</a>
+            </li>
+            <li class="header__toplist-item">
+              <a href="#events" class="header__link">События</a>
+            </li>
+            <li class="header__toplist-item">
+              <a href="#publications" class="header__link">Издания</a>
+            </li>
+            <li class="header__toplist-item">
+              <a href="#projects" class="header__link">Проекты</a>
+            </li>
+            <li class="header__toplist-item">
+              <a href="#contacts" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="" class="header__enter">Войти</a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__container-bottom container-inside">
+        <ul class="header__list">
+          <li class="header__botlist-item">
+            <button class="header__button js-button-1">Реализм
+              <span class="header__arrow js-arrow-1"></span>
+            </button>
+            <ul id="myscroll_1" data-simplebar class="header__scroll js-scroll-1">
+              <li class="header__scroll-elem header__scroll-elem_1">
+                <a class="header__scroll-text" href="">Тинторетто</a>
               </li>
-              <li class="header__toplist-item">
-                <a href="#gallery" class="header__link">Галерея</a>
+              <li class="header__scroll-elem header__scroll-elem_2">
+                <a class="header__scroll-text" href="">Фридрих</a>
               </li>
-              <li class="header__toplist-item">
-                <a href="#catalog" class="header__link">Каталог</a>
+              <li class="header__scroll-elem header__scroll-elem_3">
+                <a class="header__scroll-text" href="">Леонардо</a>
               </li>
-              <li class="header__toplist-item">
-                <a href="#events" class="header__link">События</a>
+              <li class="header__scroll-elem header__scroll-elem_4">
+                <a class="header__scroll-text" href="">Верроккьо</a>
               </li>
-              <li class="header__toplist-item">
-                <a href="#publications" class="header__link">Издания</a>
+              <li class="header__scroll-elem header__scroll-elem_4">
+                <a class="header__scroll-text" href="">Верроккьо</a>
               </li>
-              <li class="header__toplist-item">
-                <a href="#projects" class="header__link">Проекты</a>
-              </li>
-              <li class="header__toplist-item">
-                <a href="#contacts" class="header__link">Контакты</a>
+              <li class="header__scroll-elem header__scroll-elem_4">
+                <a class="header__scroll-text" href="">Верроккьо</a>
               </li>
             </ul>
-          </nav>
-          <a href="" class="header__enter">Войти</a>
-        </div>
-      </div>
-      <div class="header__bottom">
-        <div class="header__container-bottom container-inside">
-          <ul class="header__list">
-            <li class="header__botlist-item">
-              <button class="header__button js-button-1">Реализм
-                <span class="header__arrow js-arrow-1"></span>
-              </button>
-              <ul id="myscroll_1" data-simplebar class="header__scroll js-scroll-1">
-                <li class="header__scroll-elem header__scroll-elem_1">
-                  <a class="header__scroll-text" href="">Тинторетто</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_2">
-                  <a class="header__scroll-text" href="">Фридрих</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_3">
-                  <a class="header__scroll-text" href="">Леонардо</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_4">
-                  <a class="header__scroll-text" href="">Верроккьо</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_4">
-                  <a class="header__scroll-text" href="">Верроккьо</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_4">
-                  <a class="header__scroll-text" href="">Верроккьо</a>
-                </li>
-              </ul>
-            </li>
-            <li class="header__botlist-item">
-              <button class="header__button js-button-2">Импрессионизм
-                <span class="header__arrow js-arrow-2"></span>
-              </button>
-              <ul id="myscroll_2" data-simplebar class="header__scroll js-scroll-2">
-                <li class="header__scroll-elem header__scroll-elem_1">
-                  <a class="header__scroll-text" href="">Тинторетто</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_2">
-                  <a class="header__scroll-text" href="">Фридрих</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_3">
-                  <a class="header__scroll-text" href="">Леонардо</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_4">
-                  <a class="header__scroll-text" href="">Верроккьо</a>
-                </li>
-              </ul>
-            </li>
-            <li class="header__botlist-item">
-              <button class="header__button js-button-3">Постимпрессионизм
-                <span class="header__arrow js-arrow-3"></span>
-              </button>
-              <ul id="myscroll_3" data-simplebar class="header__scroll js-scroll-3">
-                <li class="header__scroll-elem header__scroll-elem_1">
-                  <a class="header__scroll-text" href="">Тинторетто</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_2">
-                  <a class="header__scroll-text" href="">Фридрих</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_3">
-                  <a class="header__scroll-text" href="">Леонардо</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_4">
-                  <a class="header__scroll-text" href="">Верроккьо</a>
-                </li>
-              </ul>
-            </li>
-            <li class="header__botlist-item">
-              <button class="header__button js-button-4">Авангард
-                <span class="header__arrow js-arrow-4"></span>
-              </button>
-              <ul id="myscroll_4" data-simplebar class="header__scroll js-scroll-4">
-                <li class="header__scroll-elem header__scroll-elem_1">
-                  <a class="header__scroll-text" href="">Тинторетто</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_2">
-                  <a class="header__scroll-text" href="">Фридрих</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_3">
-                  <a class="header__scroll-text" href="">Леонардо</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_4">
-                  <a class="header__scroll-text" href="">Верроккьо</a>
-                </li>
-              </ul>
-            </li>
-            <li class="header__botlist-item">
-              <button class="header__button js-button-5">Футуризм
-                <span class="header__arrow js-arrow-5"></span>
-              </button>
-              <ul id="myscroll_5" data-simplebar class="header__scroll js-scroll-5">
-                <li class="header__scroll-elem header__scroll-elem_1">
-                  <a class="header__scroll-text" href="">Тинторетто</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_2">
-                  <a class="header__scroll-text" href="">Фридрих</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_3">
-                  <a class="header__scroll-text" href="">Леонардо</a>
-                </li>
-                <li class="header__scroll-elem header__scroll-elem_4">
-                  <a class="header__scroll-text" href="">Верроккьо</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form action="https://jsonplaceholder.typicode.com/posts" class="header__search" method="POST">
-            <button class="header__search-button"></button>
-            <input class="header__input" required type="text" name="searched_info" placeholder="Поиск по сайту">
-          </form>
-        </div>
-      </div>
-    </header>
-    <section class="hero">
-      <div class="hero__container container-inside">
-        <h2 class="hero__header">
-          Прикоснитесь к прекрасному
-        </h2>
-        <p class="hero__text">
-          Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
-          предложений.
-        </p>
-        <a href="#map" class="hero__map-link">Подписаться на рассылку </a>           
-      </div>
-    </section>
-    <section class="about-us" id="about_us">
-      <div class="about-us__container container-inside">
-        <h2 class="about-us__header">
-          О нас
-        </h2>
-        <p class="about-us__text">
-          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
-          участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов.
-          Не
-          следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения
-          и
-          модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований
-          создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
-          комплекса
-          распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия
-          представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть
-          разоблачены.
-        </p>
-      </div>
-    </section>
-    <section class="gallery" id="gallery">
-      <div class="gallery__two-sections container-inside">
-        <div class="gallery__left">
-          <h2 class="gallery__header">
-            Галерея
-          </h2>
-          <p class="gallery__filter">Фильтровать по:</p>
-          <div class="gallery__select">
-            <select name="select" id="gallery_select">
-              <option value="">Автор</option>
-              <option value="">Направление</option>
-              <option value="">Техника</option>
-            </select>
-          </div>
-          <p class="gallery__text">
-            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
-            <a href="#" class="gallery__authorize">авторизуйтесь</a>, либо
-            воспользуйтесь лицензией.
-          </p>
-        </div>
-        <div class="gallery__right">
-          <div class="swiper-buttons">
-            <div class="swiper-buttons__button js-prev-1">
-              <div class="swiper-buttons__arrow-prev"></div>
-            </div>
-            <div class="swiper-buttons__counter swiper-pagination"></div>
-            <div class="swiper-buttons__button js-next-1">
-              <div class="swiper-buttons__arrow_next "></div>
-            </div>
-          </div>
-          <div class="swiper-container gallery__swiper-container" id="swiper_1">
-            <div class="swiper-wrapper gallery__swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="swiper-img swiper-img_1" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_2" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_3" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_4" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_5" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_6" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-img swiper-img_7" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_8" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_9" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_10" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_11" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_12" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-img swiper-img_13" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_14" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_15" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_16" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_17" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-                <div class="swiper-img swiper-img_18" tabindex="0">
-                  <div class="swiper-active"></div>
-                  <div class="swiper-hover"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="catalog" id="catalog">
-      <div class="container-inside">
-        <div class="catalog__top">
-          <h2 class="catalog__header">Каталог</h2>
-          <ul class="catalog__tabs">
-            <li class="catalog__list-item catalog__france">
-              <button class="catalog__button country-france" data-path="one"></button>
-            </li>
-            <li class="catalog__list-item catalog__german">
-              <button class="catalog__button country-german" data-path="two"></button>
-            </li>
-            <li class="catalog__list-item catalog__italy country-active">
-              <button class="catalog__button country-italy" data-path="three"></button>
-            </li>
-            <li class="catalog__list-item catalog__russia">
-              <button class="catalog__button country-russia" data-path="four"></button>
-            </li>
-            <li class="catalog__list-item catalog__belgium">
-              <button class="catalog__button country-belgium" data-path="five"></button>
-            </li>
-          </ul>
-        </div>
-        <p class="catalog__text">
-          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
-          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
-          частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
-          уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
-        </p>
-        <div class="catalog__two-sections catalog__sections-visible" data-target="three">
-          <div class="catalog__left">
-            <div class="catalog__invisible catalog__visible" data-target="artist_12">
-              <img src="img/domenico.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Доменико Гирландайо
-              </p>
-              <p class="catalog__text-mid">
-                2 июня 1448 — 11 января 1494.
-              </p>
-              <p class="catalog__text-bot">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили
-                его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
-                овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
-                подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане
-                Флоренции
-                в костюмах того времени).
-              </p>
-            </div>
-            <div class="catalog__invisible" data-target="artist_1">
-              <img src="img/bindo.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Бенедетто ди Биндо
-              </p>
-              <p class="catalog__text-mid">
-                1380 - 1417
-              </p>
-              <p class="catalog__text-bot">
-                Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда»,
-                несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в
-                Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались). Обучение
-                он
-                прошёл у Таддео ди Бартоло, крупного сиенского мастера поздней готики, в боттеге которого Бенедетто
-                трудился вместе с Грегорио ди Чекко. Наибольшее влияние на его творчество оказали работы Симоне Мартини,
-                в
-                частности в выборе колорита, а тонко проработанные лица его персонажей напоминают произведения Джованни
-                да
-                Милано.
-              </p>
-            </div>
-          </div>
-          <div class="catalog__right">
-            <div class="catalog__accordion">
-              <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
-              <div class="catalog__wrap">
-                <ul class="catalog__inside-list">
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_1"
-                      tabindex="0">Бенедетто ди Биндо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_2"
-                      tabindex="0 ">Бергоньоне, Амброджо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_3"
-                      tabindex="0">Биссоло, Франческо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_4"
-                      tabindex="0">Больтраффио, Джованни</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_5"
-                      tabindex="0">Бонсиньори, Франческо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_6"
-                      tabindex="0">Боттичини, Рафаэлло</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_7"
-                      tabindex="0">Брамантино</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_8">Бреа,
-                      Людовико</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_9">Бьяджо
-                      д’Антонио Туччи</a>
-                  </li>
-                </ul>
-                <ul class="catalog__inside-list">
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_10"
-                      tabindex="0">Веккьетта</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_11"
-                      tabindex="0">Андреа Верроккьо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it catalog__inside-links_active"
-                      data-path="artist_12" tabindex="0">Доменико Гирландайо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_13"
-                      tabindex="0">Беноццо Гоццоли</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_14"
-                      tabindex="0">Граначчи, Франческо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_15"
-                      tabindex="0">Грегорио ди Чекко</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_16"
-                      tabindex="0">Джованни да Удине</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_17"
-                      tabindex="0">Джованни ди Паоло</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_18"
-                      tabindex="0">Джорджоне</a></li>
-                </ul>
-                <ul class="catalog__inside-list">
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_19"
-                      tabindex="0">Парентино, Бернардо</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_20"
-                      tabindex="0">Пезеллино</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_21"
-                      tabindex="0">Пьетро Перуджино</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_22"
-                      tabindex="0">Перуцци, Бальдассаре</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_23"
-                      tabindex="0">Пизанелло</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_24"
-                      tabindex="0">Пинтуриккьо</a></li>
-                </ul>
-              </div>
-              <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 2000 г.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__two-sections" data-target="one">
-          <div class="catalog__left">
-            <div class="fr__invisible fr__visible" data-target="fr_1">
-              <img src="img/mane.webp" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Мане, Эдуард
-              </p>
-              <p class="catalog__text-mid">
-                23 января 1832, Париж — 30 апреля 1883
-              </p>
-              <p class="catalog__text-bot">
-                Эдуард Мане родился в доме 5 по улице Бонапарта в парижском квартале Сен-Жермен-де-Пре в семье Огюста
-                Мане, главы департамента Министерства юстиции, и Эжени-Дезире Фурнье, дочери французского дипломата,
-                бывшего консулом в Гётеборге. Шведский король Карл XIII был крёстным отцом матери Мане. В 1839 году Мане
-                отдан на обучение в пансион аббата Пуалу, затем по причине абсолютного равнодушия к учёбе был переведён
-                отцом «на полный пансион» в колле́ж Роллена (фр.), где и обучался в период с 1844 по 1848 год, также не
-                проявляя никаких успехов.
-              </p>
-            </div>
-            <div class="fr__invisible" data-target="fr_2">
-              <img src="img/renuar.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Пьер Огю́ст Ренуа́р
-              </p>
-              <p class="catalog__text-mid">
-                25 февраля 1841, Лимож — 3 декабря 1919, Кань-сюр-Мер
-              </p>
-              <p class="catalog__text-bot">
-                французский живописец, график и скульптор, один из основных представителей импрессионизма. Известен, в
-                первую очередь, как мастер светского портрета, не лишённого сентиментальности. Ренуар первым из
-                импрессионистов снискал успех у состоятельных парижан. В середине 1880-х гг. он фактически порвал с
-                импрессионизмом, вернувшись к линейности классицизма, к «энгризму». Отец знаменитого режиссёра Жана
-                Ренуара.
-              </p>
-            </div>
-          </div>
-          <div class="catalog__right">
-            <div class="catalog__accordion">
-              <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
-              <div class="catalog__wrap">
-                <ul class="catalog__inside-list">
-                  <li><a class="catalog__inside-links catalog__inside-links_fr catalog__inside-links_active"
-                      data-path="fr_1" tabindex="0">Эдуард
-                      Мане</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_fr" data-path="fr_2" tabindex="0 ">Пьер
-                      Огю́ст Ренуа́р</a></li>
-                </ul>
-              </div>
-              <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 2000 г.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__two-sections" data-target="two">
-          <div class="catalog__left">
-            <div class="ger__invisible ger__visible" data-target="ger_1">
-              <img src="img/hugo.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Гуго фон Габерман
-              </p>
-              <p class="catalog__text-mid">
-                14 июня 1849, Диллинген-на-Дунае — 27 февраля 1929, Мюнхен
-              </p>
-              <p class="catalog__text-bot">
-                Гуго фон Габерман родился в аристократической семье, он был сыном барона Филиппа фон Габерман и его
-                супруги Паулины, урождённой графини Лейструм фон Эртинген. В 1858 году семья переехала в Мюнхен. В 1862
-                году Гуго начал изучать живопись и рисунок (в гимназии). С 1868 года — он студент-юрист, однако основное
-                своё внимание уделял рисованию.
-              </p>
-            </div>
-            <div class="ger__invisible" data-target="ger_2">
-              <img src="img/karl.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Карл Йозеф Бе́гас
-              </p>
-              <p class="catalog__text-mid">
-                30 сентября 1794, Хайнсберг — 23 ноября 1854, Берлин
-              </p>
-              <p class="catalog__text-bot">
-                Отец Карла, судья по профессии, готовил сына к работе в области юриспруденции, но уже в школе у Карла
-                Бегаса обнаружились способности к рисованию.
-                В 1812 году он был отправлен в Париж для совершенствования в живописи. Проучившись 18 месяцев в студии
-                Антуана-Жана Гро, начал работать самостоятельно.
-                В 1814 году его копия Мадонны делла Седиа была куплена прусским королём Фридрихом Вильгельмом III, что
-                привлекло внимание к творчеству молодого художника. Бегас получил заказ на создание нескольких полотен
-                большого формата на библейские темы и в 1825 году, после возвращения из Италии, продолжил писать
-                картины, которые были размещены в церквях Берлина и Потсдама. Некоторые из них были на исторические
-                темы, но большая часть изображала библейские сцены.
-              </p>
-            </div>
-          </div>
-          <div class="catalog__right">
-            <div class="catalog__accordion">
-              <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
-              <div class="catalog__wrap">
-                <ul class="catalog__inside-list">
-                  <li><a class="catalog__inside-links catalog__inside-links_ger catalog__inside-links_active"
-                      data-path="ger_1" tabindex="0">Гуго фон Габерман</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_ger" data-path="ger_2" tabindex="0 ">Карл
-                      Йозеф Бе́гас</a></li>
-                </ul>
-              </div>
-              <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 2000 г.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__two-sections" data-target="four">
-          <div class="catalog__left">
-            <div class="ru__invisible ru__visible" data-target="ru_1">
-              <img src="img/repin.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Илья́ Ефи́мович Ре́пин
-              </p>
-              <p class="catalog__text-mid">
-                1844, Чугуев, Российская империя — 29 сентября 1930, Куоккала, Финляндия
-              </p>
-              <p class="catalog__text-bot">
-                Уже с самого начала своего творческого пути, с 1870-х годов, Репин стал одной из ключевых фигур русского
-                реализма. Художнику удалось решить задачу отражения в живописном произведении всего разнообразия
-                окружающей жизни. В своём творчестве он сумел охватить все стороны современности, затронуть темы,
-                волнующие общественность, живо реагировал на злобу дня. Репинскому художественному языку была
-                свойственна пластичность, он воспринимал различные стилистические направления от испанских и голландских
-                художников XVII века до Александра Иванова и современных французских импрессионистов.
-              </p>
-            </div>
-            <div class="ru__invisible" data-target="ru_2">
-              <img src="img/shishkin.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Ива́н Ива́нович Ши́шкин
-              </p>
-              <p class="catalog__text-mid">
-                13 (25) января 1832, Елабуга, Вятская губерния, Российская империя — 8 (20) марта 1898, Санкт-Петербург,
-                Российская империя
-              </p>
-              <p class="catalog__text-bot">
-                Среди русских пейзажистов Шишкину, бесспорно, принадлежит место самого сильного художника. Во всех своих
-                произведениях он является удивительным знатоком растительных форм, воспроизводящим их с тонким
-                пониманием, как общего характера, так и мельчайших отличительных черт любой породы деревьев, кустов и
-                трав. Брался ли он за изображение соснового или елового леса, отдельные сосны и ели, точно так же, как и
-                их совокупность, получали у него свою истинную физиономию, без всяких прикрас или преуменьшений, — тот
-                вид и с теми частностями, которые вполне объясняются и обуславливаются почвой и климатом, где художник
-                заставлял их расти.
-              </p>
-            </div>
-          </div>
-          <div class="catalog__right">
-            <div class="catalog__accordion">
-              <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
-              <div class="catalog__wrap">
-                <ul class="catalog__inside-list">
-                  <li><a class="catalog__inside-links catalog__inside-links_ru catalog__inside-links_active"
-                      data-path="ru_1" tabindex="0">Илья́ Ефи́мович Ре́пин </a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_ru" data-path="ru_2" tabindex="0 "> Ива́н
-                      Ива́нович Ши́шкин</a></li>
-                </ul>
-              </div>
-              <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 2000 г.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="catalog__two-sections" data-target="five">
-          <div class="catalog__left">
-            <div class="bl__invisible bl__visible" data-target="bl_1">
-              <img src="img/breigel.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Брейгель Питер
-              </p>
-              <p class="catalog__text-mid">
-                1525 — 9 сентября 1569, Брюссель
-              </p>
-              <p class="catalog__text-bot">
-                Питер Брейгель родился предположительно между 1525 и 1530 годами (точная дата неизвестна). Местом его
-                рождения чаще всего называют город Бреда (в современной нидерландской провинции Северный Брабант) или
-                деревушку Брёгел около этого города.
-              </p>
-            </div>
-            <div class="bl__invisible" data-target="bl_2">
-              <img src="img/rubens.jpg" class="catalog__img" alt="">
-              <p class="catalog__text-top">
-                Рубенс, Питер Пауль
-              </p>
-              <p class="catalog__text-mid">
-                28 июня 1577 года, Зиген — умер 30 мая 1640 года, Антверпен
-              </p>
-              <p class="catalog__text-bot">
-                Питер Брейгель родился предположительно между 1525 и 1530 годами (точная дата неизвестна). Местом его
-                рождения чаще всего называют город Бреда (в современной нидерландской провинции Северный Брабант) или
-                деревушку Брёгел около этого города.
-              </p>
-            </div>
-          </div>
-          <div class="catalog__right">
-            <div class="catalog__accordion">
-              <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
-              <div class="catalog__wrap">
-                <ul class="catalog__inside-list">
-                  <li><a class="catalog__inside-links catalog__inside-links_bl catalog__inside-links_active"
-                      data-path="bl_1" tabindex="0">Брейгель Питер</a></li>
-                  <li><a class="catalog__inside-links catalog__inside-links_bl" data-path="bl_2" tabindex="0 "> Ива́н
-                      Рубенс, Питер Пауль</a></li>
-                </ul>
-              </div>
-              <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-              <h3 class="catalog__accordion-header">C 2000 г.</h3>
-              <div>
-                <p class="catalog__accordion-text">
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="events" id="events">
-      <div class="events__container container-inside">
-        <h2 class="events__header">События</h2>
-        <ul class="events__list">
-          <li class="events__list-item">
-            <div class="events__img events__img-1"></div>
-            <p class="events__text-top">Музей им. Щусева</p>
-            <p class="events__text-top">с 20 марта по 30 апреля</p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                Книжная гравюра в живом восприятии
-              </p>
-              <p class="events__text-bot">Один из ведущих флорентийских художников Кватроченто, основатель
-                художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
-                мастерской,
-                где юный Микеланджело.
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
           </li>
-          <li class="events__list-item">
-            <div class="events__img events__img-2"></div>
-            <p class="events__text-top">ММОМА</p>
-            <p class="events__text-top">24 марта 19:00</p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-              </p>
-              <p class="events__text-bot">
-                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-                факта:
-                постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент
-                проверки
-                новых принципов формирования...
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
-
+          <li class="header__botlist-item">
+            <button class="header__button js-button-2">Импрессионизм
+              <span class="header__arrow js-arrow-2"></span>
+            </button>
+            <ul id="myscroll_2" data-simplebar class="header__scroll js-scroll-2">
+              <li class="header__scroll-elem header__scroll-elem_1">
+                <a class="header__scroll-text" href="">Тинторетто</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_2">
+                <a class="header__scroll-text" href="">Фридрих</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_3">
+                <a class="header__scroll-text" href="">Леонардо</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_4">
+                <a class="header__scroll-text" href="">Верроккьо</a>
+              </li>
+            </ul>
           </li>
-          <li class="events__list-item">
-            <div class="events__img events__img-3"></div>
-            <p class="events__text-top"> Еврейский музей </p>
-            <p class="events__text-top"> с 31 марта по 21 апреля </p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                Выставка «Формация 2020»
-              </p>
-              <p class="events__text-bot">
-                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
-                формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
-                значение
-                для новых принципов формирования материально-технической и кадровой базы.
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
+          <li class="header__botlist-item">
+            <button class="header__button js-button-3">Постимпрессионизм
+              <span class="header__arrow js-arrow-3"></span>
+            </button>
+            <ul id="myscroll_3" data-simplebar class="header__scroll js-scroll-3">
+              <li class="header__scroll-elem header__scroll-elem_1">
+                <a class="header__scroll-text" href="">Тинторетто</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_2">
+                <a class="header__scroll-text" href="">Фридрих</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_3">
+                <a class="header__scroll-text" href="">Леонардо</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_4">
+                <a class="header__scroll-text" href="">Верроккьо</a>
+              </li>
+            </ul>
           </li>
-          <li class="events__list-item events__hidden">
-            <div class="events__img events__img-4"></div>
-            <p class="events__text-top">Третьяковка на Крымском валу</p>
-            <p class="events__text-top">с 30 марта по 30 апреля </p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                XXIV Международная биеннале молодого искусства
-              </p>
-              <p class="events__text-bot">
-                Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что
-                иное,
-                как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе
-                маркетинговых и финансовых...
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
+          <li class="header__botlist-item">
+            <button class="header__button js-button-4">Авангард
+              <span class="header__arrow js-arrow-4"></span>
+            </button>
+            <ul id="myscroll_4" data-simplebar class="header__scroll js-scroll-4">
+              <li class="header__scroll-elem header__scroll-elem_1">
+                <a class="header__scroll-text" href="">Тинторетто</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_2">
+                <a class="header__scroll-text" href="">Фридрих</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_3">
+                <a class="header__scroll-text" href="">Леонардо</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_4">
+                <a class="header__scroll-text" href="">Верроккьо</a>
+              </li>
+            </ul>
           </li>
-          <li class="events__list-item events__hidden">
-            <div class="events__img events__img-5"></div>
-            <p class="events__text-top">ММАМ</p>
-            <p class="events__text-top">с 8 апреля по 20 мая</p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                Джон Винзор. Фотографии из серии «Метафора серебра»
-              </p>
-              <p class="events__text-bot">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили
-                его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
+          <li class="header__botlist-item">
+            <button class="header__button js-button-5">Футуризм
+              <span class="header__arrow js-arrow-5"></span>
+            </button>
+            <ul id="myscroll_5" data-simplebar class="header__scroll js-scroll-5">
+              <li class="header__scroll-elem header__scroll-elem_1">
+                <a class="header__scroll-text" href="">Тинторетто</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_2">
+                <a class="header__scroll-text" href="">Фридрих</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_3">
+                <a class="header__scroll-text" href="">Леонардо</a>
+              </li>
+              <li class="header__scroll-elem header__scroll-elem_4">
+                <a class="header__scroll-text" href="">Верроккьо</a>
+              </li>
+            </ul>
           </li>
         </ul>
-        <button id="events__button" class="events__button">Все события</button>
+        <form action="https://jsonplaceholder.typicode.com/posts" class="header__search" method="POST">
+          <button class="header__search-button"></button>
+          <input class="header__input" required type="text" name="searched_info" placeholder="Поиск по сайту">
+        </form>
       </div>
-    </section>
-    <section class="publications" id="publications">
-      <div class="publications__container container-inside">
-        <div class="publications__left">
-          <h2 class="publications__header">Издания</h2>
-          <h4 class="publications__categories">Категории:</h4>
-          <div class="publications__checkbox">
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="bestsellers">
-              <label class="publications__label" for="bestsellers">Бестселлеры</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="art">
-              <label class="publications__label" for="art">Искусство</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="architecture">
-              <label class="publications__label" for="architecture">Архитектура</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="design">
-              <label class="publications__label" for="design">Дизайн</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="fashion">
-              <label class="publications__label" for="fashion">Мода</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="for_children">
-              <label class="publications__label" for="for_children">Детям</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="literature">
-              <label class="publications__label" for="literature">Художественная литература</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="publicism">
-              <label class="publications__label" for="publicism">Публицистика</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="travel_guides">
-              <label class="publications__label" for="travel_guides">Путеводители</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="philosophy">
-              <label class="publications__label" for="philosophy">Философия</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="academic_books">
-              <label class="publications__label" for="academic_books">Учебная литература</label>
-            </div>
-            <div class="publications__check-item" tabindex="1">
-              <input type="checkbox" id="magazines">
-              <label class="publications__label" for="magazines">Журналы и газеты</label>
-            </div>
-          </div>
-          <h5 class="publications__header-inputs"> Цена</h5>
-          <form class="publications__inputs">
-            <label class="publications__label-price publications__label-price-1" for="from">От</label>
-            <input class="publications__input-price publications__input-1" type="number" id="from" placeholder="50">
-            <label class="publications__label-price publications__label-price-2" for="to">до</label>
-            <input class="publications__input-price publications__input-2" type="number" id="to" placeholder="25 000">
-            <label class="publications__label-price publications__label-price-3" for="to">руб.</label>
-          </form>
-        </div>
-        <div class="publications__right">
-          <div class="swiper-buttons publications__buttons">
-            <div class="swiper-buttons__button js-prev-2">
-              <div class="swiper-buttons__arrow-prev"></div>
-            </div>
-            <div class="swiper-buttons__counter swiper-pagination-2"></div>
-            <div class="swiper-buttons__button js-next-2">
-              <div class="swiper-buttons__arrow_next "></div>
-            </div>
-          </div>
-
-          <div class="swiper-container publications__swiper-container" id="swiper_2">
-            <div class="swiper-wrapper publications__swiper-wrapper">
-              <div class="swiper-slide publications__swiper-slide">
-                <div class="publications__slide-block">
-                  <img class="publications__img" src="img/Rectangle 111.jpg" alt="">
-                  <div class="publications__text">
-                    <p class="publications__text-left">Искусство света</p>
-                    <p class="publications__text-right"> 620 руб </p>
-                  </div>
-                  <p class="publications__text-bottom">Иттен, Иоханнес</p>
-                  <button class="publications__button">Заказать</button>
-                </div>
-                <div class="publications__slide-block">
-                  <img class="publications__img" src="img/Rectangle 112.jpg" alt="">
-                  <div class="publications__text">
-                    <p class="publications__text-left">Типографика </p>
-                    <p class="publications__text-right">2 450 руб</p>
-                  </div>
-                  <p class="publications__text-bottom">Рудер, Эмиль</p>
-                  <button class="publications__button">Заказать</button>
-                </div>
-                <div class="publications__slide-block">
-                  <img class="publications__img" src="img/Rectangle 113.jpg" alt="">
-                  <div class="publications__text">
-                    <p class="publications__text-left">Книга про буквы</p>
-                    <p class="publications__text-right">2 200 руб</p>
-                  </div>
-                  <p class="publications__text-bottom">Гордон, Юрий</p>
-                  <button class="publications__button">Заказать</button>
-                </div>
-              </div>
-              <div class="swiper-slide publications__swiper-slide">
-                <div class="publications__slide-block">
-                  <img class="publications__img" src="img/Rectangle 114.png" alt="">
-                  <div class="publications__text">
-                    <p class="publications__text-left">Николай Ильин </p>
-                    <p class="publications__text-right">1 100 руб</p>
-                  </div>
-                  <p class="publications__text-bottom">Кричевский, Владимир</p>
-                  <button class="publications__button">Заказать</button>
-                </div>
-                <div class="publications__slide-block">
-                  <img class="publications__img" src="img/Rectangle 115.jpg" alt="">
-                  <div class="publications__text">
-                    <p class="publications__text-left">Модульные сетки в граф...</p>
-                    <p class="publications__text-right">1 450 руб</p>
-                  </div>
-                  <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
-                  <button class="publications__button">Заказать</button>
-                </div>
-                <div class="publications__slide-block">
-                  <img class="publications__img" src="img/Rectangle 116.jpg" alt="">
-                  <div class="publications__text">
-                    <p class="publications__text-left"> Эволюция графических ст...</p>
-                    <p class="publications__text-right">2 200 руб</p>
-                  </div>
-                  <p class="publications__text-bottom">Хеллер, Чваст</p>
-                  <button class="publications__button">Заказать</button>
-                </div>
-              </div>
-              <div class="swiper-slide publications__swiper-slide">
-                <div class="publications__slide-block">
-                  <img class="publications__img" src="img/Rectangle 117.jpg" alt="">
-                  <div class="publications__text">
-                    <p class="publications__text-left">Искусство и визуальное в...</p>
-                    <p class="publications__text-right">Арнхейм, Рудольф</p>
-                  </div>
-                  <p class="publications__text-bottom">2 200 руб</p>
-                  <button class="publications__button">Заказать</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="projects" id="projects">
-      <div class="projects__container container-inside">
-        <h2 class="projects__header">Проекты</h2>
-        <p class="projects__text">
-          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
-          фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
-          уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-          Прежде
-          всего, постоянное <br> информационно-пропагандистское
-          <span class="projects__tooltip-img"></span> &nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="projects__popup projects__popup-1">Пример современных тенденций - современная методология
-            разработки </span>
-
-          обеспечение нашей деятельности однозначно фиксирует
-          необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
-          оппозиции могут быть рассмотрены
-          <span class="projects__tooltip-img"></span> &nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="projects__popup projects__popup-2"> Приятно, граждане, наблюдать, как сделанные на базе аналитики
-            выводы вызывают у вас
-            эмоции </span>
-
-          исключительно в разрезе маркетинговых и финансовых
-          <span class="projects__tooltip-img"></span> &nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="projects__popup projects__popup-3"> В стремлении повысить качество </span>
-
-          предпосылок. Банальные, но
-          неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
-          которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
-          Подробнее: <a href="#" class="projects__link">blanchard-art.ru/projects/about</a>
-        </p>
-        <h4 class="projects__partners">
-          Партнёры проектов:
-        </h4>
-        <div class="projects__swiper">
-          <div class="projects__swiper-button js-prev-3">
-            <div class="swiper-buttons__arrow-prev arrow-black"></div>
-          </div>
-          <div class="swiper-container projects__swiper-container" id="swiper_3">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide projects__slide">
-                <div class="projects__img projects__img-1"></div>
-                <div class="projects__img projects__img-2"></div>
-                <div class="projects__img projects__img-3"></div>
-              </div>
-              <div class="swiper-slide projects__slide">
-                <div class="projects__img projects__img-4"></div>
-                <div class="projects__img projects__img-5"></div>
-                <div class="projects__img projects__img-6"></div>
-
-              </div>
-              <div class="swiper-slide projects__slide">
-                <div class="projects__img projects__img-7"></div>
-                <div class="projects__img projects__img-8"></div>
-                <div class="projects__img projects__img-9"></div>
-              </div>
-            </div>
-          </div>
-          <div class="projects__swiper-button js-next-3">
-            <div class="swiper-buttons__arrow_next arrow-black"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contacts" id="contacts">
-      <div class="container-inside">
-        <h2 class="contacts__header">
-          Контакты
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero__container container-inside">
+      <h2 class="hero__header">
+        Прикоснитесь к прекрасному
+      </h2>
+      <p class="hero__text">
+        Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
+        предложений.
+      </p>
+      <a href="#map" class="hero__map-link pseudo offset">Подписаться на рассылку </a>
+    </div>
+  </section>
+  <section class="about-us" id="about_us">
+    <div class="about-us__container container-inside">
+      <h2 class="about-us__header">
+        О нас
+      </h2>
+      <p class="about-us__text">
+        Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+        участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов.
+        Не
+        следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения
+        и
+        модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований
+        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом
+        комплекса
+        распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия
+        представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть
+        разоблачены.
+      </p>
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <div class="gallery__two-sections container-inside">
+      <div class="gallery__left">
+        <h2 class="gallery__header">
+          Галерея
         </h2>
+        <p class="gallery__filter">Фильтровать по:</p>
+        <div class="gallery__select">
+          <select name="select" id="gallery_select">
+            <option value="">Автор</option>
+            <option value="">Направление</option>
+            <option value="">Техника</option>
+          </select>
+        </div>
+        <p class="gallery__text">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+          <a href="#" class="gallery__authorize">авторизуйтесь</a>, либо
+          воспользуйтесь лицензией.
+        </p>
       </div>
-      <div class="contacts__two-sections">
-        <div class="contacts__left">
-          <h4 class="contacts__left-header">
-            Шоурум №4
-          </h4>
-          <p class="contacts__text">
-            Леонтьевский переулок, дом 5, строение 1
-          </p>
-          <form class="contacts__form" autocomplete="off">
-            <h5 class="contacts__callback">
-              Заказать обратный звонок
-            </h5>
-            <input id="name_id" class="contacts__form-item" required type="text" placeholder="Имя*"
-              data-validate-field="name">
-            <input id="tel_id" class="contacts__form-item" required type="tel" placeholder="Телефон*"
-              data-validate-field="tel" data-validate-rules="phone">
-            <button class="contacts__button">Заказать</button>
-          </form>
-          <h5 class="contacts__one-click">
-            Связаться в один клик
-          </h5>
-          <div class="contacts__social">
-            <a href="https://www.whatsapp.com/" class="contscts__watsapp"></a>
-            <a href="https://telegram.org/" class="contacts__telegramm"></a>
+      <div class="gallery__right">
+        <div class="swiper-buttons">
+          <div class="swiper-buttons__button js-prev-1">
+            <div class="swiper-buttons__arrow-prev"></div>
+          </div>
+          <div class="swiper-buttons__counter swiper-pagination"></div>
+          <div class="swiper-buttons__button js-next-1">
+            <div class="swiper-buttons__arrow_next "></div>
           </div>
         </div>
-        <div class="contacts__right" id="map"></div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container-inside footer__container">
-        <div class="footer__logo"></div>
-        <div class="footer__social">
-          <a href="https://vk.com/" class="footer__social-item vk"></a>
-          <a href="https://www.instagram.com/" class="footer__social-item inst"></a>
-          <a href="https://ru-ru.facebook.com/" class="footer__social-item facebook"></a>
+        <div class="swiper-container gallery__swiper-container" id="swiper_1">
+          <div class="swiper-wrapper gallery__swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-img swiper-img_1" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_2" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_3" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_4" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_5" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_6" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img swiper-img_7" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_8" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_9" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_10" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_11" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_12" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img swiper-img_13" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_14" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_15" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_16" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_17" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+              <div class="swiper-img swiper-img_18" tabindex="0">
+                <div class="swiper-active"></div>
+                <div class="swiper-hover"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="catalog" id="catalog">
+    <div class="container-inside">
+      <div class="catalog__top">
+        <h2 class="catalog__header">Каталог</h2>
+        <ul class="catalog__tabs">
+          <li class="catalog__list-item catalog__france">
+            <button class="catalog__button country-france" data-path="one"></button>
+          </li>
+          <li class="catalog__list-item catalog__german">
+            <button class="catalog__button country-german" data-path="two"></button>
+          </li>
+          <li class="catalog__list-item catalog__italy country-active">
+            <button class="catalog__button country-italy" data-path="three"></button>
+          </li>
+          <li class="catalog__list-item catalog__russia">
+            <button class="catalog__button country-russia" data-path="four"></button>
+          </li>
+          <li class="catalog__list-item catalog__belgium">
+            <button class="catalog__button country-belgium" data-path="five"></button>
+          </li>
+        </ul>
+      </div>
+      <p class="catalog__text">
+        Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+        политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
+        частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
+        уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+      </p>
+      <div class="catalog__two-sections catalog__sections-visible" data-target="three">
+        <div class="catalog__left">
+          <div class="catalog__invisible catalog__visible" data-target="artist_12">
+            <img src="img/domenico.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Доменико Гирландайо
+            </p>
+            <p class="catalog__text-mid">
+              2 июня 1448 — 11 января 1494.
+            </p>
+            <p class="catalog__text-bot">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили
+              его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
+              овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
+              подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане
+              Флоренции
+              в костюмах того времени).
+            </p>
+          </div>
+          <div class="catalog__invisible" data-target="artist_1">
+            <img src="img/bindo.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Бенедетто ди Биндо
+            </p>
+            <p class="catalog__text-mid">
+              1380 - 1417
+            </p>
+            <p class="catalog__text-bot">
+              Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда»,
+              несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в
+              Сиенском соборе (работы в главном соборе республики второстепенным художникам не поручались). Обучение
+              он
+              прошёл у Таддео ди Бартоло, крупного сиенского мастера поздней готики, в боттеге которого Бенедетто
+              трудился вместе с Грегорио ди Чекко. Наибольшее влияние на его творчество оказали работы Симоне Мартини,
+              в
+              частности в выборе колорита, а тонко проработанные лица его персонажей напоминают произведения Джованни
+              да
+              Милано.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__right">
+          <div class="catalog__accordion">
+            <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
+            <div class="catalog__wrap">
+              <ul class="catalog__inside-list">
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_1">Бенедетто ди
+                    Биндо</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_2">Бергоньоне,
+                    Амброджо</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_3">Биссоло,
+                    Франческо</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_4">Больтраффио,
+                    Джованни</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_5">Бонсиньори,
+                    Франческо</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_6">Боттичини,
+                    Рафаэлло</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_7">Брамантино</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_8">Бреа,
+                    Людовико</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_9">Бьяджо
+                    д’Антонио Туччи</a>
+                </li>
+              </ul>
+              <ul class="catalog__inside-list">
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_10">Веккьетта</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_11">Андреа Верроккьо</a>
+                </li>
+                <li><a class="catalog__inside-links catalog__inside-links_it catalog__inside-links_active"
+                    data-path="artist_12">Доменико Гирландайо</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_13">Беноццо Гоццоли</a>
+                </li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_14">Граначчи,
+                    Франческо</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_15">Грегорио ди
+                    Чекко</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_16">Джованни да
+                    Удине</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_17">Джованни ди
+                    Паоло</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_18">Джорджоне</a></li>
+              </ul>
+              <ul class="catalog__inside-list">
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_19">Парентино,
+                    Бернардо</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_20">Пезеллино</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_21">Пьетро Перуджино</a>
+                </li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_22">Перуцци,
+                    Бальдассаре</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_23">Пизанелло</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_it" data-path="artist_24">Пинтуриккьо</a></li>
+              </ul>
+            </div>
+            <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 2000 г.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__two-sections" data-target="one">
+        <div class="catalog__left">
+          <div class="fr__invisible fr__visible" data-target="fr_1">
+            <img src="img/mane.webp" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Мане, Эдуард
+            </p>
+            <p class="catalog__text-mid">
+              23 января 1832, Париж — 30 апреля 1883
+            </p>
+            <p class="catalog__text-bot">
+              Эдуард Мане родился в доме 5 по улице Бонапарта в парижском квартале Сен-Жермен-де-Пре в семье Огюста
+              Мане, главы департамента Министерства юстиции, и Эжени-Дезире Фурнье, дочери французского дипломата,
+              бывшего консулом в Гётеборге. Шведский король Карл XIII был крёстным отцом матери Мане. В 1839 году Мане
+              отдан на обучение в пансион аббата Пуалу, затем по причине абсолютного равнодушия к учёбе был переведён
+              отцом «на полный пансион» в колле́ж Роллена (фр.), где и обучался в период с 1844 по 1848 год, также не
+              проявляя никаких успехов.
+            </p>
+          </div>
+          <div class="fr__invisible" data-target="fr_2">
+            <img src="img/renuar.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Пьер Огю́ст Ренуа́р
+            </p>
+            <p class="catalog__text-mid">
+              25 февраля 1841, Лимож — 3 декабря 1919, Кань-сюр-Мер
+            </p>
+            <p class="catalog__text-bot">
+              французский живописец, график и скульптор, один из основных представителей импрессионизма. Известен, в
+              первую очередь, как мастер светского портрета, не лишённого сентиментальности. Ренуар первым из
+              импрессионистов снискал успех у состоятельных парижан. В середине 1880-х гг. он фактически порвал с
+              импрессионизмом, вернувшись к линейности классицизма, к «энгризму». Отец знаменитого режиссёра Жана
+              Ренуара.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__right">
+          <div class="catalog__accordion">
+            <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
+            <div class="catalog__wrap">
+              <ul class="catalog__inside-list">
+                <li><a class="catalog__inside-links catalog__inside-links_fr catalog__inside-links_active"
+                    data-path="fr_1">Эдуард
+                    Мане</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_fr" data-path="fr_2">Пьер
+                    Огю́ст Ренуа́р</a></li>
+              </ul>
+            </div>
+            <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 2000 г.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__two-sections" data-target="two">
+        <div class="catalog__left">
+          <div class="ger__invisible ger__visible" data-target="ger_1">
+            <img src="img/hugo.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Гуго фон Габерман
+            </p>
+            <p class="catalog__text-mid">
+              14 июня 1849, Диллинген-на-Дунае — 27 февраля 1929, Мюнхен
+            </p>
+            <p class="catalog__text-bot">
+              Гуго фон Габерман родился в аристократической семье, он был сыном барона Филиппа фон Габерман и его
+              супруги Паулины, урождённой графини Лейструм фон Эртинген. В 1858 году семья переехала в Мюнхен. В 1862
+              году Гуго начал изучать живопись и рисунок (в гимназии). С 1868 года — он студент-юрист, однако основное
+              своё внимание уделял рисованию.
+            </p>
+          </div>
+          <div class="ger__invisible" data-target="ger_2">
+            <img src="img/karl.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Карл Йозеф Бе́гас
+            </p>
+            <p class="catalog__text-mid">
+              30 сентября 1794, Хайнсберг — 23 ноября 1854, Берлин
+            </p>
+            <p class="catalog__text-bot">
+              Отец Карла, судья по профессии, готовил сына к работе в области юриспруденции, но уже в школе у Карла
+              Бегаса обнаружились способности к рисованию.
+              В 1812 году он был отправлен в Париж для совершенствования в живописи. Проучившись 18 месяцев в студии
+              Антуана-Жана Гро, начал работать самостоятельно.
+              В 1814 году его копия Мадонны делла Седиа была куплена прусским королём Фридрихом Вильгельмом III, что
+              привлекло внимание к творчеству молодого художника. Бегас получил заказ на создание нескольких полотен
+              большого формата на библейские темы и в 1825 году, после возвращения из Италии, продолжил писать
+              картины, которые были размещены в церквях Берлина и Потсдама. Некоторые из них были на исторические
+              темы, но большая часть изображала библейские сцены.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__right">
+          <div class="catalog__accordion">
+            <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
+            <div class="catalog__wrap">
+              <ul class="catalog__inside-list">
+                <li><a class="catalog__inside-links catalog__inside-links_ger catalog__inside-links_active"
+                    data-path="ger_1">Гуго фон Габерман</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_ger" data-path="ger_2">Карл
+                    Йозеф Бе́гас</a></li>
+              </ul>
+            </div>
+            <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 2000 г.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__two-sections" data-target="four">
+        <div class="catalog__left">
+          <div class="ru__invisible ru__visible" data-target="ru_1">
+            <img src="img/repin.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Илья́ Ефи́мович Ре́пин
+            </p>
+            <p class="catalog__text-mid">
+              1844, Чугуев, Российская империя — 29 сентября 1930, Куоккала, Финляндия
+            </p>
+            <p class="catalog__text-bot">
+              Уже с самого начала своего творческого пути, с 1870-х годов, Репин стал одной из ключевых фигур русского
+              реализма. Художнику удалось решить задачу отражения в живописном произведении всего разнообразия
+              окружающей жизни. В своём творчестве он сумел охватить все стороны современности, затронуть темы,
+              волнующие общественность, живо реагировал на злобу дня. Репинскому художественному языку была
+              свойственна пластичность, он воспринимал различные стилистические направления от испанских и голландских
+              художников XVII века до Александра Иванова и современных французских импрессионистов.
+            </p>
+          </div>
+          <div class="ru__invisible" data-target="ru_2">
+            <img src="img/shishkin.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Ива́н Ива́нович Ши́шкин
+            </p>
+            <p class="catalog__text-mid">
+              13 (25) января 1832, Елабуга, Вятская губерния, Российская империя — 8 (20) марта 1898, Санкт-Петербург,
+              Российская империя
+            </p>
+            <p class="catalog__text-bot">
+              Среди русских пейзажистов Шишкину, бесспорно, принадлежит место самого сильного художника. Во всех своих
+              произведениях он является удивительным знатоком растительных форм, воспроизводящим их с тонким
+              пониманием, как общего характера, так и мельчайших отличительных черт любой породы деревьев, кустов и
+              трав. Брался ли он за изображение соснового или елового леса, отдельные сосны и ели, точно так же, как и
+              их совокупность, получали у него свою истинную физиономию, без всяких прикрас или преуменьшений, — тот
+              вид и с теми частностями, которые вполне объясняются и обуславливаются почвой и климатом, где художник
+              заставлял их расти.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__right">
+          <div class="catalog__accordion">
+            <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
+            <div class="catalog__wrap">
+              <ul class="catalog__inside-list">
+                <li><a class="catalog__inside-links catalog__inside-links_ru catalog__inside-links_active"
+                    data-path="ru_1">Илья́ Ефи́мович Ре́пин </a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_ru" data-path="ru_2"> Ива́н
+                    Ива́нович Ши́шкин</a></li>
+              </ul>
+            </div>
+            <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 2000 г.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__two-sections" data-target="five">
+        <div class="catalog__left">
+          <div class="bl__invisible bl__visible" data-target="bl_1">
+            <img src="img/breigel.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Брейгель Питер
+            </p>
+            <p class="catalog__text-mid">
+              1525 — 9 сентября 1569, Брюссель
+            </p>
+            <p class="catalog__text-bot">
+              Питер Брейгель родился предположительно между 1525 и 1530 годами (точная дата неизвестна). Местом его
+              рождения чаще всего называют город Бреда (в современной нидерландской провинции Северный Брабант) или
+              деревушку Брёгел около этого города.
+            </p>
+          </div>
+          <div class="bl__invisible" data-target="bl_2">
+            <img src="img/rubens.jpg" class="catalog__img" alt="">
+            <p class="catalog__text-top">
+              Рубенс, Питер Пауль
+            </p>
+            <p class="catalog__text-mid">
+              28 июня 1577 года, Зиген — умер 30 мая 1640 года, Антверпен
+            </p>
+            <p class="catalog__text-bot">
+              Питер Брейгель родился предположительно между 1525 и 1530 годами (точная дата неизвестна). Местом его
+              рождения чаще всего называют город Бреда (в современной нидерландской провинции Северный Брабант) или
+              деревушку Брёгел около этого города.
+            </p>
+          </div>
+        </div>
+        <div class="catalog__right">
+          <div class="catalog__accordion">
+            <h3 class="catalog__accordion-header ">C 1400 по 1499 гг.</h3>
+            <div class="catalog__wrap">
+              <ul class="catalog__inside-list">
+                <li><a class="catalog__inside-links catalog__inside-links_bl catalog__inside-links_active"
+                    data-path="bl_1">Брейгель Питер</a></li>
+                <li><a class="catalog__inside-links catalog__inside-links_bl" data-path="bl_2"> Ива́н
+                    Рубенс, Питер Пауль</a></li>
+              </ul>
+            </div>
+            <h3 class="catalog__accordion-header">C 1500 по 1599 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1600 по 1699 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1700 по 1799 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1800 по 1899 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 1900 по 1999 гг.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+            <h3 class="catalog__accordion-header">C 2000 г.</h3>
+            <div>
+              <p class="catalog__accordion-text">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="events" id="events">
+    <div class="events__container container-inside">
+      <h2 class="events__header">События</h2>
+      <ul class="events__list">
+        <li class="events__list-item">
+          <div class="events__img events__img-1"></div>
+          <p class="events__text-top">Музей им. Щусева</p>
+          <p class="events__text-top">с 20 марта по 30 апреля</p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              Книжная гравюра в живом восприятии
+            </p>
+            <p class="events__text-bot">Один из ведущих флорентийских художников Кватроченто, основатель
+              художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
+              мастерской,
+              где юный Микеланджело.
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+        <li class="events__list-item">
+          <div class="events__img events__img-2"></div>
+          <p class="events__text-top">ММОМА</p>
+          <p class="events__text-top">24 марта 19:00</p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+            </p>
+            <p class="events__text-bot">
+              Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+              факта:
+              постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент
+              проверки
+              новых принципов формирования...
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
 
-    </footer>
-  </div>
+        </li>
+        <li class="events__list-item">
+          <div class="events__img events__img-3"></div>
+          <p class="events__text-top"> Еврейский музей </p>
+          <p class="events__text-top"> с 31 марта по 21 апреля </p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              Выставка «Формация 2020»
+            </p>
+            <p class="events__text-bot">
+              Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+              формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
+              значение
+              для новых принципов формирования материально-технической и кадровой базы.
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+        <li class="events__list-item events__hidden">
+          <div class="events__img events__img-4"></div>
+          <p class="events__text-top">Третьяковка на Крымском валу</p>
+          <p class="events__text-top">с 30 марта по 30 апреля </p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              XXIV Международная биеннале молодого искусства
+            </p>
+            <p class="events__text-bot">
+              Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что
+              иное,
+              как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе
+              маркетинговых и финансовых...
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+        <li class="events__list-item events__hidden">
+          <div class="events__img events__img-5"></div>
+          <p class="events__text-top">ММАМ</p>
+          <p class="events__text-top">с 8 апреля по 20 мая</p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              Джон Винзор. Фотографии из серии «Метафора серебра»
+            </p>
+            <p class="events__text-bot">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили
+              его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+      </ul>
+      <button id="events__button" class="events__button">Все события</button>
+    </div>
+  </section>
+  <section class="publications" id="publications">
+    <div class="publications__container container-inside">
+      <div class="publications__left">
+        <h2 class="publications__header">Издания</h2>
+        <h4 class="publications__categories">Категории:</h4>
+        <div class="publications__checkbox">
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="bestsellers">
+            <label class="publications__label" for="bestsellers">Бестселлеры</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="art">
+            <label class="publications__label" for="art">Искусство</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="architecture">
+            <label class="publications__label" for="architecture">Архитектура</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="design">
+            <label class="publications__label" for="design">Дизайн</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="fashion">
+            <label class="publications__label" for="fashion">Мода</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="for_children">
+            <label class="publications__label" for="for_children">Детям</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="literature">
+            <label class="publications__label" for="literature">Художественная литература</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="publicism">
+            <label class="publications__label" for="publicism">Публицистика</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="travel_guides">
+            <label class="publications__label" for="travel_guides">Путеводители</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="philosophy">
+            <label class="publications__label" for="philosophy">Философия</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="academic_books">
+            <label class="publications__label" for="academic_books">Учебная литература</label>
+          </div>
+          <div class="publications__check-item" tabindex="1">
+            <input type="checkbox" id="magazines">
+            <label class="publications__label" for="magazines">Журналы и газеты</label>
+          </div>
+        </div>
+        <h5 class="publications__header-inputs"> Цена</h5>
+        <form class="publications__inputs">
+          <label class="publications__label-price publications__label-price-1" for="from">От</label>
+          <input class="publications__input-price publications__input-1" type="number" id="from" placeholder="50">
+          <label class="publications__label-price publications__label-price-2" for="to">до</label>
+          <input class="publications__input-price publications__input-2" type="number" id="to" placeholder="25 000">
+          <label class="publications__label-price publications__label-price-3" for="to">руб.</label>
+        </form>
+      </div>
+      <div class="publications__right">
+        <div class="swiper-buttons publications__buttons">
+          <div class="swiper-buttons__button js-prev-2">
+            <div class="swiper-buttons__arrow-prev"></div>
+          </div>
+          <div class="swiper-buttons__counter swiper-pagination-2"></div>
+          <div class="swiper-buttons__button js-next-2">
+            <div class="swiper-buttons__arrow_next "></div>
+          </div>
+        </div>
+
+        <div class="swiper-container publications__swiper-container" id="swiper_2">
+          <div class="swiper-wrapper publications__swiper-wrapper">
+            <div class="swiper-slide publications__swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_111.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Искусство света</p>
+                  <p class="publications__text-right"> 620 руб </p>
+                </div>
+                <p class="publications__text-bottom">Иттен, Иоханнес</p>
+                <button class="publications__button">Заказать</button>
+              </div>
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_112.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Типографика </p>
+                  <p class="publications__text-right">2 450 руб</p>
+                </div>
+                <p class="publications__text-bottom">Рудер, Эмиль</p>
+                <button class="publications__button">Заказать</button>
+              </div>
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_113.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Книга про буквы</p>
+                  <p class="publications__text-right">2 200 руб</p>
+                </div>
+                <p class="publications__text-bottom">Гордон, Юрий</p>
+                <button class="publications__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide publications__swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_114.png" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Николай Ильин </p>
+                  <p class="publications__text-right">1 100 руб</p>
+                </div>
+                <p class="publications__text-bottom">Кричевский, Владимир</p>
+                <button class="publications__button">Заказать</button>
+              </div>
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_115.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Модульные сетки в граф...</p>
+                  <p class="publications__text-right">1 450 руб</p>
+                </div>
+                <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
+                <button class="publications__button">Заказать</button>
+              </div>
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_116.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left"> Эволюция графических ст...</p>
+                  <p class="publications__text-right">2 200 руб</p>
+                </div>
+                <p class="publications__text-bottom">Хеллер, Чваст</p>
+                <button class="publications__button">Заказать</button>
+              </div>
+            </div>
+            <div class="swiper-slide publications__swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_117.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Искусство и визуальное в...</p>
+                  <p class="publications__text-right">Арнхейм, Рудольф</p>
+                </div>
+                <p class="publications__text-bottom">2 200 руб</p>
+                <button class="publications__button">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <div class="projects__container container-inside">
+      <h2 class="projects__header">Проекты</h2>
+      <p class="projects__text">
+        Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+        фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
+        уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+        Прежде
+        всего, постоянное <br> информационно-пропагандистское
+        <span class="projects__tooltip-img"></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="projects__popup projects__popup-1">Пример современных тенденций - современная методология
+          разработки </span>
+
+        обеспечение нашей деятельности однозначно фиксирует
+        необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
+        оппозиции могут быть рассмотрены
+        <span class="projects__tooltip-img"></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="projects__popup projects__popup-2"> Приятно, граждане, наблюдать, как сделанные на базе аналитики
+          выводы вызывают у вас
+          эмоции </span>
+
+        исключительно в разрезе маркетинговых и финансовых
+        <span class="projects__tooltip-img"></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="projects__popup projects__popup-3"> В стремлении повысить качество </span>
+
+        предпосылок. Банальные, но
+        неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
+        которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
+        Подробнее: <a href="#" class="projects__link">blanchard-art.ru/projects/about</a>
+      </p>
+      <h4 class="projects__partners">
+        Партнёры проектов:
+      </h4>
+      <div class="projects__swiper">
+        <div class="projects__swiper-button js-prev-3">
+          <div class="swiper-buttons__arrow-prev arrow-black"></div>
+        </div>
+        <div class="swiper-container projects__swiper-container" id="swiper_3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide projects__slide">
+              <div class="projects__img projects__img-1"></div>
+              <div class="projects__img projects__img-2"></div>
+              <div class="projects__img projects__img-3"></div>
+            </div>
+            <div class="swiper-slide projects__slide">
+              <div class="projects__img projects__img-4"></div>
+              <div class="projects__img projects__img-5"></div>
+              <div class="projects__img projects__img-6"></div>
+
+            </div>
+            <div class="swiper-slide projects__slide">
+              <div class="projects__img projects__img-7"></div>
+              <div class="projects__img projects__img-8"></div>
+              <div class="projects__img projects__img-9"></div>
+            </div>
+          </div>
+        </div>
+        <div class="projects__swiper-button js-next-3">
+          <div class="swiper-buttons__arrow_next arrow-black"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="container-inside">
+      <h2 class="contacts__header">
+        Контакты
+      </h2>
+    </div>
+    <div class="contacts__two-sections">
+      <div class="contacts__left">
+        <h3 class="contacts__left-header">
+          Шоурум №4
+        </h3>
+        <p class="contacts__text">
+          Леонтьевский переулок, дом 5, строение 1
+        </p>
+        <form class="contacts__form" autocomplete="off">
+          <h3 class="contacts__callback">
+            Заказать обратный звонок
+          </h3>
+          <input id="name_id" class="contacts__form-item" required type="text" placeholder="Имя*"
+            data-validate-field="name">
+          <input id="tel_id" class="contacts__form-item" required type="tel" placeholder="Телефон*"
+            data-validate-field="tel" data-validate-rules="phone">
+          <button class="contacts__button">Заказать</button>
+        </form>
+        <h3 class="contacts__one-click">
+          Связаться в один клик
+        </h3>
+        <div class="contacts__social">
+          <a href="https://www.whatsapp.com/" class="contscts__watsapp"></a>
+          <a href="https://telegram.org/" class="contacts__telegramm"></a>
+        </div>
+      </div>
+      <div class="contacts__right" id="map"></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container-inside footer__container">
+      <div class="footer__logo"></div>
+      <div class="footer__social">
+        <a href="https://vk.com/" class="footer__social-item vk"></a>
+        <a href="https://www.instagram.com/" class="footer__social-item inst"></a>
+        <a href="https://ru-ru.facebook.com/" class="footer__social-item facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/swiper.js"></script>
+  <script src="js/selector.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/yandex.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/moves.js"></script>
+  <script src="js/simplebar.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
+
 </body>
-
-
-<script src="js/swiper.js"></script>
-<script src="js/selector.js"></script>
-<script src="js/events.js"></script>
-<script src="js/yandex.js"></script>
-<script src="js/tabs.js"></script>
-<script src="js/accordion.js"></script>
-<script src="js/moves.js"></script>
-<script src="js/simplebar.min.js"></script>
-<script src="js/scroll.js"></script>
-<script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
 
 </html>
