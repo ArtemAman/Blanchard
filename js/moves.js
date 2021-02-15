@@ -1,16 +1,9 @@
-const anchors = document.querySelectorAll('.container a[href*="#"]')
+$('a[href^="#"').on('click', function() {
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-  e.preventDefault()
-   
-  const blockID = anchor.getAttribute('href').substr(1)
-   
-  document.getElementById(blockID).scrollIntoView({
-  behavior: 'smooth',
-  block: 'start'
-  })
-  })
-}
+  let href = $(this).attr('href');
 
-
+  $('html, body').animate({
+      scrollTop: $(href).offset().top
+  });
+  return false;
+});
