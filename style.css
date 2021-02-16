@@ -769,9 +769,7 @@ a:active {
   margin-top: 29px;
 }
 
-.swiper-wrapper {
-  width: 100%;
-}
+
 
 .swiper-slide {
   width: 100%;
@@ -1778,62 +1776,67 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   margin-bottom: 23px;
 }
 
-.projects__swiper {
+
+
+.projects__swiper{
   display: flex;
   flex-direction: row;
-  align-items: center;
-}
-
-.projects__swiper-container {
-  height: 150px;
-  margin-top: 0;
-  margin-right: auto;
 }
 
 .projects__slide {
   display: flex;
   flex-direction: row;
+
 }
 
+.projects__swiper-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .projects__swiper-button {
-  width: 33px;
+  width: 30px;
   height: 30px;
   z-index: 10;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  background-color: #ECECEC;
-  border-radius: 100px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 45px;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
+  background-size: cover;
 }
 
-.projects__swiper-button:hover {
-  background-color: #9D5CD0;
+.projects__swiper-wrapper{
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.projects__swiper-button:hover .arrow-black {
-  border-left: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+.js-prev-3{
+  background-image: url(img/sw_3_left.png);
+
 }
 
-.projects__swiper-button:active {
-  background-color: #7943A4;
-  box-shadow: 0 0 0 2px #D1A9F0;
+.js-next-3{
+  background-image: url(img/sw_3_right.png);
+  left: auto;
+
 }
 
-.projects__swiper-button:active .arrow-black {
-  border-left: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-}
+
+
+
+
+
+
 
 .projects__swiper-button:focus {
+  outline: none;
+}
+
+.projects__swiper-button:focus-visible {
   outline: none;
 }
 
@@ -1841,10 +1844,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   margin-right: 0;
 }
 
-.arrow-black {
-  border-left: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-}
+
 
 .projects__img {
   margin-right: 50px;
@@ -1852,6 +1852,15 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   height: 150px;
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .projects__img:nth-child(3) {
@@ -1860,79 +1869,46 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .projects__img:hover {
   cursor: pointer;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
 }
 
-.projects__img-1 {
-  background-image: url(img/Group\ 65.png);
+.projects__img:active {
+  box-shadow: 10px solid #885BC7;
 }
 
-.projects__img-2 {
-  background-image: url(img/Group\ 66.png);
+.projects__img_1{
+  background-image: url(img/partners/freelands.png);
+}
+.projects__img_2{
+  background-image: url(img/partners/ICA.png);
+}
+.projects__img_3{
+  background-image: url(img/partners/workhouse.png);
+}
+.projects__img_4{
+  background-image: url(img/partners/1849.png);
+}
+.projects__img_5{
+  background-image: url(img/partners/hiscox.png);
+}
+.projects__img_6{
+  background-image: url(img/partners/camden.png);
+}
+.projects__img_7{
+  background-image: url(img/partners/stassen.png);
+}
+.projects__img_8{
+  background-image: url(img/partners/watts.png);
+}
+.projects__img_9{
+  background-image: url(img/partners/esad.png);
 }
 
-.projects__img-3 {
-  background-image: url(img/Group\ 67.png);
-}
 
-.projects__img-4 {
-  background-image: url(img/Group\ 22.png);
-}
-
-.projects__img-5 {
-  background-image: url(img/Group\ 25.png);
-}
-
-.projects__img-6 {
-  background-image: url(img/Group\ 23.png);
-}
-
-.projects__img-7 {
-  background-image: url(img/Group\ 26.png);
-}
-
-.projects__img-8 {
-  background-image: url(img/Group\ 24.png);
-}
-
-.projects__img-9 {
-  background-image: url(img/Group\ 27.png);
-}
-
-.projects__img-1:hover {
-  background-image: url(img/73\ hover.png);
-}
-
-.projects__img-2:hover {
-  background-image: url(img/72\ hover.png);
-}
-
-.projects__img-3:hover {
-  background-image: url(img/37\ hover.png);
-}
-
-.projects__img-4:hover {
-  background-image: url(img/22\ hover.png);
-}
-
-.projects__img-5:hover {
-  background-image: url(img/60\ hover.png);
-}
-
-.projects__img-6:hover {
-  background-image: url(img/23\ hover.png);
-}
-
-.projects__img-7:hover {
-  background-image: url(img/26\ hover.png);
-}
-
-.projects__img-8:hover {
-  background-image: url(img/59\ png.png);
-}
-
-.projects__img-9:hover {
-  background-image: url(img/27\ hover.png);
-}
 
 .contacts__header {
   font-size: 48px;
