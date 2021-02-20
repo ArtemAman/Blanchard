@@ -1469,11 +1469,26 @@ a:active {
 }
 
 .publications__label {
+  width: max-content;
   color: #FFFFFF;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
+  -o-transition: 0.5s ease;  
+}
+
+.pseudo_outline:after{
+  top:-7px;
+  left:-10px ;
+  height: 27px;
+  width: calc(100% + 20px);
+  border: 2px solid #7943A4;
+  opacity: 0;
+}
+
+input[type="checkbox"]:not(:checked):focus-visible+.pseudo_outline:after{
+  opacity: 1;
+
 }
 
 
