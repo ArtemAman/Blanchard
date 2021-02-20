@@ -31,12 +31,14 @@ var secondSwiper = new Swiper('#swiper_2', {
 
 
 var lastSwiper = new Swiper('#swiper_3', {
-
+  slidesPerView: 3,
+  spaceBetween: 50,
   loop: true,
 
   navigation: {
     nextEl: '.js-next-3',
     prevEl: '.js-prev-3',
   },
+  
 
 })

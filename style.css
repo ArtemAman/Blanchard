@@ -428,7 +428,7 @@ a:active {
 
 .hero {
   width: 100%;
-  background-image: url(img/hero_1.webp);
+  background-image: url(img/hero_1.jpg);
   background-size: 110%;
   animation: city 30s linear infinite;
 }
@@ -1277,7 +1277,7 @@ a:active {
 
 .events__container {
   padding-top: 82px;
-  padding-bottom: 78px;
+  padding-bottom: 77px;
 }
 
 .events__header {
@@ -1461,10 +1461,11 @@ a:active {
   line-height: 32px;
   font-weight: 700;
   color: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 .publications__checkbox {
-  margin-bottom: 28px;
+  margin-bottom: 17px;
 }
 
 .publications__label {
@@ -1475,14 +1476,6 @@ a:active {
   -o-transition: 0.5s ease;
 }
 
-.publications__check-item:focus {
-  outline: 0px
-}
-
-.publications__check-item:focus-visible {
-  outline: 2px solid #7943A4;
-  outline-offset: 3px;
-}
 
 .publications__check-item:hover input[type="checkbox"]:not(:checked)+label:before {
   border: 1px solid #C283F3;
@@ -1515,9 +1508,10 @@ input[type="checkbox"]:checked+label, input[type="checkbox"]:not(:checked)+label
   position: relative;
   padding-left: 22px;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 16px;
   font-weight: 400;
   cursor: pointer;
+  margin-bottom: 16px;
 }
 
 input[type="checkbox"]:checked+label {
@@ -1528,10 +1522,10 @@ input[type="checkbox"]:checked+label:before, input[type="checkbox"]:not(:checked
   content: "";
   position: absolute;
   left: 0px;
-  top: 10px;
   width: 12px;
   height: 12px;
 }
+
 
 input[type="checkbox"]:not(:checked)+label:before {
   border: 1px solid #FFFFFF;
@@ -1543,6 +1537,9 @@ input[type="checkbox"]:not(:checked)+label:before {
 
 input[type="checkbox"]:checked+label:before {
   border: 1px solid #C283F3;
+  background-image: url(img/check_point.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 input[type="checkbox"]:checked+label:after, input[type="checkbox"]:not(:checked)+label:after {
@@ -1554,25 +1551,11 @@ input[type="checkbox"]:checked+label:after, input[type="checkbox"]:not(:checked)
   transition: all 0.2s ease;
 }
 
-input[type="checkbox"]:checked+label:after, input[type="checkbox"]:not(:checked)+label:after {
-  left: 5px;
-  top: 15px;
-  width: 4px;
-  height: 4px;
-  border-radius: 100px;
-  background-color: #C283F3;
-}
 
-input[type="checkbox"]:not(:checked)+label:after {
-  opacity: 0;
-}
 
-input[type="checkbox"]:checked+label:after {
-  opacity: 1;
-}
 
 .publications__header-inputs {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   font-size: 16px;
   line-height: 32px;
   font-weight: 700;
@@ -1969,11 +1952,26 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 
 .projects__img {
-  margin-right: 50px;
+
+
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+
+
   width: 450px;
   height: 150px;
-  background-repeat: no-repeat;
-  background-size: contain;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -1994,9 +1992,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   box-shadow: 5px solid #885BC7;
 }
 
-.projects__img:nth-child(3) {
-  margin-right: 0px;
-}
+
 
 .projects__img:hover {
   cursor: pointer;
@@ -2006,36 +2002,6 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   -o-filter: none;
   filter: none;
 }
-
-
-.projects__img_1{
-  background-image: url(img/partners/freelands.png);
-}
-.projects__img_2{
-  background-image: url(img/partners/ICA.png);
-}
-.projects__img_3{
-  background-image: url(img/partners/workhouse.png);
-}
-.projects__img_4{
-  background-image: url(img/partners/1849.png);
-}
-.projects__img_5{
-  background-image: url(img/partners/hiscox.png);
-}
-.projects__img_6{
-  background-image: url(img/partners/camden.png);
-}
-.projects__img_7{
-  background-image: url(img/partners/stassen.png);
-}
-.projects__img_8{
-  background-image: url(img/partners/watts.png);
-}
-.projects__img_9{
-  background-image: url(img/partners/esad.png);
-}
-
 
 
 .contacts__header {
@@ -2184,7 +2150,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 }
 
 .contacts__telegramm:hover {
-  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.8));
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 1));
 }
 
 .contacts__right {
@@ -2230,7 +2196,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 }
 
 .footer__social-item:hover {
-  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.8));
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 1));
 }
 
 .footer__social-item:nth-child(3) {
