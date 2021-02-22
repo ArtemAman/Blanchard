@@ -1,6 +1,10 @@
 var mySwiper = new Swiper('#swiper_1', {
 
-    loop: true,
+    slidesPerView: 3, 
+    slidesPerColumn: 2,
+    slidesPerGroup: 3,
+    spaceBetween: 49,  
+
 
     navigation: {
       nextEl: '.js-next-1',
@@ -12,6 +16,13 @@ var mySwiper = new Swiper('#swiper_1', {
     },
 
 })
+
+
+
+
+
+
+
 
 
 var secondSwiper = new Swiper('#swiper_2', {
@@ -42,3 +53,6 @@ var lastSwiper = new Swiper('#swiper_3', {
   
 
 })
+
+
+
