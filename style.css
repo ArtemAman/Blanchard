@@ -1260,21 +1260,19 @@ a:active {
   margin-bottom: 17px;
 }
 
-
-.events__list{
-  display: inline-flex;
-  justify-content: space-between;
-
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 
 .events__list-item {
   position: relative;
-  display: inline-block;
   width: 500px;
-
+  margin-right: 50px;
   min-height: 700px;
   vertical-align: top;
-
   margin-bottom: 50px;
   border: 1px solid #CACACA;
 }
@@ -1406,9 +1404,6 @@ a:active {
   display: none;
 }
 
-.events__shown {
-  display: inline-block;
-}
 
 .publications {
   width: 100%;

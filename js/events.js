@@ -1,22 +1,12 @@
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#events__button').addEventListener('click', function () {
-    document.querySelectorAll('.events__hidden')[0].classList.toggle('events__shown')
-
-  })
-})
-
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#events__button').addEventListener('click', function () {
-    document.querySelectorAll('.events__hidden')[1].classList.toggle('events__shown'); 
-  })
-})
-
-
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#events__button').addEventListener('click', function () {
     document.querySelector('#events__button').classList.add('events__hidden'); 
   })
 })
+
+$("#events__button").click(function() {
+  $(".events__list").removeClass("events__hidden");
+});
 
 
 
