@@ -1,25 +1,68 @@
-var mySwiper = new Swiper('#swiper_1', {
+var gallerySwiper = new Swiper('.gallery__swiper-container', {
 
-    slidesPerView: 3, 
-    slidesPerColumn: 2,
-    slidesPerGroup: 3,
-    spaceBetween: 49,  
+      direction: 'horizontal',
+      allowTouchMove: false,
 
 
-    navigation: {
-      nextEl: '.js-next-1',
-      prevEl: '.js-prev-1',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
-    },
+      navigation: {
+        nextEl: '.js-next-1',
+        prevEl: '.js-prev-1',
+      },
 
-})
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
 
+      a11y: {
 
+        prevSlideMessage: 'Предыдущий слайд',
+        nextSlideMessage: 'Следующий слайд',
 
+      },
 
+      breakpoints: {
+
+      1200: {
+
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 48,
+        slidesPerColumn: 2,
+        autoHeight: false,
+        centeredSlides: false,
+        allowTouchMove: false,
+        initialSlide: 0,
+
+      },
+
+      577: {
+
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 34,
+        slidesPerColumn: 2,
+        autoHeight: false,
+        centeredSlides: false,
+        allowTouchMove: false,
+        initialSlide: 0,
+
+      },
+
+      320: {
+
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        slidesPerColumn: 1,
+        slidesPerColumn: 1,
+        spaceBetween: 20,
+        allowTouchMove: true,
+
+      },
+
+    }  
+
+  })
 
 
 
@@ -50,7 +93,7 @@ var lastSwiper = new Swiper('#swiper_3', {
     nextEl: '.js-next-3',
     prevEl: '.js-prev-3',
   },
-  
+
 
 })
 
