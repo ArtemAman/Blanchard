@@ -40,7 +40,10 @@
         <img src="img/logo.svg" alt="" class="header__logo">
         <img src="img/search_icon.png" alt="" class="header__top-search">
         <nav id="nav" class="header__navigation">
-          <ul class="header__nav-list">
+          <ul class="header__nav-list ">
+            <li class="header__toplist-item hidden">
+              <button class="header__exit"></button>
+            </li>
             <li class="header__toplist-item">
               <a href="#about_us" class="header__link">О нас</a>
             </li>
@@ -61,6 +64,9 @@
             </li>
             <li class="header__toplist-item">
               <a href="#contacts" class="header__link">Контакты</a>
+            </li>
+            <li class="header__toplist-item hidden">
+              <a href="#contacts" class="header__link ">Войти</a>
             </li>
           </ul>
         </nav>
@@ -824,89 +830,83 @@
   <section class="events" id="events">
     <div class="events__container container-inside">
       <h2 class="events__header">События</h2>
-      <div class="">
-        <ul class="events__list row">
-          <li class="events__list-item">
-            <div class="events__img events__img-1"></div>
-            <p class="events__text-top">Музей им. Щусева</p>
-            <p class="events__text-top">с 20 марта по 30 апреля</p>
+      <ul class="events__list">
+        <li class="events__list-item">
+          <div class="events__img events__img-1"></div>
+          <p class="events__text-top">Музей им. Щусева</p>
+          <p class="events__text-top">с 20 марта по 30 апреля</p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              Книжная гравюра в живом восприятии
+            </p>
+            <p class="events__text-bot">Один из ведущих флорентийских художников Кватроченто, основатель
+              художественной
+              династии, которую продолжили его брат Давид и сын Ридольфо.
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+        <li class="events__list-item">
+          <div class="">
+            <div class="events__img events__img-2"></div>
+            <p class="events__text-top">ММОМА</p>
+            <p class="events__text-top">24 марта 19:00</p>
             <div class="events__text-block">
               <p class="events__text-mid">
-                Книжная гравюра в живом восприятии
-              </p>
-              <p class="events__text-bot">Один из ведущих флорентийских художников Кватроченто, основатель
-                художественной
-                династии, которую продолжили его брат Давид и сын Ридольфо.
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
-          </li>
-          <li class="events__list-item">
-            <div class="">
-              <div class="events__img events__img-2"></div>
-              <p class="events__text-top">ММОМА</p>
-              <p class="events__text-top">24 марта 19:00</p>
-              <div class="events__text-block">
-                <p class="events__text-mid">
-                  «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
-                </p>
-                <p class="events__text-bot">
-                  Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-                  факта.
-                </p>
-                <a href="" class="events__more">Подробнее</a>
-              </div>
-            </div>
-          </li>
-          <li class="events__list-item">
-            <div class="events__img events__img-3"></div>
-            <p class="events__text-top"> Еврейский музей </p>
-            <p class="events__text-top"> с 31 марта по 21 апреля </p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                Выставка «Формация 2020»
+                «Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
               </p>
               <p class="events__text-bot">
-                Внезапно, реплицированные с зарубежных источников, современные исследования.
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                факта.
               </p>
               <a href="" class="events__more">Подробнее</a>
             </div>
-          </li>
-        </ul>
-        <ul class="events__list row events__hidden">
-          <li class="events__list-item">
-            <div class="events__img events__img-4"></div>
-            <p class="events__text-top">Третьяковка на Крымском валу</p>
-            <p class="events__text-top">с 30 марта по 30 апреля </p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                XXIV Международная биеннале молодого искусства
-              </p>
-              <p class="events__text-bot">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили его брат Давид и сын Ридольфо.
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
-          </li>
-          <li class="events__list-item">
-            <div class="events__img events__img-5"></div>
-            <p class="events__text-top">ММАМ</p>
-            <p class="events__text-top">с 8 апреля по 20 мая</p>
-            <div class="events__text-block">
-              <p class="events__text-mid">
-                Джон Винзор. Фотографии из серии «Метафора серебра»
-              </p>
-              <p class="events__text-bot">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили
-                его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
-              </p>
-              <a href="" class="events__more">Подробнее</a>
-            </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+        <li class="events__list-item">
+          <div class="events__img events__img-3"></div>
+          <p class="events__text-top"> Еврейский музей </p>
+          <p class="events__text-top"> с 31 марта по 21 апреля </p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              Выставка «Формация 2020»
+            </p>
+            <p class="events__text-bot">
+              Внезапно, реплицированные с зарубежных источников, современные исследования.
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+        <li class="events__list-item events__hidden">
+          <div class="events__img events__img-4"></div>
+          <p class="events__text-top">Третьяковка на Крымском валу</p>
+          <p class="events__text-top">с 30 марта по 30 апреля </p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              XXIV Международная биеннале молодого искусства
+            </p>
+            <p class="events__text-bot">
+              Внезапно, реплицированные с зарубежных источников, современные исследования.
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+        <li class="events__list-item events__hidden">
+          <div class="events__img events__img-5"></div>
+          <p class="events__text-top">ММАМ</p>
+          <p class="events__text-top">с 8 апреля по 20 мая</p>
+          <div class="events__text-block">
+            <p class="events__text-mid">
+              Джон Винзор. Фотографии из серии «Метафора серебра»
+            </p>
+            <p class="events__text-bot">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили его брат Давид и сын Ридольфо.
+            </p>
+            <a href="" class="events__more">Подробнее</a>
+          </div>
+        </li>
+      </ul>
       <button id="events__button" class="events__button pseudo offset">Все события</button>
     </div>
   </section>
@@ -986,74 +986,68 @@
 
         <div class="swiper-container publications__swiper-container" id="swiper_2">
           <div class="swiper-wrapper publications__swiper-wrapper">
-            <div class="swiper-slide publications__swiper-slide">
-              <div class="publications__slide-block">
-                <img class="publications__img" src="img/Rectangle_111.jpg" alt="">
-                <div class="publications__text">
-                  <p class="publications__text-left">Искусство света</p>
-                  <p class="publications__text-right"> 620 руб </p>
-                </div>
-                <p class="publications__text-bottom">Иттен, Иоханнес</p>
-                <button class="publications__button">Заказать</button>
+            <div class="publications__slide-block swiper-slide">
+              <img class="publications__img" src="img/Rectangle_111.jpg" alt="">
+              <div class="publications__text">
+                <p class="publications__text-left">Искусство света</p>
+                <p class="publications__text-right"> 620 руб </p>
               </div>
-              <div class="publications__slide-block">
-                <img class="publications__img" src="img/Rectangle_112.jpg" alt="">
-                <div class="publications__text">
-                  <p class="publications__text-left">Типографика </p>
-                  <p class="publications__text-right">2 450 руб</p>
-                </div>
-                <p class="publications__text-bottom">Рудер, Эмиль</p>
-                <button class="publications__button">Заказать</button>
-              </div>
-              <div class="publications__slide-block">
-                <img class="publications__img" src="img/Rectangle_113.jpg" alt="">
-                <div class="publications__text">
-                  <p class="publications__text-left">Книга про буквы</p>
-                  <p class="publications__text-right">2 200 руб</p>
-                </div>
-                <p class="publications__text-bottom">Гордон, Юрий</p>
-                <button class="publications__button">Заказать</button>
-              </div>
+              <p class="publications__text-bottom">Иттен, Иоханнес</p>
+              <button class="publications__button">Заказать</button>
             </div>
-            <div class="swiper-slide publications__swiper-slide">
-              <div class="publications__slide-block">
-                <img class="publications__img" src="img/Rectangle_114.png" alt="">
-                <div class="publications__text">
-                  <p class="publications__text-left">Николай Ильин </p>
-                  <p class="publications__text-right">1 100 руб</p>
-                </div>
-                <p class="publications__text-bottom">Кричевский, Владимир</p>
-                <button class="publications__button">Заказать</button>
+            <div class="publications__slide-block swiper-slide">
+              <img class="publications__img" src="img/Rectangle_112.jpg" alt="">
+              <div class="publications__text">
+                <p class="publications__text-left">Типографика </p>
+                <p class="publications__text-right">2 450 руб</p>
               </div>
-              <div class="publications__slide-block">
-                <img class="publications__img" src="img/Rectangle_115.jpg" alt="">
-                <div class="publications__text">
-                  <p class="publications__text-left">Модульные сетки в граф...</p>
-                  <p class="publications__text-right">1 450 руб</p>
-                </div>
-                <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
-                <button class="publications__button">Заказать</button>
-              </div>
-              <div class="publications__slide-block">
-                <img class="publications__img" src="img/Rectangle_116.jpg" alt="">
-                <div class="publications__text">
-                  <p class="publications__text-left"> Эволюция графических ст...</p>
-                  <p class="publications__text-right">2 200 руб</p>
-                </div>
-                <p class="publications__text-bottom">Хеллер, Чваст</p>
-                <button class="publications__button">Заказать</button>
-              </div>
+              <p class="publications__text-bottom">Рудер, Эмиль</p>
+              <button class="publications__button">Заказать</button>
             </div>
-            <div class="swiper-slide publications__swiper-slide">
-              <div class="publications__slide-block">
-                <img class="publications__img" src="img/Rectangle_117.jpg" alt="">
-                <div class="publications__text">
-                  <p class="publications__text-left">Искусство и визуальное в...</p>
-                  <p class="publications__text-right">Арнхейм, Рудольф</p>
-                </div>
-                <p class="publications__text-bottom">2 200 руб</p>
-                <button class="publications__button">Заказать</button>
+            <div class="publications__slide-block swiper-slide">
+              <img class="publications__img" src="img/Rectangle_113.jpg" alt="">
+              <div class="publications__text">
+                <p class="publications__text-left">Книга про буквы</p>
+                <p class="publications__text-right">2 200 руб</p>
               </div>
+              <p class="publications__text-bottom">Гордон, Юрий</p>
+              <button class="publications__button">Заказать</button>
+            </div>
+            <div class="publications__slide-block swiper-slide">
+              <img class="publications__img" src="img/Rectangle_114.png" alt="">
+              <div class="publications__text">
+                <p class="publications__text-left">Николай Ильин </p>
+                <p class="publications__text-right">1 100 руб</p>
+              </div>
+              <p class="publications__text-bottom">Кричевский, Владимир</p>
+              <button class="publications__button">Заказать</button>
+            </div>
+            <div class="publications__slide-block swiper-slide">
+              <img class="publications__img" src="img/Rectangle_115.jpg" alt="">
+              <div class="publications__text">
+                <p class="publications__text-left">Модульные сетки в граф...</p>
+                <p class="publications__text-right">1 450 руб</p>
+              </div>
+              <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
+              <button class="publications__button">Заказать</button>
+            </div>
+            <div class="publications__slide-block swiper-slide">
+              <img class="publications__img" src="img/Rectangle_116.jpg" alt="">
+              <div class="publications__text">
+                <p class="publications__text-left"> Эволюция графических ст...</p>
+                <p class="publications__text-right">2 200 руб</p>
+              </div>
+              <p class="publications__text-bottom">Хеллер, Чваст</p>
+              <button class="publications__button">Заказать</button>
+            </div>
+            <div class="publications__slide-block swiper-slide">
+              <img class="publications__img" src="img/Rectangle_117.jpg" alt="">
+              <div class="publications__text">
+                <p class="publications__text-left">Искусство и визуальное в...</p>
+                <p class="publications__text-right">Арнхейм, Рудольф</p>
+              </div>
+              <p class="publications__text-bottom">2 200 руб</p>
+              <button class="publications__button">Заказать</button>
             </div>
           </div>
         </div>

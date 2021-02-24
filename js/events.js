@@ -5,8 +5,23 @@ window.addEventListener('DOMContentLoaded', function () {
 })
 
 $("#events__button").click(function() {
-  $(".events__list").removeClass("events__hidden");
+  $(".events__list-item").removeClass("events__hidden");
 });
+
+$(".header__burger").click(function() {
+  $(".header__navigation").toggleClass("shown");
+  $(".header__toplist-item").removeClass("hidden");
+});
+
+$(".header__link").click(function() {
+  $(".header__navigation").toggleClass("shown");  
+});
+
+$(".header__exit").click(function() {
+  $(".header__navigation").toggleClass("shown");  
+});
+
+
 
 
 
