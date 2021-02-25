@@ -1,3 +1,6 @@
+
+
+
 var gallerySwiper = new Swiper('.gallery__swiper-container', {
 
 
@@ -18,11 +21,11 @@ var gallerySwiper = new Swiper('.gallery__swiper-container', {
 
       breakpoints: {
 
-      1240: {
+      1650: {
 
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 48,
+        spaceBetween: 50,
         slidesPerColumn: 2,
         autoHeight: false,
         centeredSlides: false,
@@ -30,11 +33,36 @@ var gallerySwiper = new Swiper('.gallery__swiper-container', {
 
       },
 
-      577: {
+      1431: {
+
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 35,
+        slidesPerColumn: 2,
+        autoHeight: false,
+        centeredSlides: false,
+        initialSlide: 0,  
+        
+      },
+
+      1025: {
 
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 34,
+        spaceBetween: 35,
+        slidesPerColumn: 2,
+        autoHeight: false,
+        centeredSlides: false,
+        initialSlide: 0,
+
+      },
+
+
+      768: {
+
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 35,
         slidesPerColumn: 2,
         autoHeight: false,
         centeredSlides: false,
@@ -63,6 +91,13 @@ var gallerySwiper = new Swiper('.gallery__swiper-container', {
 
 var secondSwiper = new Swiper('#swiper_2', {
 
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 35,
+  autoHeight: false,
+  centeredSlides: false,
+  initialSlide: 0,
+
   navigation: {
     nextEl: '.js-next-2',
     prevEl: '.js-prev-2',
@@ -74,7 +109,7 @@ var secondSwiper = new Swiper('#swiper_2', {
 
   breakpoints: {
 
-    1430: {
+    1650: {
 
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -84,38 +119,14 @@ var secondSwiper = new Swiper('#swiper_2', {
       initialSlide: 0,
 
     },
-
-    1200: {
+    1240: {
 
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 50,
+      spaceBetween: 35,
       autoHeight: false,
       centeredSlides: false,
       initialSlide: 0,
-
-    },
-
-    577: {
-
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      spaceBetween: 34,
-      slidesPerColumn: 2,
-      autoHeight: false,
-      centeredSlides: false,
-      initialSlide: 0,
-
-    },
-
-    320: {
-
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      slidesPerColumn: 1,
-      slidesPerColumn: 1,
-      spaceBetween: 20,
-      allowTouchMove: true,
 
     },
 
@@ -125,14 +136,34 @@ var secondSwiper = new Swiper('#swiper_2', {
 
 
 var lastSwiper = new Swiper('#swiper_3', {
-  slidesPerView: 3,
-  spaceBetween: 50,
+  slidesPerView: 1,
   loop: true,
 
   navigation: {
     nextEl: '.js-next-3',
     prevEl: '.js-prev-3',
   },
+
+  breakpoints: {
+
+    1025: {
+
+      slidesPerView: 3,
+      spaceBetween: 50,
+
+    },
+
+
+
+    675: {
+
+      slidesPerView: 2,
+      spaceBetween: 50,
+
+    },
+
+
+  }
 
 
 })

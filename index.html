@@ -249,6 +249,7 @@
         </div>
         <div class="swiper-container gallery__swiper-container" id="swiper_1">
           <div class="swiper-wrapper gallery__swiper-wrapper">
+
             <div class="swiper-slide swiper-img swiper-img_1" tabindex="0">
               <div class="swiper-active"></div>
               <div class="swiper-hover"></div>
@@ -321,10 +322,14 @@
               <div class="swiper-active"></div>
               <div class="swiper-hover"></div>
             </div>
-
           </div>
         </div>
-      </div>
+        <p class="gallery__text_adaptive">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+          <a href="#" class="gallery__authorize">авторизуйтесь</a>, либо
+          воспользуйтесь лицензией.
+        </p>
+      </div>      
     </div>
   </section>
   <section class="catalog" id="catalog">
@@ -916,55 +921,60 @@
         <h2 class="publications__header">Издания</h2>
         <h4 class="publications__categories">Категории:</h4>
         <div class="publications__checkbox">
-          <div class="publications__check-item">
-            <input type="checkbox" id="bestsellers">
-            <label class="publications__label pseudo_outline" for="bestsellers">Бестселлеры</label>
+          <div class="publications__checkbox_block">
+            <div class="publications__check-item">
+              <input type="checkbox" id="bestsellers">
+              <label class="publications__label pseudo_outline" for="bestsellers">Бестселлеры</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="art">
+              <label class="publications__label pseudo_outline" for="art">Искусство</label>            
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="architecture">
+              <label class="publications__label pseudo_outline" for="architecture">Архитектура</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="design">
+              <label class="publications__label pseudo_outline" for="design">Дизайн</label>
+            </div>
           </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="art">
-            <label class="publications__label pseudo_outline" for="art">Искусство</label>
-            <span class="outline_pseudo"></span>
+          <div class="publications__checkbox_block">
+            <div class="publications__check-item">
+              <input type="checkbox" id="fashion">
+              <label class="publications__label pseudo_outline" for="fashion">Мода</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="for_children">
+              <label class="publications__label pseudo_outline" for="for_children">Детям</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="literature">
+              <label class="publications__label pseudo_outline" for="literature">Художественная литература</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="publicism">
+              <label class="publications__label pseudo_outline" for="publicism">Публицистика</label>
+            </div>
           </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="architecture">
-            <label class="publications__label pseudo_outline" for="architecture">Архитектура</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="design">
-            <label class="publications__label pseudo_outline" for="design">Дизайн</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="fashion">
-            <label class="publications__label pseudo_outline" for="fashion">Мода</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="for_children">
-            <label class="publications__label pseudo_outline" for="for_children">Детям</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="literature">
-            <label class="publications__label pseudo_outline" for="literature">Художественная литература</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="publicism">
-            <label class="publications__label pseudo_outline" for="publicism">Публицистика</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="travel_guides">
-            <label class="publications__label pseudo_outline" for="travel_guides">Путеводители</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="philosophy">
-            <label class="publications__label pseudo_outline" for="philosophy">Философия</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="academic_books">
-            <label class="publications__label pseudo_outline" for="academic_books">Учебная литература</label>
-          </div>
-          <div class="publications__check-item">
-            <input type="checkbox" id="magazines">
-            <label class="publications__label pseudo_outline" for="magazines">Журналы и газеты</label>
-          </div>
+          <div class="publications__checkbox_block">
+            <div class="publications__check-item">
+              <input type="checkbox" id="travel_guides">
+              <label class="publications__label pseudo_outline" for="travel_guides">Путеводители</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="philosophy">
+              <label class="publications__label pseudo_outline" for="philosophy">Философия</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="academic_books">
+              <label class="publications__label pseudo_outline" for="academic_books">Учебная литература</label>
+            </div>
+            <div class="publications__check-item">
+              <input type="checkbox" id="magazines">
+              <label class="publications__label pseudo_outline" for="magazines">Журналы и газеты</label>
+            </div>
+          </div> 
         </div>
         <h5 class="publications__header-inputs"> Цена</h5>
         <form class="publications__inputs">
@@ -983,71 +993,84 @@
           <div class="swiper-buttons__button js-next-2 button-black-next">
           </div>
         </div>
-
         <div class="swiper-container publications__swiper-container" id="swiper_2">
           <div class="swiper-wrapper publications__swiper-wrapper">
-            <div class="publications__slide-block swiper-slide">
-              <img class="publications__img" src="img/Rectangle_111.jpg" alt="">
-              <div class="publications__text">
-                <p class="publications__text-left">Искусство света</p>
-                <p class="publications__text-right"> 620 руб </p>
+            <div class="swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_111.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Искусство света</p>
+                  <p class="publications__text-right"> 620 руб </p>
+                </div>
+                <p class="publications__text-bottom">Иттен, Иоханнес</p>
+                <button class="publications__button">Заказать</button>
               </div>
-              <p class="publications__text-bottom">Иттен, Иоханнес</p>
-              <button class="publications__button">Заказать</button>
             </div>
-            <div class="publications__slide-block swiper-slide">
-              <img class="publications__img" src="img/Rectangle_112.jpg" alt="">
-              <div class="publications__text">
-                <p class="publications__text-left">Типографика </p>
-                <p class="publications__text-right">2 450 руб</p>
+            <div class="swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_112.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Типографика </p>
+                  <p class="publications__text-right">2 450 руб</p>
+                </div>
+                <p class="publications__text-bottom">Рудер, Эмиль</p>
+                <button class="publications__button">Заказать</button>
               </div>
-              <p class="publications__text-bottom">Рудер, Эмиль</p>
-              <button class="publications__button">Заказать</button>
             </div>
-            <div class="publications__slide-block swiper-slide">
-              <img class="publications__img" src="img/Rectangle_113.jpg" alt="">
-              <div class="publications__text">
-                <p class="publications__text-left">Книга про буквы</p>
-                <p class="publications__text-right">2 200 руб</p>
+            <div class="swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_113.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Книга про буквы</p>
+                  <p class="publications__text-right">2 200 руб</p>
+                </div>
+                <p class="publications__text-bottom">Гордон, Юрий</p>
+                <button class="publications__button">Заказать</button>
               </div>
-              <p class="publications__text-bottom">Гордон, Юрий</p>
-              <button class="publications__button">Заказать</button>
             </div>
-            <div class="publications__slide-block swiper-slide">
-              <img class="publications__img" src="img/Rectangle_114.png" alt="">
-              <div class="publications__text">
-                <p class="publications__text-left">Николай Ильин </p>
-                <p class="publications__text-right">1 100 руб</p>
+            <div class="swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_114.png" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Николай Ильин </p>
+                  <p class="publications__text-right">1 100 руб</p>
+                </div>
+                <p class="publications__text-bottom">Кричевский, Владимир</p>
+                <button class="publications__button">Заказать</button>
               </div>
-              <p class="publications__text-bottom">Кричевский, Владимир</p>
-              <button class="publications__button">Заказать</button>
             </div>
-            <div class="publications__slide-block swiper-slide">
-              <img class="publications__img" src="img/Rectangle_115.jpg" alt="">
-              <div class="publications__text">
-                <p class="publications__text-left">Модульные сетки в граф...</p>
-                <p class="publications__text-right">1 450 руб</p>
+            <div class="swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_115.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Модульные сетки в граф...</p>
+                  <p class="publications__text-right">1 450 руб</p>
+                </div>
+                <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
+                <button class="publications__button">Заказать</button>
               </div>
-              <p class="publications__text-bottom"> Мюллер-Брокманн, Йозеф</p>
-              <button class="publications__button">Заказать</button>
             </div>
-            <div class="publications__slide-block swiper-slide">
-              <img class="publications__img" src="img/Rectangle_116.jpg" alt="">
-              <div class="publications__text">
-                <p class="publications__text-left"> Эволюция графических ст...</p>
-                <p class="publications__text-right">2 200 руб</p>
+            <div class="swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_116.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left"> Эволюция графических ст...</p>
+                  <p class="publications__text-right">2 200 руб</p>
+                </div>
+                <p class="publications__text-bottom">Хеллер, Чваст</p>
+                <button class="publications__button">Заказать</button>
               </div>
-              <p class="publications__text-bottom">Хеллер, Чваст</p>
-              <button class="publications__button">Заказать</button>
             </div>
-            <div class="publications__slide-block swiper-slide">
-              <img class="publications__img" src="img/Rectangle_117.jpg" alt="">
-              <div class="publications__text">
-                <p class="publications__text-left">Искусство и визуальное в...</p>
-                <p class="publications__text-right">Арнхейм, Рудольф</p>
+            <div class="swiper-slide">
+              <div class="publications__slide-block">
+                <img class="publications__img" src="img/Rectangle_117.jpg" alt="">
+                <div class="publications__text">
+                  <p class="publications__text-left">Искусство и визуальное в...</p>
+                  <p class="publications__text-right">Арнхейм, Рудольф</p>
+                </div>
+                <p class="publications__text-bottom">2 200 руб</p>
+                <button class="publications__button">Заказать</button>
               </div>
-              <p class="publications__text-bottom">2 200 руб</p>
-              <button class="publications__button">Заказать</button>
             </div>
           </div>
         </div>
