@@ -2,6 +2,14 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#events__button').addEventListener('click', function () {
     document.querySelector('#events__button').classList.add('events__hidden'); 
   })
+
+  function AddContainer(){
+    if (window.innerWidth <= 767) {
+      document.querySelector('#contacts').classList.add('container-inside');
+      document.querySelector('#contacts__cont').classList.remove('container-inside');
+    }
+  }
+  AddContainer()
 })
 
 $("#events__button").click(function() {
