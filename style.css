@@ -569,7 +569,7 @@ a:active {
 }
 
 .about-us__text {
-  max-width: 100%;
+  max-width: 1082px;
   font-size: 16px;
   line-height: 32px;
   color: #333333;
@@ -797,7 +797,7 @@ a:active {
 .swiper-buttons__counter {
   position: relative;
   top: 1px;
-  width: 43px;
+  width: fit-content;
   color: #FFFFFF;
   margin-left: 16px;
   margin-right: 13px;
@@ -1037,7 +1037,6 @@ a:active {
 }
 
 .catalog__right {
-  max-width: 800px;
   width: 100%;
 }
 
@@ -1148,7 +1147,7 @@ a:active {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 46px;
-  grid-template-columns: repeat(3, 211px);
+  grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(9, 32px);
   padding: 25px 0 28px 0;
 }
@@ -1216,8 +1215,7 @@ a:active {
   display: block;
 }
 
-.catalog__left {
-  max-width: 750px;
+.catalog__left {  
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1258,33 +1256,29 @@ a:active {
   margin-bottom: 17px;
 }
 
-.events__swiper {
-  overflow: hidden;
-  width: 100%;
+.events__swiper {  
+  width: 100%;   
 }
 
-.events__wrapper {
+.events__wrapper {    
   flex-wrap: wrap;
   justify-content:space-between;
 }
 
 .events__card {
   position: relative;
+  margin-bottom: 50px;
   max-width: 500px;
   width: 100%;
   min-height: 700px;
-  height: auto;
-  vertical-align: top;
-  margin-bottom: 50px;
-  border: 1px solid #CACACA;
+  border: 1px solid #CACACA;  
 }
 
 .events__wrapper::after {
   content: "";
   width: 500px;
-  height: 0;
-  margin-top: 60px;
-  text-align: center;
+  height: 0;  
+  
 }
 
 
@@ -1422,9 +1416,16 @@ a:active {
   margin-bottom: 10px;
 }
 
+
 .publications__checkbox {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 0;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(12, 32px); 
   margin-bottom: auto;
 }
+
 
 .publications__label {
   width: max-content;
@@ -1620,6 +1621,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   line-height: 22px;
   color: #FFFFFF;
   font-weight: 700;
+  text-overflow: ellipsis;
 }
 
 .publications__text-right {
@@ -1629,6 +1631,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   line-height: 22px;
   color: #FFFFFF;
   font-style: italic;
+  text-overflow: ellipsis;
 }
 
 .publications__text-bottom {
@@ -1636,6 +1639,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   line-height: 22px;
   color: #FFFFFF;
   margin-bottom: 13px;
+  text-overflow: ellipsis;
 }
 
 .publications__button {

@@ -36,9 +36,9 @@
   <header class="header">
     <div class="header__top">
       <div class="header__container-top container-inside">
-        <img src="img/burger.png" alt="" class="header__burger">
+        <button class="header__burger"></button>
         <img src="img/logo.svg" alt="" class="header__logo">
-        <img src="img/search_icon.png" alt="" class="header__top-search">
+        <button class="header__top-search"></button>
         <nav id="nav" class="header__navigation">
           <ul class="header__nav-list ">
             <li class="header__toplist-item hidden">
@@ -323,7 +323,7 @@
               <div class="swiper-hover"></div>
             </div>
           </div>
-        </div>                
+        </div>
       </div>
       <p class="gallery__text_adaptive">
         Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
@@ -861,7 +861,7 @@
               <a href="" class="events__more">Подробнее</a>
             </div>
           </div>
-          <div class="events__card swiper-slide">
+          <div class="events__card swiper-slide hidden">
             <img src="img/4.jpg" alt="" class="events__img">
             <p class="events__text-top">Третьяковка на Крымском валу</p>
             <p class="events__text-top">с 30 марта по 30 апреля </p>
@@ -875,7 +875,7 @@
               <a href="" class="events__more">Подробнее</a>
             </div>
           </div>
-          <div class="events__card swiper-slide">
+          <div class="events__card swiper-slide hidden">
             <img src="img/5.jpg" alt="" class="events__img">
             <p class="events__text-top">ММАМ</p>
             <p class="events__text-top">с 8 апреля по 20 мая</p>
@@ -901,59 +901,53 @@
         <h2 class="publications__header">Издания</h2>
         <h4 class="publications__categories">Категории:</h4>
         <div class="publications__checkbox">
-          <div class="publications__checkbox_block">
-            <div class="publications__check-item">
-              <input type="checkbox" id="bestsellers">
-              <label class="publications__label pseudo_outline" for="bestsellers">Бестселлеры</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="art">
-              <label class="publications__label pseudo_outline" for="art">Искусство</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="architecture">
-              <label class="publications__label pseudo_outline" for="architecture">Архитектура</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="design">
-              <label class="publications__label pseudo_outline" for="design">Дизайн</label>
-            </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="bestsellers">
+            <label class="publications__label pseudo_outline" for="bestsellers">Бестселлеры</label>
           </div>
-          <div class="publications__checkbox_block">
-            <div class="publications__check-item">
-              <input type="checkbox" id="fashion">
-              <label class="publications__label pseudo_outline" for="fashion">Мода</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="for_children">
-              <label class="publications__label pseudo_outline" for="for_children">Детям</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="literature">
-              <label class="publications__label pseudo_outline" for="literature">Художественная литература</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="publicism">
-              <label class="publications__label pseudo_outline" for="publicism">Публицистика</label>
-            </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="art">
+            <label class="publications__label pseudo_outline" for="art">Искусство</label>
           </div>
-          <div class="publications__checkbox_block">
-            <div class="publications__check-item">
-              <input type="checkbox" id="travel_guides">
-              <label class="publications__label pseudo_outline" for="travel_guides">Путеводители</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="philosophy">
-              <label class="publications__label pseudo_outline" for="philosophy">Философия</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="academic_books">
-              <label class="publications__label pseudo_outline" for="academic_books">Учебная литература</label>
-            </div>
-            <div class="publications__check-item">
-              <input type="checkbox" id="magazines">
-              <label class="publications__label pseudo_outline" for="magazines">Журналы и газеты</label>
-            </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="architecture">
+            <label class="publications__label pseudo_outline" for="architecture">Архитектура</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="design">
+            <label class="publications__label pseudo_outline" for="design">Дизайн</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="fashion">
+            <label class="publications__label pseudo_outline" for="fashion">Мода</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="for_children">
+            <label class="publications__label pseudo_outline" for="for_children">Детям</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="literature">
+            <label class="publications__label pseudo_outline" for="literature">Художественная литература</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="publicism">
+            <label class="publications__label pseudo_outline" for="publicism">Публицистика</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="travel_guides">
+            <label class="publications__label pseudo_outline" for="travel_guides">Путеводители</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="philosophy">
+            <label class="publications__label pseudo_outline" for="philosophy">Философия</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="academic_books">
+            <label class="publications__label pseudo_outline" for="academic_books">Учебная литература</label>
+          </div>
+          <div class="publications__check-item">
+            <input type="checkbox" id="magazines">
+            <label class="publications__label pseudo_outline" for="magazines">Журналы и газеты</label>
           </div>
         </div>
         <h5 class="publications__header-inputs"> Цена</h5>
@@ -1046,9 +1040,9 @@
                 <img class="publications__img" src="img/Rectangle_117.jpg" alt="">
                 <div class="publications__text">
                   <p class="publications__text-left">Искусство и визуальное в...</p>
-                  <p class="publications__text-right">Арнхейм, Рудольф</p>
+                  <p class="publications__text-right">2 200 руб</p>
                 </div>
-                <p class="publications__text-bottom">2 200 руб</p>
+                <p class="publications__text-bottom">Арнхейм, Рудольф</p>
                 <button class="publications__button">Заказать</button>
               </div>
             </div>
@@ -1115,20 +1109,20 @@
     </div>
   </section>
   <section class="contacts" id="contacts">
-    <div class="container-inside" id="contacts__cont">
+    <div class="container-inside">
       <h2 class="contacts__header">
         Контакты
       </h2>
     </div>
     <div class="contacts__two-sections">
-      <div class="contacts__left">
+      <div class="contacts__left" id="contacts__left">
         <h3 class="contacts__left-header">
-          Шоурум №4
+          Шоурум №2
         </h3>
         <p class="contacts__text">
-          Леонтьевский переулок, дом 5, строение 1
+
+          Покровский бульвар, дом 24, строение 3
         </p>
-        <div class="contacts__map_2" id="map_2"></div>
         <form class="contacts__form" autocomplete="off">
           <h3 class="contacts__callback">
             Заказать обратный звонок

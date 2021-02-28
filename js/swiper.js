@@ -151,51 +151,52 @@ var lastSwiper = new Swiper('#swiper_3', {
 })
 
 
-// const slider = document.querySelector('.events__swiper');
+const slider = document.querySelector('.events__swiper');
 
-// // let mySwiper = new Swiper(slider, {
-// // 	slidesPerView: 3,
-// // 	spaceBetween: 10,
-// // 	loop: true,
-// // 	pagination: {
-// // 		el: '.swiper-pagination',
-// // 		clickable: true,
-// // 	},
-// // 	navigation: {
-// // 		nextEl: '.swiper-button-next',
-// // 		prevEl: '.swiper-button-prev',
-// // 	},
-// // })
+// let mySwiper = new Swiper(slider, {
+// 	slidesPerView: 3,
+// 	spaceBetween: 10,
+// 	loop: true,
+// 	pagination: {
+// 		el: '.swiper-pagination',
+// 		clickable: true,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	},
+// })
 
-// let mySwiper;
+let mySwiper;
 
-// function mobileSlider() {
-// 	if (window.innerWidth <= 675 && slider.dataset.mobile == 'false') {
-// 		mySwiper = new Swiper(slider, {
-// 			slidesPerView: 1,
-// 			spaceBetween: 10,
-// 			loop: true,
-// 			pagination: {
-// 				el: '.swiper-pagination',
-// 				clickable: true,
-// 			},
-// 		});
+function mobileSlider() {
+	if (window.innerWidth <= 675 && slider.dataset.mobile == 'false') {
+		mySwiper = new Swiper(slider, {
+			slidesPerView: 1,
+			spaceBetween: 10,
+      autoHeight:true,
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination_3',
+				clickable: true,
+			},
+		});
 
-// 		slider.dataset.mobile = 'true';
-// 	}
+		slider.dataset.mobile = 'true';
+	}
 
-// 	if (window.innerWidth > 675) {
-// 		slider.dataset.mobile = 'false';
-// 		if (slider.classList.contains('swiper-container-initialized')) {
-// 			mySwiper.destroy();
-// 		}
-// 	}
-// }
+	if (window.innerWidth > 675) {
+		slider.dataset.mobile = 'false';
+		if (slider.classList.contains('swiper-container-initialized')) {
+			mySwiper.destroy();
+		}
+	}
+}
 
-// mobileSlider()
+mobileSlider()
 
-// window.addEventListener('resize', () => {
-// 	mobileSlider();
-// });
+window.addEventListener('resize', () => {
+	mobileSlider();
+});
 
 

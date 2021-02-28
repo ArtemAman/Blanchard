@@ -5,15 +5,34 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function AddContainer(){
     if (window.innerWidth <= 767) {
-      document.querySelector('#contacts').classList.add('container-inside');
-      document.querySelector('#contacts__cont').classList.remove('container-inside');
+      document.querySelector('#contacts__left').classList.add('container-inside');
+      
     }
   }
-  AddContainer()
+  AddContainer();
+  
+
+  function Hide(){
+    if (window.innerWidth <= 480) {
+      document.querySelector('.publications__checkbox').style.display="none";
+      
+    }
+  }
+
+  Hide();
+
+  window.addEventListener('resize', () => {
+    AddContainer();
+    Hide();
+  });
 })
 
+
+
+
+
 $("#events__button").click(function() {
-  $(".events__list-item").removeClass("events__hidden");
+  $(".events__card").removeClass("hidden");
 });
 
 $(".header__burger").click(function() {
