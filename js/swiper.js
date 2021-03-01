@@ -135,7 +135,7 @@ var lastSwiper = new Swiper('#swiper_3', {
   },
 
   breakpoints: {
-    1025: {
+    1026: {
 
       slidesPerView: 3,
       spaceBetween: 50,

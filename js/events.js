@@ -21,9 +21,29 @@ window.addEventListener('DOMContentLoaded', function () {
 
   Hide();
 
+  function HideCards(){
+    if (window.innerWidth <= 980) {
+      document.querySelector('.events__card_3').classList.add('hidden');
+      
+    }
+  }
+  HideCards()
+
+  function ShowCards(){
+    if (window.innerWidth > 980) {
+      document.querySelector('.events__card_3').classList.remove('hidden');
+      
+    }
+  }
+  ShowCards()
+
+
+
   window.addEventListener('resize', () => {
     AddContainer();
     Hide();
+    HideCards()
+    ShowCards()
   });
 })
 
