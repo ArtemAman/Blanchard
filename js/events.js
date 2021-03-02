@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#events__button').addEventListener('click', function () {
-    document.querySelector('#events__button').classList.add('events__hidden'); 
+    document.querySelector('#events__button').classList.add('hidden'); 
   })
 
   function AddContainer(){
@@ -37,6 +37,25 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   ShowCards()
 
+  function HideButton(){
+    if (window.innerWidth <= 675) {
+      document.querySelector('.events__button').classList.add('hidden');
+      document.querySelector('.events__card').classList.remove('hidden');
+      
+      
+    }
+  }
+  HideButton()
+
+  function ShowButton(){
+    if (window.innerWidth > 675) {
+      document.querySelector('.events__button').classList.remove('hidden');  
+      document.querySelector('.events__card_more').classList.remove('hidden');          
+      
+    }
+  }
+  ShowButton()
+
 
 
   window.addEventListener('resize', () => {
@@ -44,6 +63,8 @@ window.addEventListener('DOMContentLoaded', function () {
     Hide();
     HideCards()
     ShowCards()
+    HideButton()
+    ShowButton()
   });
 })
 

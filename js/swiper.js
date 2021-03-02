@@ -154,20 +154,6 @@ var lastSwiper = new Swiper('#swiper_3', {
 
 const slider = document.querySelector('.events__swiper');
 
-// let mySwiper = new Swiper(slider, {
-// 	slidesPerView: 3,
-// 	spaceBetween: 10,
-// 	loop: true,
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		clickable: true,
-// 	},
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// })
-
 let mySwiper;
 
 function mobileSlider() {
@@ -180,6 +166,7 @@ function mobileSlider() {
 			pagination: {
 				el: '.swiper-pagination_3',
 				clickable: true,
+        
 			},
 		});
 

@@ -161,13 +161,7 @@ a:active {
   outline: none;
 }
 
-.hidden {
-  display: none;
-}
 
-.shown {
-  display: flex;
-}
 
 .header__enter {
   padding-left: 20px;
@@ -2142,4 +2136,13 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .facebook {
   background-image: url(img/fb.svg);
+}
+
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: flex;
 }
