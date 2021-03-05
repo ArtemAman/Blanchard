@@ -1182,37 +1182,15 @@ a:active {
   display: block;
 }
 
-.fr__invisible {
+.catalog__left-content {
   display: none;
 }
 
-.fr__visible {
+.visible {
   display: block;
 }
 
-.ger__invisible {
-  display: none;
-}
 
-.ger__visible {
-  display: block;
-}
-
-.ru__invisible {
-  display: none;
-}
-
-.ru__visible {
-  display: block;
-}
-
-.bl__invisible {
-  display: none;
-}
-
-.bl__visible {
-  display: block;
-}
 
 .catalog__left {
   width: 100%;
