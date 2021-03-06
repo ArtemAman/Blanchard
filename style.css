@@ -23,7 +23,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
@@ -37,7 +38,11 @@ ul {
   list-style: none;
 }
 
-h2, h3, h4, h5, p {
+h2,
+h3,
+h4,
+h5,
+p {
   margin: 0px;
 }
 
@@ -470,9 +475,11 @@ a:active {
   0% {
     background-size: 100% 100%;
   }
+
   50% {
     background-size: 110% 110%;
   }
+
   100% {
     background-size: 100% 100%;
   }
@@ -1463,12 +1470,14 @@ input[type="checkbox"]:not(:checked):focus-visible+.pseudo_outline:after {
   font-family: 'Open Sans';
 }
 
-input[type="checkbox"]:checked, input[type="checkbox"]:not(:checked) {
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
   position: absolute;
   left: -9999px;
 }
 
-input[type="checkbox"]:checked+label, input[type="checkbox"]:not(:checked)+label {
+input[type="checkbox"]:checked+label,
+input[type="checkbox"]:not(:checked)+label {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1484,7 +1493,8 @@ input[type="checkbox"]:checked+label {
   color: #C283F3;
 }
 
-input[type="checkbox"]:checked+label:before, input[type="checkbox"]:not(:checked)+label:before {
+input[type="checkbox"]:checked+label:before,
+input[type="checkbox"]:not(:checked)+label:before {
   content: "";
   position: absolute;
   left: 0px;
@@ -1507,7 +1517,8 @@ input[type="checkbox"]:checked+label:before {
   background-position: center;
 }
 
-input[type="checkbox"]:checked+label:after, input[type="checkbox"]:not(:checked)+label:after {
+input[type="checkbox"]:checked+label:after,
+input[type="checkbox"]:not(:checked)+label:after {
   content: "";
   position: absolute;
   -webkit-transition: all 0.2s ease;
@@ -1571,7 +1582,8 @@ input[type="checkbox"]:checked+label:after, input[type="checkbox"]:not(:checked)
   outline: 2px solid #C283F3;
 }
 
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -1612,8 +1624,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 .publications__text-left {
   max-width: 60%;
-  white-space: nowrap; 
-    overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
@@ -1628,8 +1640,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   line-height: 22px;
   color: #FFFFFF;
   font-style: italic;
-  white-space: nowrap; 
-    overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -1638,8 +1650,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   line-height: 22px;
   color: #FFFFFF;
   margin-bottom: 13px;
-  white-space: nowrap; 
-    overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
