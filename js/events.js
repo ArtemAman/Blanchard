@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function hideCheckboxes() {
     if (window.innerWidth <= 480) {
-      document.querySelector('.publications__checkbox').classList.add('hidden');
+      $('.publications__checkbox').addClass('hidden');
 
     }
   }
@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function showCheckboxes() {
     if (window.innerWidth > 480) {
-      document.querySelector('.publications__checkbox').classList.remove('hidden');
+      $('.publications__checkbox').removeClass('hidden');
 
     }
   }
@@ -84,6 +84,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   $(".publications__categories").click(function () {
     $(".publications__checkbox").toggleClass("hidden");
+    $(".publications__categories").toggleClass("opened");
   });
 
 

@@ -101,13 +101,10 @@ var lastSwiper = new Swiper('#swiper_3', {
 
 
 
-const slider_2 = document.querySelector('#swiper_2');
 
-let mySwiper_2;
-
-function mobileSlider_2() {
+let mySwiper_2 = function() {
   if (window.innerWidth >= 480) {
-    mySwiper_2 = new Swiper('#swiper_2', {
+    var swiper_2 = new Swiper('#swiper_2', {
 
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -152,15 +149,15 @@ function mobileSlider_2() {
 
     })
 
-    if (window.innerWidth < 480) {
-      if (slider_2.classList.contains('swiper-container-initialized')) {
-        mySwiper_2.destroy();
-      }
-    }
+    swiper_2.on('resize', function () {
+			if (innerWidth < 480) {
+				swiper_2.destroy();
+			}
+		});
   }
 }
 
-mobileSlider_2();
+mySwiper_2();
 
 
 
@@ -205,5 +202,5 @@ mobileSlider();
 
 window.addEventListener('resize', () => {
   mobileSlider();
-  mobileSlider_2();
+  mySwiper_2();
 });

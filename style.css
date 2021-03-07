@@ -1250,10 +1250,8 @@ a:active {
 }
 
 .swiper-pagination_3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 124px;
+  display: none;
+
 }
 
 .swiper-pagination-bullet {
