@@ -2152,3 +2152,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .shown {
   display: flex;
 }
+
+.add_cross{
+  background-image: url(img/cross_violet.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}

@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function hideCheckboxes() {
     if (window.innerWidth <= 480) {
-      $('.publications__checkbox').addClass('hidden');
+      $('.publications__check-item').addClass('visually-hidden');
 
     }
   }
@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function showCheckboxes() {
     if (window.innerWidth > 480) {
-      $('.publications__checkbox').removeClass('hidden');
+      $('.publications__check-item').removeClass('visually-hidden');
 
     }
   }
@@ -69,6 +69,25 @@ window.addEventListener('DOMContentLoaded', function () {
   showButton()
 
 
+  function addCrossCheckboxes() {
+    if (window.innerWidth <= 480) {
+      $('.publications__input').change(function () {
+        if (this.checked) {
+          $(this).closest('.publications__check-item').addClass('add_cross');
+        }
+        else {
+          $(this).closest('.publications__check-item').removeClass('add_cross');
+        }
+
+      });
+
+    }
+  }
+
+  addCrossCheckboxes()
+
+
+
 
   window.addEventListener('resize', () => {
     addContainer();
@@ -78,13 +97,21 @@ window.addEventListener('DOMContentLoaded', function () {
     hideButton()
     showButton()
     showCheckboxes()
+    addCrossCheckboxes()
   });
 
 
 
   $(".publications__categories").click(function () {
-    $(".publications__checkbox").toggleClass("hidden");
     $(".publications__categories").toggleClass("opened");
+    $('.publications__check-item').each(function () {
+      if ($(this).hasClass('add_cross')) {
+      }
+      else {
+        $(this).toggleClass("visually-hidden");
+
+      }
+    })
   });
 
 

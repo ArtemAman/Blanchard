@@ -580,10 +580,11 @@
 }
 
 @media (max-width: 480px) {
+
   .publications__checkbox {
-    grid-column-gap: 0;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(12, 38px);
+    display: block;
+    margin-bottom: 20px;
+
   }
   .publications__categories {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -593,7 +594,7 @@
     background-position: right;
     cursor: pointer;
     margin-bottom: 0px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
   }
 
   .opened {
@@ -601,9 +602,7 @@
   }
 
 
-  .publications__checkbox {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  }
+
 
 
   input[type="checkbox"]:checked+label,
@@ -615,21 +614,8 @@
   .publications__check-item {
     padding-top: 11px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 11px;
   }
-
-
-
-
-  input[type="checkbox"]:checked + label span{
-    position: absolute;
-      top: 0;
-      width: 13px;
-      height: 13px;
-      background-image: url(img/cross_violet.svg);
-      background-repeat: no-repeat;
-
-  }
-
 
 
 
