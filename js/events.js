@@ -50,8 +50,7 @@ window.addEventListener('DOMContentLoaded', function () {
   showCards()
 
   function hideButton() {
-    if (window.innerWidth <= 675) {
-      document.querySelector('.events__button').classList.add('hidden');
+    if (window.innerWidth <= 675) {      
       $(".events__card").removeClass("hidden");
 
 
@@ -60,8 +59,7 @@ window.addEventListener('DOMContentLoaded', function () {
   hideButton()
 
   function showButton() {
-    if (window.innerWidth > 675) {
-      document.querySelector('.events__button').classList.remove('hidden');
+    if (window.innerWidth > 675) {      
       $(".events__card_more").addClass("hidden");
 
     }
@@ -98,7 +96,16 @@ window.addEventListener('DOMContentLoaded', function () {
     showButton()
     showCheckboxes()
     addCrossCheckboxes()
+
   });
+
+
+  $(".publications__check-item.add_cross").click(function () {
+    $(this).removeClass("add_cross");
+    $(this).addClass("visually-hidden");
+  });
+
+ 
 
 
 
