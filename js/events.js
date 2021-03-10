@@ -85,6 +85,9 @@ window.addEventListener('DOMContentLoaded', function () {
   addCrossCheckboxes()
 
 
+  
+
+
 
 
   window.addEventListener('resize', () => {

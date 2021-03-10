@@ -1,3 +1,23 @@
+var swiper0 = new Swiper('#swiper_0', {
+	slidesPerView: 1,
+	spaceBetween: 10,
+
+	autoplay: {
+		delay: 10000,
+		disableOnInteraction: false,
+	},
+	effect: 'fade'
+});
+
+
+
+
+
+
+
+
+
+
 var gallerySwiper = new Swiper('.gallery__swiper-container', {
 
 
