@@ -464,7 +464,6 @@
     margin-right: auto;
     width: 80%;
   }
-
   .contacts__form-item {
     width: 100%;
   }
@@ -559,7 +558,6 @@
   }
   .events__wrapper {
     flex-wrap: nowrap;
-
     margin-bottom: 16px;
   }
   .events__img {
@@ -577,8 +575,7 @@
     margin-right: auto;
     max-width: 124px;
   }
-
-  .events__button{
+  .events__button {
     display: none;
   }
 }
@@ -614,29 +611,19 @@
     max-height: 143px;
     margin-bottom: 7px;
   }
-
-
   .publications__text-left {
     font-size: 12px;
     line-height: 16px;
-
-
   }
   .publications__text-right {
     display: none;
   }
-
   .publications__text-bottom {
     font-size: 12px;
     line-height: 16px;
-
-
     margin-bottom: 0px;
-
   }
-
-  .publications__text-480{
-
+  .publications__text-480 {
     font-size: 12px;
     line-height: 16px;
     color: #FFFFFF;
@@ -644,12 +631,7 @@
     white-space: nowrap;
     display: block;
     margin-bottom: 13px;
-
   }
-
-
-
-
   .gallery__swiper-container {
     width: 100%;
   }
@@ -735,102 +717,69 @@
   .publications__button {
     width: 100%;
     font-size: 12px;
-line-height: 16px;
+    line-height: 16px;
   }
   .publications__container {
     padding-bottom: 0;
   }
-
-  .publications__buttons{
+  .publications__buttons {
     display: none;
   }
-
   .contacts__left-header {
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 0;
-
   }
-
   .contacts__left {
     padding-top: 0;
-
   }
-
   .contacts__right {
     top: 55px;
-
   }
-
   .contacts__form {
     width: 100%;
   }
-
   .contacts__callback {
-
     font-size: 18px;
     line-height: 32px;
-
   }
-
   .contacts__button {
     width: 128px;
     height: 40px;
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 20px;
-
   }
-
   .contacts__one-click {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 5px;
-
   }
-
   .contscts__watsapp {
     width: 50px;
     height: 50px;
     margin-right: 20px;
-
   }
-
   .contacts__telegramm {
     width: 50px;
     height: 50px;
-
   }
-
-
   .footer__social-item {
     width: 50px;
     height: 50px;
-
-
   }
-
   .footer__logo {
     width: 97px;
     height: 22px;
     background-size: cover;
-
   }
-
-
-.footer__container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.contacts__form-item {
-
-  margin-bottom: 20px;
-
-}
-
-
-
+  .footer__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contacts__form-item {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -971,30 +920,21 @@ line-height: 16px;
   .catalog__header {
     margin-bottom: 10px;
   }
-
   .projects__container {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .projects__partners {
     font-size: 18px;
     line-height: 32px;
-
   }
-
   .projects__text {
     margin-bottom: 5px;
   }
-
   .projects__partners {
-
     margin-bottom: 12px;
   }
-
   .projects__swiper-button {
-
     top: 30%;
-
   }
 }

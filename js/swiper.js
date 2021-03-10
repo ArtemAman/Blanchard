@@ -75,7 +75,7 @@ var lastSwiper = new Swiper('#swiper_3', {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
-  autoHeight: true,
+
 
   navigation: {
     nextEl: '.js-next-3',
