@@ -84,8 +84,22 @@ window.addEventListener('DOMContentLoaded', function () {
 
   addCrossCheckboxes()
 
-
   
+  function swipeToBlock() {
+    if (window.innerWidth <= 980) {
+      $(".catalog__inside-links").on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('#catalog__left').offset().top }, 700);
+        e.preventDefault();
+      });
+    
+
+    }
+  }
+
+  swipeToBlock()
+  
+
+
 
 
 
@@ -99,6 +113,8 @@ window.addEventListener('DOMContentLoaded', function () {
     showButton()
     showCheckboxes()
     addCrossCheckboxes()
+    swipeToBlock()
+
 
   });
 
@@ -107,6 +123,11 @@ window.addEventListener('DOMContentLoaded', function () {
     $(this).removeClass("add_cross");
     $(this).addClass("visually-hidden");
   });
+
+
+
+
+
 
  
 
@@ -169,6 +190,9 @@ window.addEventListener('DOMContentLoaded', function () {
     content.siblings('.catalog__left-content').removeClass('visible'); // 3
     content.addClass('visible');
   });
+
+
+
 
 
 

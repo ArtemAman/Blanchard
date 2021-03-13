@@ -700,7 +700,7 @@
         уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
       </p>
       <div class="catalog__two-sections catalog__sections-visible" data-path="3">
-        <div class="catalog__left">
+        <div class="catalog__left" id="catalog__left">
           <div class="catalog__left-content visible" data-path="artist_12">
             <img src="img/domenico.jpg" class="catalog__img" alt="">
             <p class="catalog__text-top">
@@ -1463,15 +1463,15 @@
 
           Покровский бульвар, дом 24, строение 3
         </p>
-        <form class="contacts__form" autocomplete="off">
+        <form action="send.php" class="contacts__form" autocomplete="off" method="post">
           <h3 class="contacts__callback">
             Заказать обратный звонок
           </h3>
-          <input id="name_id" class="contacts__form-item" required type="text" placeholder="Имя*"
+          <input name="fio" id="name_id" class="contacts__form-item" required type="text" placeholder="Имя*"
             data-validate-field="name">
-          <input id="tel_id" class="contacts__form-item" required type="tel" placeholder="Телефон*"
+          <input name="tel" id="tel_id" class="contacts__form-item" required type="tel" placeholder="Телефон*"
             data-validate-field="tel" data-validate-rules="phone">
-          <button class="contacts__button pseudo offset">Заказать</button>
+          <button  type="submit" class="contacts__button pseudo offset">Заказать</button>
         </form>
         <h3 class="contacts__one-click">
           Связаться в один клик
