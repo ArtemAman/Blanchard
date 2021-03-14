@@ -949,7 +949,8 @@ a:active {
 
 .modal {
   background-color: #fff;
-  width: 70%;
+  width: 900px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -973,32 +974,53 @@ a:active {
 }
 
 .modal__description {
-  padding: 40px 20px;
+  padding: 120px 50px;
 }
 
 .modal__img {
-  width: 150%;
-  height: auto;
-  margin-right: 25px;
+  width: 400px;
+  height: 500px;
 }
 
 .modal__header {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.modal__name{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .modal__dates {
   font-size: 12px;
-  line-height: 20px;
+  line-height: 16px;
   color: #999999;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .modal__text {
   font-size: 16px;
   line-height: 32px;
+}
+
+.modal__exit{
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-image: url(img/modal_cross.svg);
+  background-color: transparent;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.modal__exit:focus{
+  outline: none;
+
 }
 
 .swiper-img:focus {

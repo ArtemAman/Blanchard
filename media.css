@@ -282,6 +282,11 @@
   .modal {
     width: 90%;
   }
+
+  .modal__description {
+    padding: 20px 20px;
+  }
+
   .container-inside {
     max-width: 92%;
   }
@@ -373,6 +378,11 @@
 @media (max-width: 768px) {
   .modal {
     width: 90%;
+    height: fit-content;
+  }
+  .modal__img {
+    width: 100%;
+    height: auto;
   }
   .modal__content {
     flex-direction: column;
@@ -528,6 +538,7 @@
 }
 
 @media (max-width: 675px) {
+
   .hero__swiper {
     height: 570px;
   }
@@ -614,6 +625,8 @@
 }
 
 @media (max-width: 480px) {
+
+
   .hero__swiper {
     height: 380px;
   }

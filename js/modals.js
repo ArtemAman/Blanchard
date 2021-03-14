@@ -26,3 +26,9 @@ modalOverlay.addEventListener('click', (e) => {
 	}
 });
 
+
+
+$(".modal__exit").click(function () {
+  modalOverlay.classList.remove('modal-overlay--visible');
+});
+
