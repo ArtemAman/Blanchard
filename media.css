@@ -144,8 +144,7 @@
     position: fixed;
     left: -100%;
     top: 0;
-    z-index: 15;
-    overflow-y: none;
+    z-index: 100;
     padding-top: 40px;
     padding-left: 65px;
     width: 100%;
@@ -572,7 +571,6 @@
   .header__burger {
     width: 20px;
     height: 15px;
-    background-image: url(img/burger_small.png);
   }
   .header__top-search {
     width: 16px;

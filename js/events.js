@@ -151,15 +151,17 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   $(".header__burger").click(function () {
-    $(".header__navigation").toggleClass("shown");
-    $(".header__toplist-item").removeClass("hidden");
+    $(".header__navigation").toggleClass("shown");    
+    $(".header__toplist-exit").removeClass("hidden");
   });
 
   $(".header__link").click(function () {
+    $(".header__toplist-exit").addClass("hidden");
     $(".header__navigation").toggleClass("shown");
   });
 
   $(".header__exit").click(function () {
+    $(".header__toplist-exit").addClass("hidden");
     $(".header__navigation").toggleClass("shown");
   });
 
