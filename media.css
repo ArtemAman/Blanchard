@@ -924,6 +924,9 @@
   .publications__swiper-slide {
     max-width: 130px;
   }
+}
+
+@media (max-width: 338px) {
   .projects__popup-1 {
     margin-left: -145px;
   }
@@ -1086,14 +1089,5 @@
   }
   .projects__swiper-button {
     top: 30%;
-  }
-  .projects__popup-1 {
-    margin-left: -145px;
-  }
-  .projects__popup-2 {
-    margin-left: -145px;
-  }
-  .projects__popup-3 {
-    margin-left: -189px;
   }
 }
