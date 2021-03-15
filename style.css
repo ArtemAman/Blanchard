@@ -156,6 +156,7 @@ a:active {
   border: none;
   background-image: url(img/x.png);
   background-size: cover;
+  padding: 0;
 }
 
 .header__exit:focus {
@@ -1019,6 +1020,7 @@ body.modal--visible {
   right: 20px;
   top: 20px;
   cursor: pointer;
+  padding: 0;
 }
 
 .modal__exit:focus {

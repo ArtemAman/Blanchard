@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	const imgs = document.querySelectorAll('.swiper-img');
 	const modalOverlay = document.querySelector('.modal-overlay');
 	const modals = document.querySelectorAll('.modal');
-	const modalClose = document.querySelector('.modal__exit');
+	// const modalClose = document.querySelectorAll('.modal__exit');
 	const body = document.body;
+
 
 	imgs.forEach((el) => {
 		el.addEventListener('click', (e) => {
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 	modalOverlay.addEventListener('click', (e) => {
-		if (e.target == modalOverlay || e.target == modalClose) {
+		if (e.target == modalOverlay || e.target.classList.contains('modal__exit')) {
 			modalOverlay.classList.remove('modal-overlay--visible');
 			modals.forEach((el) => {
 				el.classList.remove('modal--visible');
