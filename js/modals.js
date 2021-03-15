@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	const imgs = document.querySelectorAll('.swiper-img');
 	const modalOverlay = document.querySelector('.modal-overlay');
 	const modals = document.querySelectorAll('.modal');
-	// const modalClose = document.querySelectorAll('.modal__exit');
 	const body = document.body;
 
 
